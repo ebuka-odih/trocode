@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <!-- Last Published: Thu Aug 04 2022 20:42:06 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="www.plai.io" data-wf-page="5e90eabe55a54a7639d756a4" data-wf-site="5e4d80fab3b7e8f3c8158547">
+
 <head>
     <meta charset="utf-8" />
-    <title>Plai: Better Digital Marketing Is Just A Few Taps Away</title>
-    <meta content="Grow your brand fast and on a budget with Plai marketing app. No previous marketing experience required. Advertise like a pro, easily find insights, discover new keywords and trends. Plai is like having a full-cycle marketing team in your pocket!" name="description" />
+    <title>Trocode: Better Digital Marketing Is Just A Few Taps Away</title>
+    <meta content="Grow your brand fast and on a budget with Trocode marketing app. No previous marketing experience required. Advertise like a pro, easily find insights, discover new keywords and trends. Trocode is like having a full-cycle marketing team in your pocket!" name="description" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/css/plai-io.webflow.bd4533ee8.min.css" rel="stylesheet" type="text/css" />
     <style>
@@ -430,9 +431,9 @@
 <div id="Header" class="hero-section">
     <div class="container-2 w-container">
         <div class="hero-text">
-            <h5 data-w-id="59082a59-d92a-caf6-58bc-b1e17c9334e9" class="hero-overline">plai.io</h5>
-            <h1 data-w-id="f43f054b-d333-efeb-dcc0-1cfc1e24947e" class="hero-h1">Launch targeted ads in seconds with Plai</h1>
-            <p data-w-id="e6756bad-9e53-4803-f2a6-f2597fb08a7a" class="hero-paragraph">Plai is the ad tool built for small teams &amp; creators to launch ads like a pro, no experience required. Simply plug in your creative and budget, and Plai runs your ad campaign for you. <br />
+            <h5 data-w-id="59082a59-d92a-caf6-58bc-b1e17c9334e9" class="hero-overline">Trocode.io</h5>
+            <h1 data-w-id="f43f054b-d333-efeb-dcc0-1cfc1e24947e" class="hero-h1">Launch targeted ads in seconds with Trocode</h1>
+            <p data-w-id="e6756bad-9e53-4803-f2a6-f2597fb08a7a" class="hero-paragraph">Trocode is the ad tool built for small teams &amp; creators to launch ads like a pro, no experience required. Simply plug in your creative and budget, and Trocode runs your ad campaign for you. <br />
                 <br />
             </p>
             <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
@@ -461,22 +462,22 @@
         </a>
         <div class="_3d-section">
             <div class="phone phone-2">
-                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87acbbab1cf86da399c96c_hero2a.png" width="135" data-w-id="810b4c79-98a4-d323-eab6-a59dd35e33b8" alt="Plai marketing app" class="right-phone" />
+                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87acbbab1cf86da399c96c_hero2a.png" width="135" data-w-id="810b4c79-98a4-d323-eab6-a59dd35e33b8" alt="Trocode marketing app" class="right-phone" />
             </div>
             <div class="phone phone1">
-                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87a9978a0cee010276d7b8_hero1.png" width="135" data-w-id="b1a7adde-c91a-0c9e-ab92-c69ecb53d176" alt="Plai" class="left-phone" />
+                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87a9978a0cee010276d7b8_hero1.png" width="135" data-w-id="b1a7adde-c91a-0c9e-ab92-c69ecb53d176" alt="Trocode" class="left-phone" />
             </div>
         </div>
     </div>
 </div>
 <div id="Features-Section" class="features-section">
-    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png" width="424" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-1080.png 1080w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png 1244w" sizes="100vw" alt="Plai marketing
+    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png" width="424" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-1080.png 1080w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png 1244w" sizes="100vw" alt="Trocode marketing
 " class="left-blur" />
     <div class="container-flex-2">
         <div class="title-wrap">
             <h2 class="content-h2 content-h2-centre">No experience required. <br />
             </h2>
-            <p class="paragraph"> Plai doesn&#x27;t just make advertising easier, it makes it better! In seconds, anyone can promote their brand and their product with as little as $1 /day. <br />
+            <p class="paragraph"> Trocode doesn&#x27;t just make advertising easier, it makes it better! In seconds, anyone can promote their brand and their product with as little as $1 /day. <br />
             </p>
         </div>
         <div data-w-id="3c5bf71c-4b3a-16e4-786c-101beb19f68c" class="feature-wrap-1 pr">
@@ -484,7 +485,7 @@
                 <div class="content-block left-aligned">
                     <div class="overline">EASY TO LEARN</div>
                     <h2 class="content-h2">Advertise like a pro, fast!</h2>
-                    <p class="paragraph left-align">We&#x27;ve worked at Google &amp; Facebook and saw how difficult it was to launch effective ads, so we made Plai to take care of all the hard stuff for you in a few taps. <a href="https://plai-io.webflow.io/downloads-page">
+                    <p class="paragraph left-align">We&#x27;ve worked at Google &amp; Facebook and saw how difficult it was to launch effective ads, so we made Trocode to take care of all the hard stuff for you in a few taps. <a href="https://plai-io.webflow.io/downloads-page">
                             <strong>
                                 <br />
                             </strong>
