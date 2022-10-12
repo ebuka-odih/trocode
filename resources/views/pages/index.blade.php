@@ -432,8 +432,10 @@
     <div class="container-2 w-container">
         <div class="hero-text">
             <h5 data-w-id="59082a59-d92a-caf6-58bc-b1e17c9334e9" class="hero-overline">Trocode.io</h5>
-            <h1 data-w-id="f43f054b-d333-efeb-dcc0-1cfc1e24947e" class="hero-h1">Launch targeted ads in seconds with Trocode</h1>
-            <p data-w-id="e6756bad-9e53-4803-f2a6-f2597fb08a7a" class="hero-paragraph">Trocode is the ad tool built for small teams &amp; creators to launch ads like a pro, no experience required. Simply plug in your creative and budget, and Trocode runs your ad campaign for you. <br />
+            <h1 data-w-id="f43f054b-d333-efeb-dcc0-1cfc1e24947e" class="hero-h1">Run Ads That Actually Make Returns</h1>
+            <p data-w-id="e6756bad-9e53-4803-f2a6-f2597fb08a7a" class="hero-paragraph">
+                With Trocode you can now reach more , sell more and grow a much better audience for your brand using our smart and stress free automated solutions to enhance your productivity.
+                <br />
                 <br />
             </p>
             <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
@@ -475,17 +477,17 @@
 " class="left-blur" />
     <div class="container-flex-2">
         <div class="title-wrap">
-            <h2 class="content-h2 content-h2-centre">No experience required. <br />
+            <h2 class="content-h2 content-h2-centre">Enjoy Superior Quality Results<br />
             </h2>
-            <p class="paragraph"> Trocode doesn&#x27;t just make advertising easier, it makes it better! In seconds, anyone can promote their brand and their product with as little as $1 /day. <br />
+            <p class="paragraph"> You can now Promote your Brand , Products and Services to a larger reach , with low cost and less stress , We make Ads Dreams come True . <br />
             </p>
         </div>
         <div data-w-id="3c5bf71c-4b3a-16e4-786c-101beb19f68c" class="feature-wrap-1 pr">
             <div data-w-id="619a06bb-bfad-22f9-3a3a-d29047da52a8" style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-content">
                 <div class="content-block left-aligned">
                     <div class="overline">EASY TO LEARN</div>
-                    <h2 class="content-h2">Advertise like a pro, fast!</h2>
-                    <p class="paragraph left-align">We&#x27;ve worked at Google &amp; Facebook and saw how difficult it was to launch effective ads, so we made Trocode to take care of all the hard stuff for you in a few taps. <a href="https://plai-io.webflow.io/downloads-page">
+                    <h2 class="content-h2">Avoid Ads Issues!</h2>
+                    <p class="paragraph left-align">We’ve worked at Facebook Ads, Google Ads and other Platforms, and we are familiar with the stress they cause you , With Trocode you don’t worry about payment issues or account issues , we have worked a perfect system just for you to excel . <a href="https://plai-io.webflow.io/downloads-page">
                             <strong>
                                 <br />
                             </strong>
@@ -504,8 +506,8 @@
             <div data-w-id="686399a5-351e-4f98-912a-f7182a72cbe1" style="-webkit-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-content">
                 <div class="content-block right-aligned">
                     <div class="overline right-aligned">BETTER RESULTS</div>
-                    <h2 class="content-h2 right-aligend">Automated ad improvements.</h2>
-                    <p class="paragraph right-aligned">When creating your ad, you can include multiple graphics, ad text, targeting, and more for Plai to A/B test and improve your results over time.</p>
+                    <h2 class="content-h2 right-aligend">Cutting Edge Ad Managements and Reach.</h2>
+                    <p class="paragraph right-aligned"> You get to experience Better Ad Performance on Each Campaign we handle for you , we have tested all methods to yield the best results just for you, so we can now provide you with this valuable Platform to enhance your experience.</p>
                     <a href="/getapp" class="cta blue paragraph w-button">Try it Free</a>
                 </div>
             </div>
@@ -519,8 +521,8 @@
             <div data-w-id="cb1dc496-5b87-6139-7ab9-c8f0b5733b8c" style="-webkit-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-content">
                 <div class="content-block left-aligned">
                     <div class="overline">HELPING YOU MARKET</div>
-                    <h2 class="content-h2">Use our advertising templates.</h2>
-                    <p class="paragraph left-align">Using templates makes it easier to give your marketing efforts a strategic impact. Using templates will also save you time.</p>
+                    <h2 class="content-h2"> Easy Setup To Use.</h2>
+                    <p class="paragraph left-align">You can start running ads in Few minutes, Trocode’s interface is extensively smooth to provide you with the best user experience.</p>
                     <a href="/getapp" class="cta blue paragraph w-button">Get Started</a>
                 </div>
             </div>
@@ -534,8 +536,8 @@
             <div data-w-id="8588a556-b4d9-99e1-7a72-52bb9a240272" style="-webkit-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(25PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-content">
                 <div class="content-block right-aligned">
                     <div class="overline right-aligned">START WITH JUST $1</div>
-                    <h2 class="content-h2 right-aligend"> +$1,000,000 ad spend managed per month.</h2>
-                    <p class="paragraph right-aligned">Why? Because Plai doesn&#x27;t just make marketing easy, it makes it better! Plai users achieve a lower cost per click than industry standards so their budgets can go further.</p>
+                    <h2 class="content-h2 right-aligend"> Accurate and Tailored Ads.</h2>
+                    <p class="paragraph right-aligned"> Run Ads and Sell To Audiences that really matters , this is why We are happy to provide the best services to brands that want to scale up their marketing, You have the best tool in your hands to reach tailored audiences and same time save cost.</p>
                     <a href="/getapp" class="cta blue paragraph w-button">Try It Free</a>
                 </div>
             </div>
@@ -547,6 +549,71 @@
         </div>
     </div>
     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e869af158567_Right%20Blur.png" width="424" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e869af158567_Right%2520Blur-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e869af158567_Right%20Blur.png 591w" sizes="100vw" alt="Plai online marketing " class="right-blur" />
+</div>
+
+<div id="Pricing-Section" class="pricing-section wf-section">
+    <div class="pricing-header-container">
+        <h1 class="h2">
+            <strong>All, For The Price Of Lunch.</strong>
+            <br />
+        </h1>
+        <p class="body_text xxl">Get started with a 7-day free trial; we’re always adding new and exciting tools to help you market <br />
+        </p>
+    </div>
+    <div class="pricing-table-container">
+        <div class="pricing-plan starter">
+            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f670486ac71365_starter%20(1).png" width="54" alt="Plai" class="pricing-image starter-image" />
+            <div class="pricing-row">
+                <div class="plan-price-wrapper">
+                    <div class="plan-name">Individuals</div>
+                    <div class="plan-price">$14.99</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="feature-wrap-2">
+                    <div class="feature-2">Add 1 team member and 1 workspace</div>
+                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Google Search, Snap, YouTube, Google Display, Google Play</div>
+                    <div class="feature-2">Unlimted ad accounts, Unlimited ad spend</div>
+                    <div class="feature-2">A/B testing, audience builder, insight finder, Plaibooks.</div>
+                    <div class="feature-2">Discover influencers, trending content, new keywords and more.</div>
+                </div>
+            </div>
+            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
+        </div>
+        <div data-w-id="26d6aa46-85a2-d56e-961e-31e9674efa0f" class="pricing-plan simple">
+            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f6702ba3c71363_SMall.png" width="160" alt="Plai pricing" class="pricing-image starter-image" />
+            <div class="pricing-row">
+                <div class="plan-price-wrapper">
+                    <div class="plan-name">Small Teams</div>
+                    <div class="plan-price">$49.99</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="feature-wrap-2">
+                    <div class="feature-2">Add up to 3 team members and 3 workspaces</div>
+                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Google Search, Snap, YouTube, Google Display, Google Play</div>
+                    <div class="feature-2">Unlimited ad accounts, Unlimited ad spend, A/B testing, audience builder, insight finder, Plaibooks.</div>
+                    <div class="feature-2">Discover influencers, trending content, new keywords and more like adding team members. </div>
+                </div>
+            </div>
+            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
+        </div>
+        <div class="pricing-plan advanced">
+            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f6706c88c71361_Large.png" width="160" alt="Plai pricing" class="pricing-image tree" />
+            <div class="pricing-row">
+                <div class="plan-price-wrapper">
+                    <div class="plan-name">Growing Teams</div>
+                    <div class="plan-price">$99.99</div>
+                    <div class="plan-duration">per month</div>
+                </div>
+                <div class="feature-wrap-2">
+                    <div class="feature-2">Add unlimited team members and unlimited workspaces</div>
+                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Snap, YouTube, Google Search, Google Display, Google Play</div>
+                    <div class="feature-2">Unlimited ad accounts, unlimited ad spend, A/B testing, audience builder, insight finder, Plaibooks.</div>
+                    <div class="feature-2">Discover influencers, trending content, new keywords and more like adding team members.</div>
+                </div>
+            </div>
+            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
+        </div>
+    </div>
 </div>
 <div id="Testimonials-New" class="testimonial-section-new">
     <div class="testimonial-container">
@@ -666,74 +733,10 @@
         </div>
     </div>
 </div>
-<div id="Pricing-Section" class="pricing-section wf-section">
-    <div class="pricing-header-container">
-        <h1 class="h2">
-            <strong>All, For The Price Of Lunch.</strong>
-            <br />
-        </h1>
-        <p class="body_text xxl">Get started with a 7-day free trial; we’re always adding new and exciting tools to help you market <br />
-        </p>
-    </div>
-    <div class="pricing-table-container">
-        <div class="pricing-plan starter">
-            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f670486ac71365_starter%20(1).png" width="54" alt="Plai" class="pricing-image starter-image" />
-            <div class="pricing-row">
-                <div class="plan-price-wrapper">
-                    <div class="plan-name">Individuals</div>
-                    <div class="plan-price">$14.99</div>
-                    <div class="plan-duration">per month</div>
-                </div>
-                <div class="feature-wrap-2">
-                    <div class="feature-2">Add 1 team member and 1 workspace</div>
-                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Google Search, Snap, YouTube, Google Display, Google Play</div>
-                    <div class="feature-2">Unlimted ad accounts, Unlimited ad spend</div>
-                    <div class="feature-2">A/B testing, audience builder, insight finder, Plaibooks.</div>
-                    <div class="feature-2">Discover influencers, trending content, new keywords and more.</div>
-                </div>
-            </div>
-            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
-        </div>
-        <div data-w-id="26d6aa46-85a2-d56e-961e-31e9674efa0f" class="pricing-plan simple">
-            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f6702ba3c71363_SMall.png" width="160" alt="Plai pricing" class="pricing-image starter-image" />
-            <div class="pricing-row">
-                <div class="plan-price-wrapper">
-                    <div class="plan-name">Small Teams</div>
-                    <div class="plan-price">$49.99</div>
-                    <div class="plan-duration">per month</div>
-                </div>
-                <div class="feature-wrap-2">
-                    <div class="feature-2">Add up to 3 team members and 3 workspaces</div>
-                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Google Search, Snap, YouTube, Google Display, Google Play</div>
-                    <div class="feature-2">Unlimited ad accounts, Unlimited ad spend, A/B testing, audience builder, insight finder, Plaibooks.</div>
-                    <div class="feature-2">Discover influencers, trending content, new keywords and more like adding team members. </div>
-                </div>
-            </div>
-            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
-        </div>
-        <div class="pricing-plan advanced">
-            <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87941a06f6706c88c71361_Large.png" width="160" alt="Plai pricing" class="pricing-image tree" />
-            <div class="pricing-row">
-                <div class="plan-price-wrapper">
-                    <div class="plan-name">Growing Teams</div>
-                    <div class="plan-price">$99.99</div>
-                    <div class="plan-duration">per month</div>
-                </div>
-                <div class="feature-wrap-2">
-                    <div class="feature-2">Add unlimited team members and unlimited workspaces</div>
-                    <div class="feature-2">Facebook + Instagram Ads, TikTok Ads, Snap, YouTube, Google Search, Google Display, Google Play</div>
-                    <div class="feature-2">Unlimited ad accounts, unlimited ad spend, A/B testing, audience builder, insight finder, Plaibooks.</div>
-                    <div class="feature-2">Discover influencers, trending content, new keywords and more like adding team members.</div>
-                </div>
-            </div>
-            <a href="/getapp" class="cta pricing w-button">START 7-DAY FREE TRIAL</a>
-        </div>
-    </div>
-</div>
 <div class="section_xxl grey wf-section">
     <div class="_800px_container center">
-        <h2 class="h2">Grow your brand on a budget.</h2>
-        <p class="body_text xxl">No marketing experience required or technical mumbo-jumbo</p>
+        <h2 class="h2">Scale up your Brand The right way.</h2>
+        <p class="body_text xxl">Running ads is a cheap and profitable way to boost your business or brand ,that’s if you do it the right way.</p>
         <a href="/getapp" class="cta w-button">Try It Free</a>
     </div>
 </div>
