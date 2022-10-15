@@ -310,6 +310,36 @@
     </script>
     <!--End of Tawk.to Script-->
     <meta name="facebook-domain-verification" content="tz3kb95tn752zr4z9ro0bwkrj7i4x5" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: right;
+            width: 50%;
+            padding: 10px;
+            height: 140px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body class="body-3">
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar-top-2 w-nav">
@@ -442,32 +472,34 @@
                 <a href="https://app.plai.io/" class="cta blue w-button">Start advertising</a>
             </div>
         </div>
-        <a href="#" data-w-id="885af323-ba51-3ec9-df78-96395d2b32a6" class="lightbox-link w-inline-block w-lightbox">
-            <div class="button-wrap">
-                <div class="play-button-3"></div>
-                <div class="play-button-pulse"></div>
-            </div>
-            <script type="application/json" class="w-json">
-            {
-              "items": [{
-                "url": "https://youtube.com/watch?v=AxUyRVPUaDs",
-                "originalUrl": "https://youtube.com/watch?v=AxUyRVPUaDs",
-                "width": 940,
-                "height": 528,
-                "thumbnailUrl": "https://i.ytimg.com/vi/AxUyRVPUaDs/hqdefault.jpg",
-                "html": " < iframe class = \"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FAxUyRVPUaDs%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAxUyRVPUaDs&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FAxUyRVPUaDs%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube\" width=\"940\" height=\"528\" scrolling=\"no\" title=\"YouTube embed\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-                "type": "video"
-              }],
-              "group": ""
-            }
-          </script>
-        </a>
-        <div class="_3d-section">
-            <div class="phone phone-2">
-                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87acbbab1cf86da399c96c_hero2a.png" width="135" data-w-id="810b4c79-98a4-d323-eab6-a59dd35e33b8" alt="Trocode marketing app" class="right-phone" />
-            </div>
-            <div class="phone phone1">
-                <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87a9978a0cee010276d7b8_hero1.png" width="135" data-w-id="b1a7adde-c91a-0c9e-ab92-c69ecb53d176" alt="Trocode" class="left-phone" />
+
+        <div class="card">
+{{--            _3d-section--}}
+            <div class="row">
+                <div class="column" >
+                    <h5 style="color: #0c1c66">Twitter Ads</h5>
+                    <img height="80" width="80"  src="{{ asset('img/twitter.png') }}" alt="">
+                </div>
+                <div class="column" style="background-color:#efe8e8;">
+                    <h5 style="color: #0c1c66">Facebook Ads</h5>
+                    <img src="{{ asset('img/facebook.png') }}" alt="">
+                </div>
+                <div class="column" style="background-color:#efe8e8;">
+                    <h5 style="color: #0c1c66">SEO</h5>
+                    <img src="{{ asset('img/google.png') }}" alt="">
+                </div>
+                <div class="column" >
+                    <h5 style="color: #0c1c66">Instagram Ads</h5>
+                    <img height="80" width="80"  src="{{ asset('img/instagram.png') }}" alt="">
+                </div>
+                <div class="column" >
+                    <h5 style="color: #0c1c66">Tiktok Ads</h5>
+                    <img  src="{{ asset('img/tiktok.png') }}" alt="">
+                </div>
+                <div class="column" style="background-color:#efe8e8;">
+                    <h5 style="color: #0c1c66">Email Marketing</h5>
+                    <img height="80" width="80" src="{{ asset('img/email.png') }}" alt="">
+                </div>
             </div>
         </div>
     </div>
