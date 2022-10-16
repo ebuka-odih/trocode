@@ -295,19 +295,7 @@
         fbq('track', 'PageView');
     </script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function() {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/615c584125797d7a89026ba8/1fh8bhgg8';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
+
     <!--End of Tawk.to Script-->
     <meta name="facebook-domain-verification" content="tz3kb95tn752zr4z9ro0bwkrj7i4x5" />
 
@@ -333,11 +321,31 @@
         .card {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            width: 40%;
+            width: 60%;
         }
 
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .column {
+                float: right;
+                width: 50%;
+                padding: 10px;
+                height: 140px; /* Should be removed. Only for demonstration */
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                width: 100%;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -474,7 +482,7 @@
         </div>
 
         <div class="card">
-{{--            _3d-section--}}
+            {{--            _3d-section--}}
             <div class="row">
                 <div class="column" >
                     <h5 style="color: #0c1c66">Twitter Ads</h5>
@@ -502,6 +510,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <div id="Features-Section" class="features-section">
