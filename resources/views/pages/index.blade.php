@@ -321,7 +321,7 @@
         .card {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            width: 60%;
+            width: 50%;
         }
 
         .card:hover {
@@ -349,7 +349,8 @@
         }
     </style>
 </head>
-<body class="body-3">
+<body  class="body-3">
+
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar-top-2 w-nav">
     <a href="/" aria-current="page" class="brand nav-top-brand w-nav-brand w--current">
         <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d86f50681151806b16aec_plai%20circle%20icon.png" width="48" alt="" />
@@ -466,7 +467,9 @@
         </div>
     </div>
 </div>
-<div id="Header" class="hero-section">
+{{--<br><br><br><br><br><br><br>--}}
+<div  id="Header" class="hero-section">
+
     <div class="container-2 w-container">
         <div class="hero-text">
             <h5 data-w-id="59082a59-d92a-caf6-58bc-b1e17c9334e9" class="hero-overline">Trocode.io</h5>
@@ -498,21 +501,23 @@
                 </div>
                 <div class="column" >
                     <h5 style="color: #0c1c66">Instagram Ads</h5>
-                    <img height="80" width="80"  src="{{ asset('img/instagram.png') }}" alt="">
+                    <img src="{{ asset('img/ig.png') }}" alt="">
                 </div>
                 <div class="column" >
                     <h5 style="color: #0c1c66">Tiktok Ads</h5>
-                    <img  src="{{ asset('img/tiktok.png') }}" alt="">
+                    <img src="{{ asset('img/tiktok.png') }}" alt="">
                 </div>
                 <div class="column" style="background-color:#efe8e8;">
-                    <h5 style="color: #0c1c66">Email Marketing</h5>
-                    <img height="80" width="80" src="{{ asset('img/email.png') }}" alt="">
+                    <h5 style="color: #0c1c66">Youtube Ads</h5>
+                    <img src="{{ asset('img/youtube.png') }}" alt="">
                 </div>
             </div>
         </div>
 
     </div>
+
 </div>
+
 <div id="Features-Section" class="features-section">
     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png" width="424" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%2520Blur%25402x-p-1080.png 1080w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e849ec15856a_Left%20Blur%402x.png 1244w" sizes="100vw" alt="Trocode marketing
 " class="left-blur" />
