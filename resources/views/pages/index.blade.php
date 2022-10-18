@@ -796,29 +796,36 @@
             <div class="icon">
                 <img src="https://uploads-ssl.webflow.com/5e1fd344dc3c51e02ca5090a/5e1fd344dc3c510adda50927_Checkmark%40svg.svg" width="24" height="24" alt="What does Plai do" class="image-4 light" />
             </div>
-            <h5 class="h5 light">Why do businesses use Plai?</h5>
-            <p class="text_small light">Plai doesn&#x27;t just make marketing easy, it makes it better. Digital marketing is always changing, that&#x27;s why we regularly update Plai to include the latest best practices to keep you a step ahead without you having to spend hours learning the latest tactics.</p>
+            <h5 class="h5 light">How does Trocode Work?</h5>
+            <p class="text_small light">
+                As an individual or a company that wants to constantly develop better , you have to carry out effective marketing, We at Trocode understand the stress of doing that with little or no skills , we are here to do all advertising and marketing for you , No more worries about card or payment issues anymore , because we would run ads that really make dividends for you.
+            </p>
         </div>
         <div class="flx_item_30">
             <div class="icon">
                 <img src="https://uploads-ssl.webflow.com/5e1fd344dc3c51e02ca5090a/5e1fd344dc3c510adda50927_Checkmark%40svg.svg" width="24" height="24" alt="why use plai" class="image-4 light" />
             </div>
-            <h5 class="h5 light">What does Plai actually do?</h5>
-            <p class="text_small light">Plai makes it easy for you to plan your marketing campaigns, find insights in your analytics, and act on your insights with targeted ads. Difficult tasks like bidding, remarketing, match types, A/B testing and more are all done for you without you having to lift a finger.</p>
+            <h5 class="h5 light">How effective is Trocode AI</h5>
+            <p class="text_small light">
+                We make use of the most up to date advertising AI for all platforms of ads you may want to run , We update our protocols regularly also, to fit to current advertising standards for a better campaign for you , so you don’t have to worry .
+            </p>
         </div>
         <div class="flx_item_30">
             <div class="icon">
                 <img src="https://uploads-ssl.webflow.com/5e1fd344dc3c51e02ca5090a/5e1fd344dc3c510adda50927_Checkmark%40svg.svg" width="24" height="24" alt="How does Plai work" class="image-4 light" />
             </div>
-            <h5 class="h5 light">How does Plai really work?</h5>
-            <p class="text_small light">With AI and human touch we have made it easy for you to own your marketing and brand like never before. No marketing experience required. <br />
-                <br />It&#x27;s fast, easy to set up in a few taps, and available on the go.
+            <h5 class="h5 light">Why should I use Trocode? </h5>
+            <p class="text_small light">
+                When you have the ability to run powerful and effective ads that actually make your marketing dreams come true , why should you say No ?
             </p>
         </div>
     </div>
     <h2 class="content-cta">
-        <span class="cta-plain-overline">plai</span> has helped thousands of businesses flourish. Download Plai today and become a super-marketer!
+        <span class="cta-plain-overline">How do I Get Started?
+</span>
     </h2>
+    <p style="font-size: 20px" class="text_small light">You can get started free of charge and stress free by registering an account,
+        <br> you can now access all the tools you need to achieve marketing dominance.</p>
     <div class="profile-images-wrapper">
         <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e82493158575_people-white-bord.png" width="147" alt="Plai" class="people-group-image" />
         <div class="follower-number _02">Over 20,000+ App Downloads <span class="tag-span"></span>
