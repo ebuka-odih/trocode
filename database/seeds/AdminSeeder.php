@@ -1,6 +1,9 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class AdminSeeder extends Seeder
 {
@@ -11,6 +14,15 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $admin = User::where('email', '=', 'admin@trocode.io')->first();
+        if($admin === null){
+            DB::table('users')->insert([
+                'name' => 'Admin',
+                'admin' => 1,
+                'email' => 'admin@trocode.io',
+                'email_verified_at' => \Carbon\Carbon::now(),
+                'password' => Hash::make('TROCODE'),
+            ]);
+        }
     }
 }

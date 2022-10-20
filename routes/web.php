@@ -10,3 +10,4 @@ Route::view('/', 'pages.index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+include 'admin.php';
