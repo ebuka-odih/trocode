@@ -348,6 +348,15 @@
             }
         }
     </style>
+    <style>
+        .word {
+            margin: auto;
+            color: #18183a;
+            font: 100 normal 2.5em 'tahoma';
+            font-weight: bold;
+            /*text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;*/
+        }
+    </style>
 </head>
 <body  class="body-3">
 
@@ -482,7 +491,13 @@
             <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
                 <a href="https://app.plai.io/" class="cta blue w-button">Start advertising</a>
             </div>
+            <br><br>
+           <div>
+               <h3 class="word"></h3>
+           </div>
+            <br><br><br><br>
         </div>
+        <br><br>
 
         <div class="card">
             {{--            _3d-section--}}
@@ -513,6 +528,7 @@
                 </div>
             </div>
         </div>
+
 
     </div>
 
@@ -967,6 +983,60 @@
                 $(this).text(Math.ceil(now));
             }
         });
+    });
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+</script>
+
+  <script>
+    var words = ['No Card Needed', 'Easy Setup', 'Grow Your Brand', 'With Effective Ads', 'Ads That Sell', 'No Ads issues Or Limit', 'Sell More', 'Low Cost', 'Quality Performance', 'High Traffic'],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 15,
+        speed = 70;
+    var wordflick = function () {
+        setInterval(function () {
+            if (forwards) {
+                if (offset >= words[i].length) {
+                    ++skip_count;
+                    if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                    }
+                }
+            }
+            else {
+                if (offset == 0) {
+                    forwards = true;
+                    i++;
+                    offset = 0;
+                    if (i >= len) {
+                        i = 0;
+                    }
+                }
+            }
+            part = words[i].substr(0, offset);
+            if (skip_count == 0) {
+                if (forwards) {
+                    offset++;
+                }
+                else {
+                    offset--;
+                }
+            }
+            $('.word').text(part);
+        },speed);
+    };
+
+    $(document).ready(function () {
+        wordflick();
     });
 </script>
 </body>
