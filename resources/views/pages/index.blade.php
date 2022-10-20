@@ -351,7 +351,7 @@
     <style>
         .word {
             margin: auto;
-            color: #18183a;
+            color: #2139a8;
             font: 100 normal 2.5em 'tahoma';
             font-weight: bold;
             /*text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;*/
@@ -490,14 +490,14 @@
             </p>
             <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
                 <a href="https://app.plai.io/" class="cta blue w-button">Start advertising</a>
+
             </div>
-            <br><br>
-           <div>
-               <h3 class="word"></h3>
-           </div>
-            <br><br><br><br>
+            <div style="margin-top: 20px; height: 100px" data-aos="zoom-out"><h1 class="word">
+                </h1>
+            </div>
+
         </div>
-        <br><br>
+
 
         <div class="card">
             {{--            _3d-section--}}
