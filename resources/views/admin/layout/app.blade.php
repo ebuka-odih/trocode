@@ -283,7 +283,7 @@
                     <a href="apps_mailbox.html" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <span>Mailbox</span>
+                            <span>All Ads</span>
                         </div>
                     </a>
                 </li>
@@ -313,54 +313,6 @@
                     </ul>
                 </li>
 
-                <li class="menu">
-                    <a href="#pages" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-                            <span>Pages</span>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </div>
-                    </a>
-                    <ul class="collapse submenu list-unstyled" id="pages" data-parent="#accordionExample">
-                        <li>
-                            <a href="pages_helpdesk.html"> Helpdesk </a>
-                        </li>
-                        <li>
-                            <a href="pages_contact_us.html"> Contact Form </a>
-                        </li>
-                        <li>
-                            <a href="pages_faq.html"> FAQ </a>
-                        </li>
-                        <li>
-                            <a href="pages_faq2.html"> FAQ 2 </a>
-                        </li>
-                        <li>
-                            <a href="pages_privacy.html"> Privacy Policy </a>
-                        </li>
-                        <li>
-                            <a href="pages_coming_soon.html" target="_blank"> Coming Soon </a>
-                        </li>
-                        <li>
-                            <a href="#pages-error" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Error <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg> </a>
-                            <ul class="collapse list-unstyled sub-submenu" id="pages-error" data-parent="#pages">
-                                <li>
-                                    <a href="pages_error404.html" target="_blank"> 404 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_error500.html" target="_blank"> 500 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_error503.html" target="_blank"> 503 </a>
-                                </li>
-                                <li>
-                                    <a href="pages_maintenence.html" target="_blank"> Maintanence </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
 
 
             </ul>

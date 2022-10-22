@@ -329,6 +329,14 @@
                 <li class="menu">
                     <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
                         <div class="">
+                            <img src="{{ asset('img/user.svg') }}" alt="">
+                            <span>Profile</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="menu">
+                    <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
+                        <div class="">
                             <img src="{{ asset('img/send.svg') }}" alt="">
                              <span> Contact us</span>
                         </div>
