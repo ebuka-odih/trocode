@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->integer('status')->default(1);
             $table->string('avatar')->nullable();
             $table->double('balance')->default(0);
+            $table->integer('confirm_payment')->nullable()->default(0);
+            $table->string('payment_code')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -118,7 +118,7 @@
                     </a>
                     <div class="ms-3">
                         <a class="fw-semibold text-dual" href="javascript:void(0)">{{ auth()->user()->name }}</a>
-                        <div class="fs-sm text-dual">Developer</div>
+                        <div class="fs-sm text-dual">Bal <span style="font-weight: bolder" class="text text-success">${{ auth()->user()->balance ? : "0.00" }}</span></div>
                     </div>
                 </div>
             </div>
