@@ -1,384 +1,294 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<!-- Mirrored from designreset.com/cork/ltr/demo6/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Oct 2022 00:56:13 GMT -->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Sales Dashboard </title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <link href="{{ asset('client/assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
-    <script src="{{ asset('client/assets/js/loader.js') }}"></script>
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet">
-    <link href="{{ asset('client/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('client/assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{ asset('client/plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('client/assets/css/dashboard/dash_1.css') }}" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <title>Trocode</title>
 
+    <meta name="description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework">
+    <meta property="og:site_name" content="Trocode">
+    <meta property="og:description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Stylesheets -->
+    <!-- Page JS Plugins CSS -->
+    <link rel="stylesheet" href="{{ asset('client/assets/js/plugins/highlightjs/styles/atom-one-dark.css') }}">
+    <link rel="stylesheet" href="{{ asset('client/assets/js/plugins/magnific-popup/magnific-popup.css') }}">
+
+    <!-- Fonts and Dashmix framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" id="css-main" href="{{ asset('client/assets/css/dashmix.min.css') }}">
+
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+    <link rel="stylesheet" id="css-theme" href="{{ asset('client/assets/css/themes/xmodern.min.css') }}">
+    <!-- END Stylesheets -->
 </head>
-<body class="sidebar-noneoverflow">
-<!-- BEGIN LOADER -->
-<div id="load_screen"> <div class="loader"> <div class="loader-content">
-            <div class="spinner-grow align-self-center"></div>
-        </div></div></div>
-<!--  END LOADER -->
+<body>
+<!-- Page Container -->
 
-<!--  BEGIN NAVBAR  -->
-<div class="header-container fixed-top">
-    <header class="header navbar navbar-expand-sm">
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed page-header-dark main-content-boxed">
+    <!-- Side Overlay-->
+    <aside id="side-overlay">
+        <!-- Side Header -->
+        <div class="bg-primary">
+            <div class="content-header">
+                <div class="fs-lg fw-light text-white">
+                    <i class="fa fa-users me-1"></i> People
+                </div>
 
-        <ul class="navbar-nav theme-brand flex-row  text-center">
-            <li class="nav-item theme-logo">
-                <a href="index-2.html">
-                    <img src="assets/img/logo.svg" class="navbar-logo" alt="logo">
+                <!-- Close Side Overlay -->
+                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                <a class="ms-auto text-white" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+                    <i class="fa fa-times-circle"></i>
                 </a>
-            </li>
-            <li class="nav-item theme-text">
-                <a href="index-2.html" class="nav-link"> CORK </a>
-            </li>
-            <li class="nav-item toggle-sidebar">
-                <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></a>
-            </li>
-        </ul>
+                <!-- END Close Side Overlay -->
+            </div>
+        </div>
+        <!-- END Side Header -->
 
-        <ul class="navbar-item flex-row navbar-dropdown">
-            <li class="nav-item dropdown apps-dropdown more-dropdown md-hidden">
-                <div class="dropdown  custom-dropdown-icon">
-                    <a class="dropdown-toggle btn" href="#" role="button" id="appSection" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg><span>Apps</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+    </aside>
+    <!-- END Side Overlay -->
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="appSection">
-                        <a class="dropdown-item" data-value="Chat" href="apps_chat.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Chat</a>
-                        <a class="dropdown-item" data-value="Mailbox" href="apps_mailbox.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Mailbox</a>
-                        <a class="dropdown-item" data-value="Todo" href="apps_todoList.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg> Todo List</a>
-                        <a class="dropdown-item" data-value="Notes" href="apps_notes.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Notes</a>
-                        <a class="dropdown-item" data-value="Scrumboard" href="apps_scrumboard.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg> Scrumboard</a>
-                        <a class="dropdown-item" data-value="Contacts" href="apps_contacts.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Contacts</a>
-                        <div class="dropdown-item-collapsable">
-                            <a class="dropdown-item" data-value="Invoice" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg> Invoice <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                            </a>
-                            <div class="collapse" id="collapseExample">
-                                <ul>
-                                    <li>
-                                        <a data-value="Invoice List" href="apps_invoice-list.html"> List </a>
-                                    </li>
-                                    <li>
-                                        <a data-value="Invoice Preview" href="apps_invoice-preview.html"> Preview </a>
-                                    </li>
-                                    <li>
-                                        <a data-value="Invoice Add" href="apps_invoice-add.html"> Add </a>
-                                    </li>
-                                    <li>
-                                        <a data-value="Invoice Edit" href="apps_invoice-edit.html"> Edit </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a class="dropdown-item" data-value="Calendar" href="apps_calendar.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Calendar</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
+    <!-- Sidebar -->
+    <!--
+      Sidebar Mini Mode - Display Helper classes
 
-        <ul class="navbar-item flex-row search-ul">
-            <li class="nav-item align-self-center search-animated">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search toggle-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                <form class="form-inline search-full form-inline search" role="search">
-                    <div class="search-bar">
-                        <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
-                    </div>
-                </form>
-            </li>
-        </ul>
-        <ul class="navbar-item flex-row navbar-dropdown">
-            <li class="nav-item dropdown language-dropdown more-dropdown">
-                <div class="dropdown  custom-dropdown-icon">
-                    <a class="dropdown-toggle btn" href="#" role="button" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/img/ca.png" class="flag-width" alt="flag"><span>English</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+      Adding 'smini-hide' class to an element will make it invisible (opacity: 0) when the sidebar is in mini mode
+      Adding 'smini-show' class to an element will make it visible (opacity: 1) when the sidebar is in mini mode
+        If you would like to disable the transition animation, make sure to also add the 'no-transition' class to your element
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-                        <a class="dropdown-item" data-img-value="de" data-value="German" href="javascript:void(0);"><img src="assets/img/de.png" class="flag-width" alt="flag"> German</a>
-                        <a class="dropdown-item" data-img-value="jp" data-value="Japanese" href="javascript:void(0);"><img src="assets/img/jp.png" class="flag-width" alt="flag"> Japanese</a>
-                        <a class="dropdown-item" data-img-value="fr" data-value="French" href="javascript:void(0);"><img src="assets/img/fr.png" class="flag-width" alt="flag"> French</a>
-                        <a class="dropdown-item" data-img-value="ca" data-value="English" href="javascript:void(0);"><img src="assets/img/ca.png" class="flag-width" alt="flag"> English</a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item dropdown message-dropdown">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="messageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg><span class="badge badge-primary"></span>
+      Adding 'smini-hidden' to an element will hide it when the sidebar is in mini mode
+      Adding 'smini-visible' to an element will show it (display: inline-block) only when the sidebar is in mini mode
+      Adding 'smini-visible-block' to an element will show it (display: block) only when the sidebar is in mini mode
+    -->
+    <nav id="sidebar" aria-label="Main Navigation">
+        <!-- Side Header (mini Sidebar mode) -->
+        <div class="smini-visible-block">
+            <div class="content-header bg-primary">
+                <!-- Logo -->
+                <a class="fw-semibold text-white tracking-wide" href="index.html">
+                    D<span class="opacity-75">x</span>
                 </a>
-                <div class="dropdown-menu p-0 position-absolute" aria-labelledby="messageDropdown">
-                    <div class="">
-                        <a class="dropdown-item">
-                            <div class="">
+                <!-- END Logo -->
+            </div>
+        </div>
+        <!-- END Side Header (mini Sidebar mode) -->
 
-                                <div class="media">
-                                    <div class="user-img">
-                                        <div class="avatar avatar-xl">
-                                            <span class="avatar-title rounded-circle">KY</span>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="">
-                                            <h5 class="usr-name">Kara Young</h5>
-                                            <p class="msg-title">ACCOUNT UPDATE</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </a>
-                        <a class="dropdown-item">
-                            <div class="">
-                                <div class="media">
-                                    <div class="user-img">
-                                        <div class="avatar avatar-xl">
-                                            <span class="avatar-title rounded-circle">DA</span>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="">
-                                            <h5 class="usr-name">Daisy Anderson</h5>
-                                            <p class="msg-title">ACCOUNT UPDATE</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="dropdown-item">
-                            <div class="">
-
-                                <div class="media">
-                                    <div class="user-img">
-                                        <div class="avatar avatar-xl">
-                                            <span class="avatar-title rounded-circle">OG</span>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        <div class="">
-                                            <h5 class="usr-name">Oscar Garner</h5>
-                                            <p class="msg-title">ACCOUNT UPDATE</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </li>
-
-            <li class="nav-item dropdown notification-dropdown">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="badge badge-success"></span>
+        <!-- Side Header (normal Sidebar mode) -->
+        <div class="smini-hidden">
+            <div class="content-header justify-content-lg-center bg-primary">
+                <!-- Logo -->
+                <a class="fw-semibold text-white tracking-wide" href="index.html">
+                    Dash<span class="opacity-75">mix</span>
+                    <span class="fw-normal">Social</span>
                 </a>
-                <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
-                    <div class="notification-scroll">
+                <!-- END Logo -->
 
-                        <div class="dropdown-item">
-                            <div class="media server-log">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-server"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6" y2="6"></line><line x1="6" y1="18" x2="6" y2="18"></line></svg>
-                                <div class="media-body">
-                                    <div class="data-info">
-                                        <h6 class="">Server Rebooted</h6>
-                                        <p class="">45 min ago</p>
-                                    </div>
-
-                                    <div class="icon-status">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dropdown-item">
-                            <div class="media ">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-                                <div class="media-body">
-                                    <div class="data-info">
-                                        <h6 class="">Licence Expiring Soon</h6>
-                                        <p class="">8 hrs ago</p>
-                                    </div>
-
-                                    <div class="icon-status">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dropdown-item">
-                            <div class="media file-upload">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                                <div class="media-body">
-                                    <div class="data-info">
-                                        <h6 class="">Kelly Portfolio.pdf</h6>
-                                        <p class="">670 kb</p>
-                                    </div>
-
-                                    <div class="icon-status">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Options -->
+                <div class="d-lg-none">
+                    <!-- Close Sidebar, Visible only on mobile screens -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-alt-secondary d-lg-none" data-toggle="layout" data-action="sidebar_close">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <!-- END Close Sidebar -->
                 </div>
-            </li>
+                <!-- END Options -->
+            </div>
+        </div>
+        <!-- END Side Header (normal Sidebar mode) -->
 
-            <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                </a>
-                <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
-                    <div class="user-profile-section">
-                        <div class="media mx-auto">
-                            <img src="assets/img/profile-17.jpg" class="img-fluid mr-2" alt="avatar">
-                            <div class="media-body">
-                                <h5>Sonia Shaw</h5>
-                                <p>Project Leader</p>
-                            </div>
-                        </div>
+        <!-- Sidebar Scrolling -->
+        <div class="js-sidebar-scroll">
+            <!-- User Info -->
+            <div class="smini-hidden">
+                <div class="content-side content-side-full bg-black-10 d-flex align-items-center">
+                    <a class="img-link d-inline-block" href="javascript:void(0)">
+                        <img class="img-avatar img-avatar48 img-avatar-thumb" src="{{ asset(auth()->user()->avatar) }}" alt="">
+                    </a>
+                    <div class="ms-3">
+                        <a class="fw-semibold text-dual" href="javascript:void(0)">{{ auth()->user()->name }}</a>
+                        <div class="fs-sm text-dual">Developer</div>
                     </div>
-                    <div class="dropdown-item">
-                        <a href="user_profile.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>My Profile</span>
-                        </a>
-                    </div>
-                    <div class="dropdown-item">
-                        <a href="apps_mailbox.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-inbox"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg> <span>My Inbox</span>
-                        </a>
-                    </div>
-                    <div class="dropdown-item">
-                        <a href="auth_lockscreen.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span>Lock Screen</span>
-                        </a>
-                    </div>
-                    <div class="dropdown-item">
-                        <a href="auth_login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
-                        </a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
-</div>
-<!--  END NAVBAR  -->
-
-<!--  BEGIN MAIN CONTAINER  -->
-<div class="main-container" id="container">
-
-    <div class="overlay"></div>
-    <div class="search-overlay"></div>
-
-    <!--  BEGIN SIDEBAR  -->
-    <div class="sidebar-wrapper sidebar-theme">
-
-        <nav id="sidebar">
-            <div class="profile-info">
-                <figure class="user-cover-image"></figure>
-                <div class="user-info">
-                    <img src="assets/img/profile-17.jpg" alt="avatar">
-                    <h6 class="">Sonia Shaw</h6>
-                    <p class="">Project Leader</p>
                 </div>
             </div>
-            <div class="shadow-bottom"></div>
-            <ul class="list-unstyled menu-categories ps ps--active-y" id="accordionExample">
-                <li class="menu active">
-                    <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            <span>Dashboard</span>
+            <!-- END User Info -->
+
+            <!-- Side Navigation -->
+            <div class="content-side">
+                <ul class="nav-main">
+                    <li class="nav-main-item">
+                        <a class="nav-main-link active" href="db_social.html">
+                            <i class="nav-main-link-icon fa fa-user-circle"></i>
+                            <span class="nav-main-link-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-bell"></i>
+                            <span class="nav-main-link-name">My Ads</span>
+                            <span class="nav-main-link-badge badge rounded-pill bg-info">6</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-money-bill"></i>
+                            <span class="nav-main-link-name">Add Fund</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-heading">Profile</li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-tools"></i>
+                            <span class="nav-main-link-name">Setting</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="db_social.html">
+                            <i class="nav-main-link-icon fa fa-user-circle"></i>
+                            <span class="nav-main-link-name">My Profile</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-main-heading">Homepage</li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="be_pages_dashboard_all.html">
+                            <i class="nav-main-link-icon fa fa-arrow-left"></i>
+                            <span class="nav-main-link-name">Go Back</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- END Side Navigation -->
+        </div>
+        <!-- END Sidebar Scrolling -->
+    </nav>
+    <!-- END Sidebar -->
+
+    <!-- Header -->
+    <header id="page-header">
+        <!-- Header Content -->
+        <div class="content-header">
+            <!-- Left Section -->
+            <div>
+                <!-- Toggle Sidebar -->
+                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                <button type="button" class="btn btn-alt-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+                <!-- END Toggle Sidebar -->
+
+
+            </div>
+            <!-- END Left Section -->
+
+            <!-- Right Section -->
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn btn-alt-secondary dropdown-toggle" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="d-none d-sm-inline me-1">{{ auth()->user()->name }}</span>
+                    <span class="badge rounded-pill bg-success">PRO</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-user-dropdown" style="">
+                    <div class="rounded-top fw-semibold text-white text-center bg-image" style="background-image: url('client/assets/media/photos/photo16.jpg');">
+                        <div class="p-3">
+                            <img class="img-avatar img-avatar-thumb" src="{{ asset(auth()->user()->avatar) }}" alt="">
                         </div>
-                    </a>
-                </li>
-
-                <li class="menu menu-heading">
-                    <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>MAIN</span></div>
-                </li>
-
-
-                <li class="menu">
-                    <a href="fonticons.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <img src="{{ asset('img/activity.svg') }}" alt="">
-                            <span>My Ads</span>
+                        <div class="p-3 bg-primary-dark-op">
+                            <a class="text-white fw-semibold" href="">{{ auth()->user()->name }}</a>
+                            <div class="text-white-75">{{ auth()->user()->email }}</div>
                         </div>
-                    </a>
-                </li>
-
-                <li class="menu">
-                    <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <img src="{{ asset('img/money.svg') }}" alt="">
-                            <span>Add Funds</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <img src="{{ asset('img/user.svg') }}" alt="">
-                            <span>Profile</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="widgets.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <img src="{{ asset('img/send.svg') }}" alt="">
-                             <span> Contact us</span>
-                        </div>
-                    </a>
-                </li>
+                    </div>
+                    <div class="p-2">
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="javascript:void(0)">
+                            Profile
+                            <i class="fa fa-fw fa-user-circle opacity-50 ms-1"></i>
+                        </a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="javascript:void(0)">
+                            Top Up
+                            <i class="fab fa-fw fa-paypal opacity-50 ms-1"></i>
+                        </a>
+                        <div role="separator" class="dropdown-divider"></div>
+                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="op_auth_signin.html">
+                            Log Out
+                            <i class="fa fa-fw fa-sign-out-alt text-danger ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END Right Section -->
+        </div>
+        <!-- END Header Content -->
 
 
-                <div class="ps__rail-x" style="left: 0px; bottom: -847px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 847px; height: 423px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 282px; height: 140px;"></div></div></ul>
 
-        </nav>
+        <!-- Header Loader -->
+        <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+        <div id="page-header-loader" class="overlay-header bg-primary-darker">
+            <div class="content-header">
+                <div class="w-100 text-center">
+                    <i class="fa fa-fw fa-2x fa-sun fa-spin text-white"></i>
+                </div>
+            </div>
+        </div>
+        <!-- END Header Loader -->
+    </header>
+    <!-- END Header -->
 
-    </div>
-    <!--  END SIDEBAR  -->
-
-    <!--  BEGIN CONTENT AREA  -->
-    @yield('content')
-    <!--  END CONTENT AREA  -->
+    <!-- Main Container -->
+    <main id="main-container">
 
 
+        <!-- Page Content -->
+        @yield('content')
+        <!-- END Page Content -->
+    </main>
+    <!-- END Main Container -->
+
+    <!-- Footer -->
+    <footer id="page-footer" class="bg-body-light">
+        <div class="content py-0">
+            <div class="row fs-sm">
+                <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-end">
+                    Crafted with <i class="fa fa-heart text-danger"></i> by <a class="fw-semibold" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
+                </div>
+                <div class="col-sm-6 order-sm-1 text-center text-sm-start">
+                    <a class="fw-semibold" href="https://1.envato.market/r6y" target="_blank">Trocode 5.1</a> &copy; <span data-toggle="year-copy"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END Footer -->
 </div>
-<!-- END MAIN CONTAINER -->
+<!-- END Page Container -->
 
-<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-<script src="{{ asset('client/assets/js/libs/jquery-3.1.1.min.js') }}"></script>
-<script src="{{ asset('client/bootstrap/js/popper.min.js') }}"></script>
-<script src="{{ asset('client/bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('client/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-<script src="{{ asset('client/assets/js/app.js') }}"></script>
-<script>
-    $(document).ready(function() {
-        App.init();
-    });
-</script>
-<script src="{{ asset('client/assets/js/custom.js') }}"></script>
-<!-- END GLOBAL MANDATORY SCRIPTS -->
+<!--
+  Dashmix JS
 
-<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-<script src="{{ asset('client/plugins/apex/apexcharts.min.js') }}"></script>
-<script src="{{ asset('client/assets/js/dashboard/dash_1.js') }}"></script>
-<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+  Core libraries and functionality
+  webpack is putting everything together at assets/_js/main/app.js
+-->
+<script src="{{ asset('client/assets/js/dashmix.app.min.js') }}"></script>
 
+<!-- jQuery (required for Magnific Popup Plugin) -->
+<script src="{{ asset('client/assets/js/lib/jquery.min.js') }}"></script>
+
+<!-- Page JS Plugins -->
+<script src="{{ asset('client/assets/js/plugins/highlightjs/highlight.pack.min.js') }}"></script>
+<script src="{{ asset('client/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+
+<!-- Page JS Helpers (Highlight.js + Magnific Popup Plugins) -->
+<script>Dashmix.helpersOnLoad(['js-highlightjs', 'jq-magnific-popup']);</script>
 </body>
-
-<!-- Mirrored from designreset.com/cork/ltr/demo6/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Oct 2022 00:59:02 GMT -->
 </html>

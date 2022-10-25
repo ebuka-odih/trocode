@@ -11,6 +11,10 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
     Route::get('users', 'Admin\AdminController@users')->name('users');
 });
+Route::post('/pay', [
+    'uses' => 'PaymentController@redirectToGateway',
+    'as' => 'pay'
+]);
 
 Auth::routes();
 
