@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Ads;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function dashboard()
     {
-        return view('dashboard.index');
+        $ads = Ads::all();
+        return view('dashboard.index', compact('ads'));
     }
 }

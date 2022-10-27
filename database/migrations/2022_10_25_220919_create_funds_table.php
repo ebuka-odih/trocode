@@ -16,6 +16,12 @@ class CreateFundsTable extends Migration
         Schema::create('funds', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->bigInteger('user_id');
+            $table->double('amount');
+            $table->integer('confirm_payment')->nullable()->default(0);
+            $table->string('payment_code')->nullable();
+            $table->string('currency')->nullable();
+            $table->string('reference')->nullable();
         });
     }
 

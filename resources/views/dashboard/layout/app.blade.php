@@ -128,7 +128,7 @@
             <div class="content-side">
                 <ul class="nav-main">
                     <li class="nav-main-item">
-                        <a class="nav-main-link active" href="db_social.html">
+                        <a class="nav-main-link active" href="{{ route('user.dashboard') }}">
                             <i class="nav-main-link-icon fa fa-user-circle"></i>
                             <span class="nav-main-link-name">Home</span>
                         </a>
@@ -136,12 +136,12 @@
                     <li class="nav-main-item">
                         <a class="nav-main-link" href="">
                             <i class="nav-main-link-icon fa fa-bell"></i>
-                            <span class="nav-main-link-name">My Ads</span>
+                            <span class="nav-main-link-name">Campaigns</span>
                             <span class="nav-main-link-badge badge rounded-pill bg-info">6</span>
                         </a>
                     </li>
                     <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
+                        <a class="nav-main-link" href="{{ route('user.deposits') }}">
                             <i class="nav-main-link-icon fa fa-money-bill"></i>
                             <span class="nav-main-link-name">Add Fund</span>
                         </a>

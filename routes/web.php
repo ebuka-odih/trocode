@@ -10,6 +10,11 @@ Route::view('/', 'pages.index')->name('index');
 Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 'user.'], function () {
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
     Route::get('users', 'Admin\AdminController@users')->name('users');
+
+    Route::get('fund', "FundController@deposits")->name('deposits');
+    Route::post('pay', "FundController@pay")->name('pay');
+
+    Route::get('campaign/{id}', "CampaignController@create")->name('campaign');
 });
 Route::post('/pay', [
     'uses' => 'PaymentController@redirectToGateway',
