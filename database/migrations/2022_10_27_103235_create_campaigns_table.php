@@ -19,12 +19,12 @@ class CreateCampaignsTable extends Migration
             $table->bigInteger('ads_id');
             $table->string('objective');
             $table->integer('days');
-            $table->double('amount');
-            $table->string('image')->nullable();
+            $table->string('media')->nullable();
             $table->double('budget')->nullable();
             $table->string('start_age')->nullable();
             $table->string('end_age')->nullable();
             $table->string('gender')->nullable();
+
             $table->integer('status')->default(0);
         });
     }

@@ -15,6 +15,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('pay', "FundController@pay")->name('pay');
 
     Route::get('campaign/{id}', "CampaignController@create")->name('campaign');
+    Route::post('campaign', "CampaignController@getData")->name('getData');
+    Route::get('review/225{id}34', "CampaignController@review")->name('review');
+    Route::get('edit/campaign/225{id}34', "CampaignController@edit")->name('edit');
 });
 Route::post('/pay', [
     'uses' => 'PaymentController@redirectToGateway',
