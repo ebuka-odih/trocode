@@ -18,6 +18,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::post('campaign', "CampaignController@getData")->name('getData');
     Route::get('review/225{id}34', "CampaignController@review")->name('review');
     Route::get('edit/campaign/225{id}34', "CampaignController@edit")->name('edit');
+    Route::get('campaigns', "CampaignController@campaigns")->name('campaigns');
 });
 Route::post('/pay', [
     'uses' => 'PaymentController@redirectToGateway',

@@ -1,5 +1,5 @@
 
-@extends('dashboard.layout.app')
+@extends('admin.layout.app')
 @section('content')
 
     <div class="content">
@@ -35,6 +35,10 @@
                                     <div class="row text-center m-0 border-top border-bottom bg-body-light">
                                         <table class="table" style="width:100%">
                                             <tr>
+                                                <th>Platform:</th>
+                                                <td>{{ optional($camp->ads)->name }}</td>
+                                            </tr>
+                                            <tr>
                                                 <th>Age:</th>
                                                 <td>{{ $camp->start_age }}yo => {{ $camp->end_age }}yo</td>
                                             </tr>
@@ -42,21 +46,27 @@
                                                 <th>Gender:</th>
                                                 <td>{{ $camp->gender }}</td>
                                             </tr>
+                                            <tr>
+                                                <th>Status:</th>
+                                                <td>  {!! $camp->status() !!}</td>
+                                            </tr>
                                         </table>
                                     </div>
                                 </div>
                                 <div class="block-content block-content-full">
                                     <div class="row">
                                         <div class="col-6">
-                                            <a class="btn btn-sm btn-primary w-100" href="{{ route('user.edit', $camp->id) }}">
-                                                Edit
+                                            <a class="btn btn-sm btn-primary w-100" href="{{ route('admin.campaigns') }}">
+                                                Back
                                             </a>
                                         </div>
+                                        @if($camp->status == 1)
                                         <div class="col-6">
-                                            <a class="btn btn-sm btn-alt-primary w-100" data-toggle="layout" data-action="side_overlay_open" href="javascript:void(0)">
+                                            <a class="btn btn-sm btn-alt-primary w-100"  href="{{ route('admin.approve', $camp->id) }}">
                                                 Publish
                                             </a>
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

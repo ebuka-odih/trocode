@@ -16,6 +16,7 @@ class CreateCampaignsTable extends Migration
         Schema::create('campaigns', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->bigInteger('user_id');
             $table->bigInteger('ads_id');
             $table->string('objective');
             $table->integer('days');

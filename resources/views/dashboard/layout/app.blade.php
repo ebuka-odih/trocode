@@ -89,8 +89,8 @@
             <div class="content-header justify-content-lg-center bg-primary">
                 <!-- Logo -->
                 <a class="fw-semibold text-white tracking-wide" href="index.html">
-                    Dash<span class="opacity-75">mix</span>
-                    <span class="fw-normal">Social</span>
+                    Tro<span class="opacity-75">code</span>
+{{--                    <span class="fw-normal">Social</span>--}}
                 </a>
                 <!-- END Logo -->
 
@@ -134,10 +134,10 @@
                         </a>
                     </li>
                     <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
+                        <a class="nav-main-link" href="{{ route('user.campaigns') }}">
                             <i class="nav-main-link-icon fa fa-bell"></i>
                             <span class="nav-main-link-name">Campaigns</span>
-                            <span class="nav-main-link-badge badge rounded-pill bg-info">6</span>
+{{--                            <span class="nav-main-link-badge badge rounded-pill bg-info">6</span>--}}
                         </a>
                     </li>
                     <li class="nav-main-item">

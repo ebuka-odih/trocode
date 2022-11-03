@@ -10,4 +10,7 @@ Route::group(['middleware' => ['admin', 'auth', 'verified'], 'prefix' => 'admin'
     Route::get('profile/{id}', 'Admin\UserController@profile')->name('profile');
 
     Route::resource('ads', "Admin\AdminAdsController");
+    Route::get('campaigns', "Admin\AdminCampaign@campaigns")->name('campaigns');
+    Route::get('campaigns/details/{id}', "Admin\AdminCampaign@preview")->name('preview');
+    Route::get('approve/campaign/{id}', "Admin\AdminCampaign@approve")->name('approve');
 });

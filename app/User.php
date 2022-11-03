@@ -46,4 +46,9 @@ class User extends Authenticatable
         return '/avatar/' . $this->attributes['avatar'];
     }
 
+    public function campaign()
+    {
+        return $this->hasMany(Campaign::class, 'user_id');
+    }
+
 }

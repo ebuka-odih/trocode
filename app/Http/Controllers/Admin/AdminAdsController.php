@@ -37,12 +37,12 @@ class AdminAdsController extends Controller
             $news->description = $request->description;
             $news->image = $input['imagename'];
             $news->save();
-            return redirect()->route('admin.ads.index');
+            return redirect()->back();
         }
         $news = new Ads();
         $news->name = $request->name;
         $news->description = $request->description;
         $news->save();
-        return redirect()->route('admin.ads.index');
+        return redirect()->back();
     }
 }

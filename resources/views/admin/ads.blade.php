@@ -1,63 +1,82 @@
 @extends('admin.layout.app')
 @section('content')
 
-    <div id="content" class="main-content">
-        <div class="container-fluid">
-            <div class="container-fluid">
-                <div class="row layout-top-spacing">
+    <div class="content">
+        <!-- Layouts -->
+        <div class="block block-rounded">
+            <div class="block-content">
 
-                    <div id="tableStriped" class="col-lg-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Ads List</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <a href="{{ route('admin.ads.create') }}" class="btn btn-sm btn-primary m-3">Ad Ads</a>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped mb-4">
-                                        <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Image</th>
-                                            <th>Date</th>
-                                            <th class="text-center">Action</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        @foreach($ads as $item)
-                                            <tr>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <p class="align-self-center mb-0">{{ $item->name }}</p>
-                                                    </div>
-                                                </td>
-                                                <td><img src="{{ asset('files/'.$item->image) }}" height="80" width="80" alt=""></td>
-                                                <td>{{ date('d/m/Y', strtotime($item->created_at)) }}</td>
-
-                                                <td class="text-center">
-                                                    <button class="btn btn-sm btn-danger">Delete</button>
-                                                </td>
-
-                                            </tr>
+                <!-- Label on top Layout -->
+                <h2 class="content-heading">Ads</h2>
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 offset-1">
+                        <!-- Form Labels on top - Alternative Style -->
+                        <form action="{{ route('admin.ads.store') }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
                                         @endforeach
-                                        </tbody>
-                                    </table>
+                                    </ul>
                                 </div>
+                            @endif
 
-
+                            <div class="mb-4">
+                                <label class="form-label" for="example-ltf-email2">Ad Name</label>
+                                <input type="text" class="form-control form-control-alt" id="example-ltf-email2" name="name" >
                             </div>
-                        </div>
+                            <div class="mb-4">
+                                <label class="form-label" for="example-ltf-password2">Ad Image</label>
+                                <input type="file" class="form-control-file form-control-alt" id="example-ltf-password2" name="image" >
+                            </div>
+                            <div class="mb-4">
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                            </div>
+                        </form>
+                        <!-- END Form Labels on top - Alternative Style -->
                     </div>
-
                 </div>
+                <!-- END Label on top Layout -->
 
             </div>
         </div>
+        <!-- END Layouts -->
+    </div>
 
+    <div class="content">
+        <div class="block block-rounded">
+        <div class="block-content">
+
+            <!-- Label on top Layout -->
+            <h2 class="content-heading">Ads List</h2>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Image</th>
+                                <th>Action</th>
+                            </tr>
+                            @foreach($ads as $item)
+                            <tr>
+                                <td>{{ date('d m, Y', strtotime($item->created_at)) }}</td>
+                                <td>{{ $item->name }}</td>
+                                <td><img src="{{ asset('files/'.$item->image) }}" height="80" width="80" alt=""></td>
+                                <td></td>
+                            </tr>
+                            @endforeach
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- END Label on top Layout -->
+
+        </div>
+        </div>
     </div>
 
 @endsection

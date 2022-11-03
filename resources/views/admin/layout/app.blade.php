@@ -1,205 +1,714 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>CORK Admin Template - Analytics Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <link href="{{ asset('assets/css/loader.css') }}" rel="stylesheet" type="text/css" />
-    <script src="{{ asset('assets/js/loader.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/css/plugins.css') }}" rel="stylesheet" type="text/css" />
-    <!-- END GLOBAL MANDATORY STYLES -->
+    <title>Trocode</title>
 
-    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{ asset('plugins/apex/apexcharts.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('assets/css/dashboard/dash_1.css') }}" rel="stylesheet" type="text/css" />
-    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
-    <link href="{{ asset('assets/css/scrollspyNav.css') }}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/forms/theme-checkbox-radio.css') }}">
-    <link href="{{ asset('assets/css/tables/table-basic.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/css/users/user-profile.css') }}" rel="stylesheet" type="text/css" />
+    <meta name="description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
 
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework">
+    <meta property="og:site_name" content="Trocode">
+    <meta property="og:description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Icons -->
+
+
+    <!-- Stylesheets -->
+    <!-- Fonts and Dashmix framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" id="css-main" href="{{ asset('client/assets/css/dashmix.min.css') }}">
+
+    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
+    <!-- END Stylesheets -->
 </head>
 <body>
-<!-- BEGIN LOADER -->
-<div id="load_screen">
-    <div class="loader">
-        <div class="loader-content">
-            <div class="spinner-grow align-self-center"></div>
+<!-- Page Container -->
+
+<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+    <!-- Side Overlay-->
+    <aside id="side-overlay">
+        <!-- Side Header -->
+        <div class="bg-image" style="background-image: url('assets/media/various/bg_side_overlay_header.jpg');">
+            <div class="bg-primary-op">
+                <div class="content-header">
+                    <!-- User Avatar -->
+                    <a class="img-link me-1" href="be_pages_generic_profile.html">
+                        <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar10.jpg" alt="">
+                    </a>
+                    <!-- END User Avatar -->
+
+                    <!-- User Info -->
+                    <div class="ms-2">
+                        <a class="text-white fw-semibold" href="be_pages_generic_profile.html">George Taylor</a>
+                        <div class="text-white-75 fs-sm">Full Stack Developer</div>
+                    </div>
+                    <!-- END User Info -->
+
+                    <!-- Close Side Overlay -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <a class="ms-auto text-white" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
+                        <i class="fa fa-times-circle"></i>
+                    </a>
+                    <!-- END Close Side Overlay -->
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<!--  END LOADER -->
+        <!-- END Side Header -->
 
-<!--  BEGIN NAVBAR  -->
-<div class="header-container fixed-top">
-    <header class="header navbar navbar-expand-sm">
-        <a href="javascript:void(0);" class="sidebarCollapse" data-placement="bottom"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></a>
-
-        <ul class="navbar-item flex-row">
-            <li class="nav-item align-self-center page-heading">
-                <div class="page-header">
-                    <div class="page-title">
-                        <h3>Analytics</h3>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <ul class="navbar-item flex-row navbar-dropdown">
-
-            <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
-                <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img src="{{ asset('client/assets/img/profile-7.jpg') }}" alt="avatar">
-                </a>
-                <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
-                    <div class="user-profile-section">
-                        <div class="media mx-auto">
-                            <img src="{{ asset('client/assets/img/profile-7.jpg') }}" class="img-fluid mr-2" alt="avatar">
-                            <div class="media-body">
-                                <h5>{{ auth()->user()->name }}</h5>
-                                <p>Admin</p>
+        <!-- Side Content -->
+        <div class="content-side">
+            <!-- Side Overlay Tabs -->
+            <div class="block block-transparent pull-x pull-t mb-0">
+                <ul class="nav nav-tabs nav-tabs-block nav-justified" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="so-settings-tab" data-bs-toggle="tab" data-bs-target="#so-settings" role="tab" aria-controls="so-settings" aria-selected="true">
+                            <i class="fa fa-fw fa-cog"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="so-people-tab" data-bs-toggle="tab" data-bs-target="#so-people" role="tab" aria-controls="so-people" aria-selected="false">
+                            <i class="far fa-fw fa-user-circle"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="so-profile-tab" data-bs-toggle="tab" data-bs-target="#so-profile" role="tab" aria-controls="so-profile" aria-selected="false">
+                            <i class="far fa-fw fa-edit"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="block-content tab-content overflow-hidden">
+                    <!-- Settings Tab -->
+                    <div class="tab-pane pull-x fade fade-up show active" id="so-settings" role="tabpanel" aria-labelledby="so-settings-tab">
+                        <div class="block mb-0">
+                            <!-- Color Themes -->
+                            <!-- Toggle Themes functionality initialized in Template._uiHandleTheme() -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Color Themes</span>
                             </div>
+                            <div class="block-content block-content-full">
+                                <div class="row g-sm text-center">
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-default" data-toggle="theme" data-theme="default" href="#">
+                                            Default
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xwork" data-toggle="theme" data-theme="assets/css/themes/xwork.min.css" href="#">
+                                            xWork
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xmodern" data-toggle="theme" data-theme="assets/css/themes/xmodern.min.css" href="#">
+                                            xModern
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xeco" data-toggle="theme" data-theme="assets/css/themes/xeco.min.css" href="#">
+                                            xEco
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xsmooth" data-toggle="theme" data-theme="assets/css/themes/xsmooth.min.css" href="#">
+                                            xSmooth
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xinspire" data-toggle="theme" data-theme="assets/css/themes/xinspire.min.css" href="#">
+                                            xInspire
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xdream" data-toggle="theme" data-theme="assets/css/themes/xdream.min.css" href="#">
+                                            xDream
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xpro" data-toggle="theme" data-theme="assets/css/themes/xpro.min.css" href="#">
+                                            xPro
+                                        </a>
+                                    </div>
+                                    <div class="col-4 mb-1">
+                                        <a class="d-block py-3 text-white fs-sm fw-semibold bg-xplay" data-toggle="theme" data-theme="assets/css/themes/xplay.min.css" href="#">
+                                            xPlay
+                                        </a>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" href="be_ui_color_themes.html">All Color Themes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Color Themes -->
+
+                            <!-- Sidebar -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Sidebar</span>
+                            </div>
+                            <div class="block-content block-content-full">
+                                <div class="row g-sm text-center">
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="sidebar_style_dark" href="javascript:void(0)">Dark</a>
+                                    </div>
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="sidebar_style_light" href="javascript:void(0)">Light</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Sidebar -->
+
+                            <!-- Header -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Header</span>
+                            </div>
+                            <div class="block-content block-content-full">
+                                <div class="row g-sm text-center mb-2">
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="header_style_dark" href="javascript:void(0)">Dark</a>
+                                    </div>
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="header_style_light" href="javascript:void(0)">Light</a>
+                                    </div>
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="header_mode_fixed" href="javascript:void(0)">Fixed</a>
+                                    </div>
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="header_mode_static" href="javascript:void(0)">Static</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Header -->
+
+                            <!-- Content -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Content</span>
+                            </div>
+                            <div class="block-content block-content-full">
+                                <div class="row g-sm text-center">
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="content_layout_boxed" href="javascript:void(0)">Boxed</a>
+                                    </div>
+                                    <div class="col-6 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="content_layout_narrow" href="javascript:void(0)">Narrow</a>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <a class="d-block py-3 bg-body-dark fw-semibold text-dark" data-toggle="layout" data-action="content_layout_full_width" href="javascript:void(0)">Full Width</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END Content -->
+
+                            <!-- Layout API -->
+                            <div class="block-content block-content-full border-top">
+                                <a class="btn w-100 btn-alt-primary" href="be_layout_api.html">
+                                    <i class="fa fa-fw fa-flask me-1"></i> Layout API
+                                </a>
+                            </div>
+                            <!-- END Layout API -->
                         </div>
                     </div>
-                    <div class="dropdown-item">
-                        <a href="user_profile.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span> Profile</span>
-                        </a>
-                    </div>
+                    <!-- END Settings Tab -->
 
-                    <div class="dropdown-item">
-                        <a href="auth_login.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>Log Out</span>
+                    <!-- People -->
+                    <div class="tab-pane pull-x fade fade-up" id="so-people" role="tabpanel" aria-labelledby="so-people-tab">
+                        <div class="block mb-0">
+                            <!-- Online -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Online</span>
+                            </div>
+                            <div class="block-content">
+                                <ul class="nav-items">
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar4.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-success"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Marie Duncan</div>
+                                                <div class="fs-sm text-muted">Photographer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar11.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-success"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Jose Mills</div>
+                                                <div class="fw-normal fs-sm text-muted">Web Designer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar5.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-success"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Amanda Powell</div>
+                                                <div class="fw-normal fs-sm text-muted">Web Developer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Online -->
+
+                            <!-- Busy -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Busy</span>
+                            </div>
+                            <div class="block-content">
+                                <ul class="nav-items">
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar7.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-danger"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Laura Carr</div>
+                                                <div class="fw-normal fs-sm text-muted">UI Designer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Busy -->
+
+                            <!-- Away -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Away</span>
+                            </div>
+                            <div class="block-content">
+                                <ul class="nav-items">
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar14.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-warning"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Carl Wells</div>
+                                                <div class="fw-normal fs-sm text-muted">Copywriter</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar7.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-warning"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Amber Harvey</div>
+                                                <div class="fw-normal fs-sm text-muted">Writer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Away -->
+
+                            <!-- Offline -->
+                            <div class="block-content block-content-sm block-content-full bg-body">
+                                <span class="text-uppercase fs-sm fw-bold">Offline</span>
+                            </div>
+                            <div class="block-content">
+                                <ul class="nav-items">
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar14.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-muted"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Jose Mills</div>
+                                                <div class="fw-normal fs-sm text-muted">Teacher</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar3.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-muted"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Danielle Jones</div>
+                                                <div class="fw-normal fs-sm text-muted">Photographer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar5.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-muted"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Laura Carr</div>
+                                                <div class="fw-normal fs-sm text-muted">Front-end Developer</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex py-2" href="be_pages_generic_profile.html">
+                                            <div class="flex-shrink-0 mx-3 overlay-container">
+                                                <img class="img-avatar img-avatar48" src="assets/media/avatars/avatar15.jpg" alt="">
+                                                <span class="overlay-item item item-tiny item-circle border border-2 border-white bg-muted"></span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <div class="fw-semibold">Jose Wagner</div>
+                                                <div class="fw-normal fs-sm text-muted">UX Specialist</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END Offline -->
+
+                            <!-- Add People -->
+                            <div class="block-content block-content-full border-top">
+                                <a class="btn w-100 btn-alt-primary" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-plus me-1 opacity-50"></i> Add People
+                                </a>
+                            </div>
+                            <!-- END Add People -->
+                        </div>
+                    </div>
+                    <!-- END People -->
+
+                    <!-- Profile -->
+                    <div class="tab-pane pull-x fade fade-up" id="so-profile" role="tabpanel" aria-labelledby="so-profile-tab">
+                        <form action="be_pages_dashboard.html" method="POST" onsubmit="return false;">
+                            <div class="block mb-0">
+                                <!-- Personal -->
+                                <div class="block-content block-content-sm block-content-full bg-body">
+                                    <span class="text-uppercase fs-sm fw-bold">Personal</span>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="mb-4">
+                                        <label class="form-label">Username</label>
+                                        <input type="text" readonly class="form-control" id="so-profile-username-static" value="Admin">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="so-profile-name">Name</label>
+                                        <input type="text" class="form-control" id="so-profile-name" name="so-profile-name" value="George Taylor">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="so-profile-email">Email</label>
+                                        <input type="email" class="form-control" id="so-profile-email" name="so-profile-email" value="g.taylor@example.com">
+                                    </div>
+                                </div>
+                                <!-- END Personal -->
+
+                                <!-- Password Update -->
+                                <div class="block-content block-content-sm block-content-full bg-body">
+                                    <span class="text-uppercase fs-sm fw-bold">Password Update</span>
+                                </div>
+                                <div class="block-content block-content-full">
+                                    <div class="mb-4">
+                                        <label class="form-label" for="so-profile-password">Current Password</label>
+                                        <input type="password" class="form-control" id="so-profile-password" name="so-profile-password">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="so-profile-new-password">New Password</label>
+                                        <input type="password" class="form-control" id="so-profile-new-password" name="so-profile-new-password">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="so-profile-new-password-confirm">Confirm New Password</label>
+                                        <input type="password" class="form-control" id="so-profile-new-password-confirm" name="so-profile-new-password-confirm">
+                                    </div>
+                                </div>
+                                <!-- END Password Update -->
+
+                                <!-- Options -->
+                                <div class="block-content block-content-sm block-content-full bg-body">
+                                    <span class="text-uppercase fs-sm fw-bold">Options</span>
+                                </div>
+                                <div class="block-content">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="so-settings-status" name="so-settings-status">
+                                        <label class="form-check-label fw-semibold" for="so-settings-status">Online Status</label>
+                                    </div>
+                                    <p class="text-muted fs-sm">
+                                        Make your online status visible to other users of your app
+                                    </p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="so-settings-notifications" name="so-settings-notifications">
+                                        <label class="form-check-label fw-semibold" for="so-settings-notifications">Notifications</label>
+                                    </div>
+                                    <p class="text-muted fs-sm">
+                                        Receive desktop notifications regarding your projects and sales
+                                    </p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="so-settings-updates" name="so-settings-updates">
+                                        <label class="form-check-label fw-semibold" for="so-settings-updates">Auto Updates</label>
+                                    </div>
+                                    <p class="text-muted fs-sm">
+                                        If enabled, we will keep all your applications and servers up to date with the most recent features automatically
+                                    </p>
+                                </div>
+                                <!-- END Options -->
+
+                                <!-- Submit -->
+                                <div class="block-content block-content-full border-top">
+                                    <button type="submit" class="btn w-100 btn-alt-primary">
+                                        <i class="fa fa-fw fa-save me-1 opacity-50"></i> Save
+                                    </button>
+                                </div>
+                                <!-- END Submit -->
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END Profile -->
+                </div>
+            </div>
+            <!-- END Side Overlay Tabs -->
+        </div>
+        <!-- END Side Content -->
+    </aside>
+    <!-- END Side Overlay -->
+
+    <!-- Sidebar -->
+
+    <nav id="sidebar" aria-label="Main Navigation">
+        <!-- Side Header -->
+        <div class="bg-header-dark">
+            <div class="content-header bg-white-5">
+                <!-- Logo -->
+                <a class="fw-semibold text-white tracking-wide" href="index.html">
+              <span class="smini-visible">
+                D<span class="opacity-75">x</span>
+              </span>
+                    <span class="smini-hidden">
+                Dash<span class="opacity-75">mix</span>
+              </span>
+                </a>
+                <!-- END Logo -->
+
+                <!-- Options -->
+                <div>
+                    <!-- Toggle Sidebar Style -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <!-- Class Toggle, functionality initialized in Helpers.dmToggleClass() -->
+                    <button type="button" class="btn btn-sm btn-alt-secondary" data-toggle="class-toggle" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" onclick="Dashmix.layout('sidebar_style_toggle');Dashmix.layout('header_style_toggle');">
+                        <i class="fa fa-toggle-off" id="sidebar-style-toggler"></i>
+                    </button>
+                    <!-- END Toggle Sidebar Style -->
+
+                    <!-- Dark Mode -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-alt-secondary" data-toggle="class-toggle" data-target="#dark-mode-toggler" data-class="far fa" onclick="Dashmix.layout('dark_mode_toggle');">
+                        <i class="far fa-moon" id="dark-mode-toggler"></i>
+                    </button>
+                    <!-- END Dark Mode -->
+
+                    <!-- Close Sidebar, Visible only on mobile screens -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-alt-secondary d-lg-none" data-toggle="layout" data-action="sidebar_close">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <!-- END Close Sidebar -->
+                </div>
+                <!-- END Options -->
+            </div>
+        </div>
+        <!-- END Side Header -->
+
+        <!-- Sidebar Scrolling -->
+        <div class="js-sidebar-scroll">
+            <!-- Side Navigation -->
+            <div class="content-side">
+                <ul class="nav-main">
+                    <li class="nav-main-item">
+                        <a class="nav-main-link active" href="{{ route('admin.dashboard') }}">
+                            <i class="nav-main-link-icon fa fa-location-arrow"></i>
+                            <span class="nav-main-link-name">Dashboard</span>
                         </a>
+                    </li>
+                    <li class="nav-main-heading">Base</li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.ads.index') }}">
+                            <i class="nav-main-link-icon fa fa-tv"></i>
+                            <span class="nav-main-link-name">Ads</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.campaigns') }}">
+                            <i class="nav-main-link-icon fa fa-border-all"></i>
+                            <span class="nav-main-link-name">Campaigns</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.users') }}">
+                            <i class="nav-main-link-icon fa fa-users"></i>
+                            <span class="nav-main-link-name">Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-heading">Settings</li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.users') }}">
+                            <i class="nav-main-link-icon fa fa-shield-alt"></i>
+                            <span class="nav-main-link-name">Security</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- END Side Navigation -->
+        </div>
+        <!-- END Sidebar Scrolling -->
+    </nav>
+    <!-- END Sidebar -->
+
+    <!-- Header -->
+    <header id="page-header">
+        <!-- Header Content -->
+        <div class="content-header">
+            <!-- Left Section -->
+            <div class="space-x-1">
+                <!-- Toggle Sidebar -->
+                <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                <button type="button" class="btn btn-alt-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+                <!-- END Toggle Sidebar -->
+
+
+            </div>
+            <!-- END Left Section -->
+
+            <!-- Right Section -->
+            <div class="space-x-1">
+                <!-- User Dropdown -->
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn btn-alt-secondary" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-fw fa-user d-sm-none"></i>
+                        <span class="d-none d-sm-inline-block">Admin</span>
+                        <i class="fa fa-fw fa-angle-down opacity-50 ms-1 d-none d-sm-inline-block"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-0" aria-labelledby="page-header-user-dropdown">
+                        <div class="bg-primary-dark rounded-top fw-semibold text-white text-center p-3">
+                            User Options
+                        </div>
+                        <div class="p-2">
+                            <a class="dropdown-item" href="be_pages_generic_profile.html">
+                                <i class="far fa-fw fa-user me-1"></i> Profile
+                            </a>
+
+                            <div role="separator" class="dropdown-divider"></div>
+
+                            <!-- Toggle Side Overlay -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
+                                <i class="far fa-fw fa-building me-1"></i> Settings
+                            </a>
+                            <!-- END Side Overlay -->
+
+                            <div role="separator" class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="op_auth_signin.html">
+                                <i class="far fa-fw fa-arrow-alt-circle-left me-1"></i> Sign Out
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </li>
-        </ul>
+                <!-- END User Dropdown -->
+
+
+                <!-- Toggle Side Overlay -->
+                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                <button type="button" class="btn btn-alt-secondary" data-toggle="layout" data-action="side_overlay_toggle">
+                    <i class="far fa-fw fa-list-alt"></i>
+                </button>
+                <!-- END Toggle Side Overlay -->
+            </div>
+            <!-- END Right Section -->
+        </div>
+        <!-- END Header Content -->
+
+        <!-- Header Search -->
+        <div id="page-header-search" class="overlay-header bg-header-dark">
+            <div class="bg-white-10">
+                <div class="content-header">
+                    <form class="w-100" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group">
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <button type="button" class="btn btn-alt-primary" data-toggle="layout" data-action="header_search_off">
+                                <i class="fa fa-fw fa-times-circle"></i>
+                            </button>
+                            <input type="text" class="form-control border-0" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- END Header Search -->
+
+        <!-- Header Loader -->
+        <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+        <div id="page-header-loader" class="overlay-header bg-header-dark">
+            <div class="bg-white-10">
+                <div class="content-header">
+                    <div class="w-100 text-center">
+                        <i class="fa fa-fw fa-sun fa-spin text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Header Loader -->
     </header>
+    <!-- END Header -->
+
+    <!-- Main Container -->
+    <main id="main-container">
+   @yield('content')
+    </main>
+    <!-- END Main Container -->
+
+    <!-- Footer -->
+    <footer id="page-footer" class="bg-body-light">
+        <div class="content py-0">
+            <div class="row fs-sm">
+                <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-end">
+                    Crafted with <i class="fa fa-heart text-danger"></i> by <a class="fw-semibold" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
+                </div>
+                <div class="col-sm-6 order-sm-1 text-center text-sm-start">
+                    <a class="fw-semibold" href="https://1.envato.market/r6y" target="_blank">Trocode 5.1</a> &copy; <span data-toggle="year-copy"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END Footer -->
 </div>
-<!--  END NAVBAR  -->
+<!-- END Page Container -->
 
-<!--  BEGIN MAIN CONTAINER  -->
-<div class="main-container" id="container">
+<!--
+  Dashmix JS
 
-    <div class="overlay"></div>
-    <div class="search-overlay"></div>
+  Core libraries and functionality
+  webpack is putting everything together at assets/_js/main/app.js
+-->
+<script src="{{ asset('client/assets/js/dashmix.app.min.js') }}"></script>
 
-    <!--  BEGIN SIDEBAR  -->
-    <div class="sidebar-wrapper sidebar-theme">
+<!-- Page JS Plugins -->
+<script src="{{ asset('client/assets/js/plugins/chart.js/chart.min.js') }}"></script>
 
-        <nav id="sidebar">
-
-            <ul class="navbar-nav theme-brand flex-row  text-center">
-                <li class="nav-item theme-text">
-                    <a href="{{ route('index') }}" class="nav-link"> CORK </a>
-                </li>
-                <li class="nav-item toggle-sidebar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather sidebarCollapse feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
-                </li>
-            </ul>
-            <div class="shadow-bottom"></div>
-            <ul class="list-unstyled menu-categories" id="accordionExample">
-                <li class="menu active">
-                    <a href="#dashboard" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            <span>Dashboard</span>
-                        </div>
-                    </a>
-
-                </li>
-
-                <li class="menu menu-heading">
-                    <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg><span>APPS</span></div>
-                </li>
-
-                <li class="menu">
-                    <a href="apps_chat.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                            <span>Deposits</span>
-                        </div>
-                    </a>
-                </li>
-                <li class="menu">
-                    <a href="{{ route('admin.ads.create') }}" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                            <span>Campaigns</span>
-                        </div>
-                    </a>
-                </li>
-
-                <li class="menu">
-                    <a href="apps_mailbox.html" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <span>All Ads</span>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="menu menu-heading">
-                    <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle"><circle cx="12" cy="12" r="10"></circle></svg><span>USER AND PAGES</span></div>
-                </li>
-
-
-                <li class="menu">
-                    <a href="{{ route('admin.users') }}" aria-expanded="false" class="dropdown-toggle">
-                        <div class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                            <span>Users</span>
-                        </div>
-                    </a>
-                </li>
-
-
-
-            </ul>
-
-        </nav>
-
-    </div>
-    <!--  END SIDEBAR  -->
-
-    <!--  BEGIN CONTENT AREA  -->
-
-    @yield('content')
-    <!--  END CONTENT AREA  -->
-
-
-</div>
-<!-- END MAIN CONTAINER -->
-
-<!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
-<script src="{{ asset('assets/js/libs/jquery-3.1.1.min.js') }}"></script>
-<script src="{{ asset('bootstrap/js/popper.min.js') }}"></script>
-<script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
-<script>
-    $(document).ready(function() {
-        App.init();
-    });
-</script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
-<!-- END GLOBAL MANDATORY SCRIPTS -->
-
-<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-<script src="{{ asset('plugins/apex/apexcharts.min.js') }}"></script>
-<script src="{{ asset('assets/js/dashboard/dash_1.js') }}"></script>
-<!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
-
+<!-- Page JS Code -->
+<script src="{{ asset('assets/js/pages/be_pages_dashboard.min.js') }}"></script>
 </body>
-
-<!-- Mirrored from designreset.com/cork/ltr/demo5/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Oct 2022 10:48:08 GMT -->
 </html>

@@ -24,6 +24,19 @@ class FundController extends Controller
         $request->currency = env('PAYSTACK_CURRENCY_CODE', 'NGN');
         $request->reference = Paystack::genTranxRef();
         return Paystack::getAuthorizationUrl()->redirectNow();
+    }
+
+    public function handleGatewayCallback()
+    {
+
+        $payment = Paystack::getPaymentData();
+        $payment_detalis = json_encode($payment);
+        if (!empty($payment['data']) && $payment['data']['status'] == 'success') {
+            return (new WalletController)->wallet_payment_done(Session::get('payment_data'), $payment_detalis);
+        }
+        Session::forget('payment_data');
+        flash(translate('Payment cancelled'))->success();
+        return redirect()->route('home');
 
     }
 
