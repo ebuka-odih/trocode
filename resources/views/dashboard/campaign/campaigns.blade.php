@@ -14,6 +14,8 @@
 
             <div class="block block-rounded">
                 <div class="block-content">
+                    <a href="{{ route('user.addCamp') }}" class="btn btn-sm btn-primary m-3 push-left">Create Campaign</a>
+
 
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-vcenter">

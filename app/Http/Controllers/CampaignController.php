@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Auth;
 
 class CampaignController extends Controller
 {
+    public function index()
+    {
+        $ads = Ads::all();
+        return view('dashboard.campaign.ads', compact('ads'));
+    }
+
     public function create($id)
     {
         $ad = Ads::findOrFail($id);
