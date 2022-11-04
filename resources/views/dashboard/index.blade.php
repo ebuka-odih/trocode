@@ -76,18 +76,33 @@
             <h2 class="h3 fw-normal mb-0">Select Your Ads Type</h2>
         </div>
         <div class="row items-push">
-            @foreach($ads as $item)
-            <div class="col-6 col-lg-3">
-                <a class="block block-rounded block-fx-pop h-100 mb-0" href="{{ route('user.campaign', $item->id) }}">
-                    <div class="block-content block-content-full">
-                        <div class="fs-5 fw-semibold text-muted mb-3">{{ $item->name }}</div>
 
-                        <div class="fs-4 fw-bold text-success">
-                            <img style="height: 80px; width: 120px" src="{{ asset('files/'.$item->image) }}" alt="">
+            @foreach($ads as $item)
+                <div class="col-md-6">
+                    <div class="block block-rounded">
+                        <div class="block-content block-content-full">
+                            <div class="d-sm-flex">
+                                <div class="ms-sm-2 me-sm-4 py-2">
+                                    {{--                                    bg-body-dark--}}
+                                    <a class="item item-rounded  text-dark fs-2 mb-2 mx-auto" href="javascript:void(0)">
+                                        {{--                                        <i class="fab fa-fw fa-facebook"></i>--}}
+                                        <img height="70" width="70" src="{{ asset('files/'.$item->image ) }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="py-2">
+                                    <a class="link-fx h4 mb-1 d-inline-block text-dark" href="be_pages_jobs_listing.html">
+                                        {{ $item->name }}
+                                    </a>
+
+                                    <p class="text-muted mb-2">
+                                        {{ $item->description ? : "" }}
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
+
             @endforeach
         </div>
         <!-- END Quick Statistics -->
