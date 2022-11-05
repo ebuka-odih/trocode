@@ -24,7 +24,7 @@
                                     </a>
                                 </div>
                                 <div class="py-2">
-                                    <a class="link-fx h4 mb-1 d-inline-block text-dark" href="{{ route('user.campaign') }}">
+                                    <a class="link-fx h4 mb-1 d-inline-block text-dark" href="{{ route('user.campaign', $item->id) }}">
                                         {{ $item->name }}
                                     </a>
 
