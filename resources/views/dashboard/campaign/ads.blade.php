@@ -18,7 +18,7 @@
                             <div class="d-sm-flex">
                                 <div class="ms-sm-2 me-sm-4 py-2">
 {{--                                    bg-body-dark--}}
-                                    <a class="item item-rounded  text-dark fs-2 mb-2 mx-auto" href="{{ route('user.campaign') }}">
+                                    <a class="item item-rounded  text-dark fs-2 mb-2 mx-auto" href="{{ route('user.campaign', $item->id) }}">
 {{--                                        <i class="fab fa-fw fa-facebook"></i>--}}
                                         <img height="70" width="70" src="{{ asset('files/'.$item->image ) }}" alt="">
                                     </a>
