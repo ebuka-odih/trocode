@@ -75,7 +75,7 @@
 
 
                         <div class="option-item for-mobile-devices d-block d-lg-none">
-                            <i class="search-btn ri-search-line"></i>
+                          
                             <i class="close-btn ri-close-line"></i>
 
                             <div class="search-overlay search-popup">

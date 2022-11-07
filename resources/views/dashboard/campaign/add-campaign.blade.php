@@ -1,394 +1,67 @@
 @extends('dashboard.layout.app')
 @section('content')
 
-    <style>
+    <main class="main-content-wrap style-two">
 
-        #regForm {
-            background-color: #ffffff;
-            margin: 100px auto;
-            font-family: Raleway;
-            padding: 40px;
-            width: 70%;
-            min-width: 300px;
-        }
 
-        h1 {
-            text-align: center;
-        }
+        <!-- Start Student Progress Area -->
+        <div class="student-progress-area">
+            <h5 style="font-size: 25px" class="text-center m-4 fw-light">Campaign Objective:</h5>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
 
-        input {
-            padding: 10px;
-            width: 100%;
-            font-size: 17px;
-            font-family: Raleway;
-            border: 1px solid #aaaaaa;
-        }
+                        <div class="device-content website card-box-style">
 
-        /* Mark input boxes that gets an error on validation: */
-        input.invalid {
-            background-color: #ffdddd;
-        }
-
-        /* Hide all steps by default: */
-        .tab {
-            display: none;
-        }
-
-        button {
-            background-color: #353743;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 17px;
-            font-family: Raleway;
-            cursor: pointer;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        #prevBtn {
-            background-color: #bbbbbb;
-        }
-
-        /* Make circles that indicate the steps of the form: */
-        .step {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbbbbb;
-            border: none;
-            border-radius: 50%;
-            display: inline-block;
-            opacity: 0.5;
-        }
-
-        .step.active {
-            opacity: 1;
-        }
-
-        /* Mark the steps that are finished and valid: */
-        .step.finish {
-            background-color: #04AA6D;
-        }
-    </style>
-
-    <div class="content">
-        <div class="block block-rounded text-center">
-            <div class="block-content">
-                <h3 class="text-center">Enter Campaign Details</h3>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="block block-rounded text-center">
-            <div class="block-content">
-                <!-- Inline Layout -->
-                <div class="row">
-                    <div class="col-lg-12 space-y-2">
-                        <!-- Form Inline - Default Style -->
-                        <form id="regForm" method="POST" action="{{ route('user.getData') }}" class="js-validation" novalidate="novalidate" enctype="multipart/form-data">
-                            <!-- One "tab" for each step in the form: -->
-                            @csrf
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 col-sm-6">
+                                    <div class="single-website-performance d-flex justify-content-between align-items-center">
+                                        <div class="website-performance-content">
+                                            <h5>Bounce Rate (avg)</h5>
+                                            <h4>24.67% <span>+04.18%</span></h4>
+                                        </div>
+                                        <div class="website-chart" style="position: relative;">
+                                            <div id="bounce_rate" style="min-height: 50px;"><div id="apexchartsk5qfgckh" class="apexcharts-canvas apexchartsk5qfgckh apexcharts-theme-light" style="width: 200px; height: 50px;"><svg id="SvgjsSvg1821" width="200" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1823" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1822"><clipPath id="gridRectMaskk5qfgckh"><rect id="SvgjsRect1828" width="208" height="54" x="-4" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskk5qfgckh"><rect id="SvgjsRect1829" width="204" height="54" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1834" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1835" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="0.75"></stop><stop id="SvgjsStop1836" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop><stop id="SvgjsStop1837" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop><stop id="SvgjsStop1838" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1827" x1="0" y1="0" x2="0" y2="50" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="50" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1841" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1842" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1844" class="apexcharts-grid"><g id="SvgjsG1845" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1847" x1="0" y1="0" x2="200" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1848" x1="0" y1="12.5" x2="200" y2="12.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1849" x1="0" y1="25" x2="200" y2="25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1850" x1="0" y1="37.5" x2="200" y2="37.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1851" x1="0" y1="50" x2="200" y2="50" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1846" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1853" x1="0" y1="50" x2="200" y2="50" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1852" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1830" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1831" class="apexcharts-series" seriesName="BouncexRatexxavgx" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1839" d="M 0 50L 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625C 200 45.625 200 45.625 200 50M 200 45.625z" fill="url(#SvgjsLinearGradient1834)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskk5qfgckh)" pathTo="M 0 50L 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625C 200 45.625 200 45.625 200 50M 200 45.625z" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><path id="SvgjsPath1840" d="M 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625" fill="none" fill-opacity="1" stroke="#5c31d6" stroke-opacity="1" stroke-linecap="round" stroke-width="4" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskk5qfgckh)" pathTo="M 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><g id="SvgjsG1832" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1859" r="0" cx="0" cy="0" class="apexcharts-marker wgfq7kb02 no-pointer-events" stroke="#ffffff" fill="#5c31d6" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1833" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1854" x1="0" y1="0" x2="200" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1855" x1="0" y1="0" x2="200" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1856" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1857" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1858" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1826" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1843" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1824" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 25px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(92, 49, 214);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                                            <div class="resize-triggers"><div class="expand-trigger"><div style="width: 201px; height: 51px;"></div></div><div class="contract-trigger"></div></div></div>
+                                    </div>
                                 </div>
-                            @endif
-                            <input type="hidden" value="{{ $ad->id }}" name="ad_id">
-                            <div class="tab">
-                                <h4>Campaign Objective:</h4>
-                                <div class="row items-push">
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="Increase Purchase" id="example-radio-block1" name="objective">
-                                            <label class="form-check-label" for="example-radio-block1">
-                                                <span class="d-block fw-normal text-center my-3">
-
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded"><i class="fa fa-dollar-sign"></i></span>
-                                                     <span class="fs-4 fw-semibold text-primary">Increase Purchase <small class="badge bg-secondary">Sales Campaign</small></span>
-                                                </span>
-                                                <small>Reach people more likely to purchase.</small>
-                                            </label>
+                                <div class="col-lg-12 col-sm-6">
+                                    <div class="single-website-performance d-flex justify-content-between align-items-center">
+                                        <div class="website-performance-content color-style-fe5957">
+                                            <h5>Page Views (avg)</h5>
+                                            <h4>7.32% <span>-0.21%</span></h4>
                                         </div>
+                                        <div class="website-chart" style="position: relative;">
+                                            <div id="page_views" style="min-height: 50px;"><div id="apexchartsdiovggr1g" class="apexcharts-canvas apexchartsdiovggr1g apexcharts-theme-light" style="width: 200px; height: 50px;"><svg id="SvgjsSvg1861" width="200" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1863" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1862"><clipPath id="gridRectMaskdiovggr1g"><rect id="SvgjsRect1868" width="208" height="54" x="-4" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskdiovggr1g"><rect id="SvgjsRect1869" width="204" height="54" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1874" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1875" stop-opacity="0" stop-color="rgba(79,203,141,0)" offset="0.75"></stop><stop id="SvgjsStop1876" stop-opacity="0" stop-color="rgba(79,203,141,0)" offset="1"></stop><stop id="SvgjsStop1877" stop-opacity="0" stop-color="rgba(79,203,141,0)" offset="1"></stop><stop id="SvgjsStop1878" stop-opacity="0" stop-color="rgba(79,203,141,0)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1867" x1="0" y1="0" x2="0" y2="50" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="50" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1881" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1882" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1884" class="apexcharts-grid"><g id="SvgjsG1885" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1887" x1="0" y1="0" x2="200" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1888" x1="0" y1="12.5" x2="200" y2="12.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1889" x1="0" y1="25" x2="200" y2="25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1890" x1="0" y1="37.5" x2="200" y2="37.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1891" x1="0" y1="50" x2="200" y2="50" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1886" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1893" x1="0" y1="50" x2="200" y2="50" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1892" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1870" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1871" class="apexcharts-series" seriesName="PagexViewsxxavgx" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1879" d="M 0 50L 0 42.5C 7 42.5 13 41.25 20 41.25C 27 41.25 33 48.75 40 48.75C 47 48.75 53 20.625 60 20.625C 67 20.625 73 23.75 80 23.75C 87 23.75 93 40.625 100 40.625C 107 40.625 113 20.625 120 20.625C 127 20.625 133 3.125 140 3.125C 147 3.125 153 9.375 160 9.375C 167 9.375 173 38.125 180 38.125C 187 38.125 193 41.25 200 41.25C 200 41.25 200 41.25 200 50M 200 41.25z" fill="url(#SvgjsLinearGradient1874)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskdiovggr1g)" pathTo="M 0 50L 0 42.5C 7 42.5 13 41.25 20 41.25C 27 41.25 33 48.75 40 48.75C 47 48.75 53 20.625 60 20.625C 67 20.625 73 23.75 80 23.75C 87 23.75 93 40.625 100 40.625C 107 40.625 113 20.625 120 20.625C 127 20.625 133 3.125 140 3.125C 147 3.125 153 9.375 160 9.375C 167 9.375 173 38.125 180 38.125C 187 38.125 193 41.25 200 41.25C 200 41.25 200 41.25 200 50M 200 41.25z" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><path id="SvgjsPath1880" d="M 0 42.5C 7 42.5 13 41.25 20 41.25C 27 41.25 33 48.75 40 48.75C 47 48.75 53 20.625 60 20.625C 67 20.625 73 23.75 80 23.75C 87 23.75 93 40.625 100 40.625C 107 40.625 113 20.625 120 20.625C 127 20.625 133 3.125 140 3.125C 147 3.125 153 9.375 160 9.375C 167 9.375 173 38.125 180 38.125C 187 38.125 193 41.25 200 41.25" fill="none" fill-opacity="1" stroke="#4fcb8d" stroke-opacity="1" stroke-linecap="round" stroke-width="4" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskdiovggr1g)" pathTo="M 0 42.5C 7 42.5 13 41.25 20 41.25C 27 41.25 33 48.75 40 48.75C 47 48.75 53 20.625 60 20.625C 67 20.625 73 23.75 80 23.75C 87 23.75 93 40.625 100 40.625C 107 40.625 113 20.625 120 20.625C 127 20.625 133 3.125 140 3.125C 147 3.125 153 9.375 160 9.375C 167 9.375 173 38.125 180 38.125C 187 38.125 193 41.25 200 41.25" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><g id="SvgjsG1872" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1899" r="0" cx="0" cy="0" class="apexcharts-marker wvztp523f no-pointer-events" stroke="#ffffff" fill="#4fcb8d" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1873" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1894" x1="0" y1="0" x2="200" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1895" x1="0" y1="0" x2="200" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1896" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1897" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1898" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1866" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1883" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1864" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 25px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(79, 203, 141);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                                            <div class="resize-triggers"><div class="expand-trigger"><div style="width: 201px; height: 51px;"></div></div><div class="contract-trigger"></div></div></div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required=""  class="form-check-input" value="Increase Website Visit" id="example-radio-block2" name="objective">
-                                            <label class="form-check-label" for="example-radio-block2">
-                                                <span class="d-block fw-normal text-center my-3">
-
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded"><i class="fa fa-globe"></i></span>
-                                                     <span class="fs-4 fw-semibold text-primary">Increase Website Visit <br><small class="badge bg-secondary">Website Traffic</small></span>
-                                                </span>
-                                                <small>Get more traffic from more potential customers</small>
-                                            </label>
+                                </div>
+                                <div class="col-lg-12 col-sm-6">
+                                    <div class="single-website-performance d-flex justify-content-between align-items-center">
+                                        <div class="website-performance-content">
+                                            <h5>Time On Site (avg)</h5>
+                                            <h4>1min 30s <span>+2.50%</span></h4>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required=""  class="form-check-input" value="Increase App Install"  id="example-radio-block3" name="objective">
-                                            <label class="form-check-label" for="example-radio-block3">
-                                                <span class="d-block fw-normal text-center my-3">
-
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded"><i class="fa fa-mobile-alt"></i></span>
-                                                     <span class="fs-4 fw-semibold text-primary">Increase App Install <br><small class="badge bg-secondary">Website Traffic</small></span>
-                                                </span>
-                                                <small>Get more more people to install your app</small>
-                                            </label>
-                                        </div>
+                                        <div class="website-chart" style="position: relative;">
+                                            <div id="time_on_site" style="min-height: 50px;"><div id="apexchartsu4pb9i8wg" class="apexcharts-canvas apexchartsu4pb9i8wg apexcharts-theme-light" style="width: 200px; height: 50px;"><svg id="SvgjsSvg1901" width="200" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1903" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1902"><clipPath id="gridRectMasku4pb9i8wg"><rect id="SvgjsRect1908" width="208" height="54" x="-4" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMasku4pb9i8wg"><rect id="SvgjsRect1909" width="204" height="54" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><linearGradient id="SvgjsLinearGradient1914" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1915" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="0.75"></stop><stop id="SvgjsStop1916" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop><stop id="SvgjsStop1917" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop><stop id="SvgjsStop1918" stop-opacity="0" stop-color="rgba(92,49,214,0)" offset="1"></stop></linearGradient></defs><line id="SvgjsLine1907" x1="0" y1="0" x2="0" y2="50" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="50" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1921" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1922" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1924" class="apexcharts-grid"><g id="SvgjsG1925" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1927" x1="0" y1="0" x2="200" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1928" x1="0" y1="12.5" x2="200" y2="12.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1929" x1="0" y1="25" x2="200" y2="25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1930" x1="0" y1="37.5" x2="200" y2="37.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1931" x1="0" y1="50" x2="200" y2="50" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1926" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1933" x1="0" y1="50" x2="200" y2="50" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1932" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1910" class="apexcharts-area-series apexcharts-plot-series"><g id="SvgjsG1911" class="apexcharts-series" seriesName="TimexOnxSitexxavgx" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1919" d="M 0 50L 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625C 200 45.625 200 45.625 200 50M 200 45.625z" fill="url(#SvgjsLinearGradient1914)" fill-opacity="1" stroke-opacity="1" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMasku4pb9i8wg)" pathTo="M 0 50L 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625C 200 45.625 200 45.625 200 50M 200 45.625z" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><path id="SvgjsPath1920" d="M 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625" fill="none" fill-opacity="1" stroke="#5c31d6" stroke-opacity="1" stroke-linecap="round" stroke-width="4" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMasku4pb9i8wg)" pathTo="M 0 50C 7 50 13 34.375 20 34.375C 27 34.375 33 18.75 40 18.75C 47 18.75 53 34.375 60 34.375C 67 34.375 73 36.875 80 36.875C 87 36.875 93 3.125 100 3.125C 107 3.125 113 35.3125 120 35.3125C 127 35.3125 133 26.5625 140 26.5625C 147 26.5625 153 46.875 160 46.875C 167 46.875 173 18.75 180 18.75C 187 18.75 193 45.625 200 45.625" pathFrom="M -1 50L -1 50L 20 50L 40 50L 60 50L 80 50L 100 50L 120 50L 140 50L 160 50L 180 50L 200 50"></path><g id="SvgjsG1912" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1939" r="0" cx="0" cy="0" class="apexcharts-marker wset88bju no-pointer-events" stroke="#ffffff" fill="#5c31d6" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1913" class="apexcharts-datalabels" data:realIndex="0"></g></g><line id="SvgjsLine1934" x1="0" y1="0" x2="200" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1935" x1="0" y1="0" x2="200" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1936" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1937" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1938" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1906" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1923" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1904" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 25px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(92, 49, 214);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                                            <div class="resize-triggers"><div class="expand-trigger"><div style="width: 201px; height: 51px;"></div></div><div class="contract-trigger"></div></div></div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="tab">
-                                <h4>Choose Number of Days:</h4>
-                                <div class="row items-push">
-                                    <div class="col-md-3">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="7" id="7days" name="days">
-                                            <label class="form-check-label" for="7days">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                  <span class="d-block fw-bold py-3 m-3 bg-body-light rounded">7 Days</span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="30" id="30days" name="days">
-                                            <label class="form-check-label" for="30days">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                  <span class="d-block fw-bold py-3 m-3 bg-body-light rounded">30 Days</span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="60" id="60days" name="days">
-                                            <label class="form-check-label" for="60days">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                  <span class="d-block fw-bold py-3 m-3 bg-body-light rounded">60 Days</span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="90" id="90days" name="days">
-                                            <label class="form-check-label" for="90days">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                  <span class="d-block fw-bold py-3 m-3 bg-body-light rounded">90 Days</span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="tab">
-                                <div class="row items-push">
-                                    <h4>What's Your Monthly Budget:</h4>
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="500" id="high" name="budget">
-                                            <label class="form-check-label" for="high">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                <span class="fs-4 fw-semibold text-primary"><small class="badge bg-success">Mid</small></span>
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded">$500/day</span>
-                                                </span>
-                                                <small><i class="fa fa-dot-circle text-primary"></i>Big business with multiple teams</small>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="150" id="mid" name="budget">
-                                            <label class="form-check-label" for="mid">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                <span class="fs-4 fw-semibold text-primary"><small class="badge bg-warning">Mid</small></span>
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded">$150/day</span>
-                                                </span>
-                                                <small><i class="fa fa-dot-circle text-primary"></i>Startup</small>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-check form-block">
-                                            <input type="radio" required="" class="form-check-input" value="25" id="low" name="budget">
-                                            <label class="form-check-label" for="low">
-                                                <span class="d-block fw-normal text-center my-3">
-                                                <span class="fs-4 fw-semibold text-primary"><small class="badge bg-danger">Low</small></span>
-                                                  <span class="d-block fs-2 fw-light py-3 m-3 bg-body-light rounded">$25/day</span>
-                                                </span>
-                                                <small><i class="fa fa-dot-circle text-primary"></i>Freelance Business</small>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab">
-                                <div class="row items-push">
-                                    <h4>Who are your target audience</h4>
-                                    <div class="col-md-2">
-                                        <h4>Age</h4>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-">
-                                            <select name="start_age" id="" class="form-select">
-                                                <option value="16">16</option>
-                                                <option value="above">Above 16</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-">
-                                            <select name="end_age" id="" class="form-select">
-                                                <option value="40">40</option>
-                                                <option value="below">Below 40</option>
-                                                <option value="above">Above 40</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row items-push">
-                                    <div class="col-md-2">
-                                        <h4>Gender</h4>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form">
-                                            <select name="gender" id="" class="form-select">
-                                                <option value="All">All</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row items-push">
-                                    <div class="col-md-2">
-                                        <h4>Ad Media</h4>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="form">
-                                            <input type="file" name="media" class="form-control-file">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="tab">
-
-                            </div>
-                            <div style="overflow:auto;">
-                                <div style="float:right;">
-                                    <button type="button" class="btn btn-info" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                                </div>
-                            </div>
-                            <!-- Circles which indicates the steps of the form: -->
-                            <div style="text-align:center;margin-top:40px;">
-                                <span class="step"></span>
-                                <span class="step"></span>
-                                <span class="step"></span>
-                                <span class="step"></span>
-                            </div>
-                        </form>
-                        <!-- END Form Inline - Default Style -->
-
-                        <br><br>
                     </div>
 
                 </div>
-                <!-- END Inline Layout -->
-
-
             </div>
         </div>
-    </div>
+        <!-- End Student Progress Area -->
 
+        <!-- Start Footer Area -->
+       @include('dashboard.layout.footer')
+        <!-- End Footer Area -->
 
-    <script>
-        var currentTab = 0; // Current tab is set to be the first tab (0)
-        showTab(currentTab); // Display the current tab
+    </main>
 
-        function showTab(n) {
-            // This function will display the specified tab of the form...
-            var x = document.getElementsByClassName("tab");
-            x[n].style.display = "block";
-            //... and fix the Previous/Next buttons:
-            if (n == 0) {
-                document.getElementById("prevBtn").style.display = "none";
-            } else {
-                document.getElementById("prevBtn").style.display = "inline";
-            }
-            if (n == (x.length - 1)) {
-                document.getElementById("nextBtn").innerHTML = "Submit";
-                document.getElementById("nextBtn").type = "submit";
-            } else {
-                document.getElementById("nextBtn").innerHTML = "Next";
-            }
-            //... and run a function that will display the correct step indicator:
-            fixStepIndicator(n)
-        }
-
-        function nextPrev(n) {
-            // This function will figure out which tab to display
-            var x = document.getElementsByClassName("tab");
-            // Exit the function if any field in the current tab is invalid:
-            if (n == 1 && !validateForm()) return false;
-            // Hide the current tab:
-            x[currentTab].style.display = "none";
-            // Increase or decrease the current tab by 1:
-            currentTab = currentTab + n;
-            // if you have reached the end of the form...
-            if (currentTab >= x.length) {
-                // ... the form gets submitted:
-                document.getElementById("regForm").submit();
-                return false;
-            }
-            // Otherwise, display the correct tab:
-            showTab(currentTab);
-        }
-
-        function validateForm() {
-            // This function deals with validation of the form fields
-            var x, y, i, valid = true;
-            x = document.getElementsByClassName("tab");
-            y = x[currentTab].getElementsByTagName("input");
-            // A loop that checks every input field in the current tab:
-            for (i = 0; i < y.length; i++) {
-                // If a field is empty...
-                if (y[i].value == "") {
-                    // add an "invalid" class to the field:
-                    y[i].className += " invalid";
-                    // and set the current valid status to false
-                    valid = false;
-                }
-            }
-            // If the valid status is true, mark the step as finished and valid:
-            if (valid) {
-                document.getElementsByClassName("step")[currentTab].className += " finish";
-            }
-            return valid; // return the valid status
-        }
-
-        function fixStepIndicator(n) {
-            // This function removes the "active" class of all steps...
-            var i, x = document.getElementsByClassName("step");
-            for (i = 0; i < x.length; i++) {
-                x[i].className = x[i].className.replace(" active", "");
-            }
-            //... and adds the "active" class on the current step:
-            x[n].className += " active";
-        }
-    </script>
 @endsection
