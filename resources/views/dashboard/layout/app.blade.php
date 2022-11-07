@@ -1,294 +1,285 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Link Of CSS -->
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/remixicon.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/boxicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/iconsax.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/metismenu.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/simplebar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/calendar.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/sweetalert2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jbox.all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/editor.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/loaders.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/sidebar-menu.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+    <!-- Title -->
     <title>Trocode</title>
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% {  transform: rotate(359deg); }
+        }
+        #circle {
+            animation: spin 2s linear infinite;
 
-    <meta name="description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
-    <meta name="author" content="pixelcave">
-    <meta name="robots" content="noindex, nofollow">
-
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework">
-    <meta property="og:site_name" content="Trocode">
-    <meta property="og:description" content="Trocode - Bootstrap 5 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-
-    <!-- Stylesheets -->
-    <!-- Page JS Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('client/assets/js/plugins/highlightjs/styles/atom-one-dark.css') }}">
-    <link rel="stylesheet" href="{{ asset('client/assets/js/plugins/magnific-popup/magnific-popup.css') }}">
-
-    <!-- Fonts and Dashmix framework -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" id="css-main" href="{{ asset('client/assets/css/dashmix.min.css') }}">
-
-    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
-    <link rel="stylesheet" id="css-theme" href="{{ asset('client/assets/css/themes/xmodern.min.css') }}">
-    <!-- END Stylesheets -->
+        }
+    </style>
 </head>
-<body>
-<!-- Page Container -->
 
-<div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed page-header-dark main-content-boxed">
-    <!-- Side Overlay-->
-    <aside id="side-overlay">
-        <!-- Side Header -->
-        <div class="bg-primary">
-            <div class="content-header">
-                <div class="fs-lg fw-light text-white">
-                    <i class="fa fa-users me-1"></i> People
-                </div>
-
-                <!-- Close Side Overlay -->
-                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                <a class="ms-auto text-white" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_close">
-                    <i class="fa fa-times-circle"></i>
-                </a>
-                <!-- END Close Side Overlay -->
-            </div>
-        </div>
-        <!-- END Side Header -->
-
-    </aside>
-    <!-- END Side Overlay -->
-
-    <!-- Sidebar -->
-    <!--
-      Sidebar Mini Mode - Display Helper classes
-
-      Adding 'smini-hide' class to an element will make it invisible (opacity: 0) when the sidebar is in mini mode
-      Adding 'smini-show' class to an element will make it visible (opacity: 1) when the sidebar is in mini mode
-        If you would like to disable the transition animation, make sure to also add the 'no-transition' class to your element
-
-      Adding 'smini-hidden' to an element will hide it when the sidebar is in mini mode
-      Adding 'smini-visible' to an element will show it (display: inline-block) only when the sidebar is in mini mode
-      Adding 'smini-visible-block' to an element will show it (display: block) only when the sidebar is in mini mode
-    -->
-    <nav id="sidebar" aria-label="Main Navigation">
-        <!-- Side Header (mini Sidebar mode) -->
-        <div class="smini-visible-block">
-            <div class="content-header bg-primary">
-                <!-- Logo -->
-                <a class="fw-semibold text-white tracking-wide" href="index.html">
-                    D<span class="opacity-75">x</span>
-                </a>
-                <!-- END Logo -->
-            </div>
-        </div>
-        <!-- END Side Header (mini Sidebar mode) -->
-
-        <!-- Side Header (normal Sidebar mode) -->
-        <div class="smini-hidden">
-            <div class="content-header justify-content-lg-center bg-primary">
-                <!-- Logo -->
-                <a class="fw-semibold text-white tracking-wide" href="index.html">
-                    Tro<span class="opacity-75">code</span>
-{{--                    <span class="fw-normal">Social</span>--}}
-                </a>
-                <!-- END Logo -->
-
-                <!-- Options -->
-                <div class="d-lg-none">
-                    <!-- Close Sidebar, Visible only on mobile screens -->
-                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                    <button type="button" class="btn btn-sm btn-alt-secondary d-lg-none" data-toggle="layout" data-action="sidebar_close">
-                        <i class="fa fa-times-circle"></i>
-                    </button>
-                    <!-- END Close Sidebar -->
-                </div>
-                <!-- END Options -->
-            </div>
-        </div>
-        <!-- END Side Header (normal Sidebar mode) -->
-
-        <!-- Sidebar Scrolling -->
-        <div class="js-sidebar-scroll">
-            <!-- User Info -->
-            <div class="smini-hidden">
-                <div class="content-side content-side-full bg-black-10 d-flex align-items-center">
-                    <a class="img-link d-inline-block" href="javascript:void(0)">
-                        <img class="img-avatar img-avatar48 img-avatar-thumb" src="{{ asset(auth()->user()->avatar) }}" alt="">
-                    </a>
-                    <div class="ms-3">
-                        <a class="fw-semibold text-dual" href="javascript:void(0)">{{ auth()->user()->name }}</a>
-                        <div class="fs-sm text-dual">Bal <span style="font-weight: bolder" class="text text-success">${{ auth()->user()->balance ? : "0.00" }}</span></div>
-                    </div>
-                </div>
-            </div>
-            <!-- END User Info -->
-
-            <!-- Side Navigation -->
-            <div class="content-side">
-                <ul class="nav-main">
-                    <li class="nav-main-item">
-                        <a class="nav-main-link active" href="{{ route('user.dashboard') }}">
-                            <i class="nav-main-link-icon fa fa-user-circle"></i>
-                            <span class="nav-main-link-name">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="{{ route('user.campaigns') }}">
-                            <i class="nav-main-link-icon fa fa-bell"></i>
-                            <span class="nav-main-link-name">Campaigns</span>
-{{--                            <span class="nav-main-link-badge badge rounded-pill bg-info">6</span>--}}
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="{{ route('user.deposits') }}">
-                            <i class="nav-main-link-icon fa fa-money-bill"></i>
-                            <span class="nav-main-link-name">Add Fund</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-heading">Profile</li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon fa fa-tools"></i>
-                            <span class="nav-main-link-name">Setting</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="db_social.html">
-                            <i class="nav-main-link-icon fa fa-user-circle"></i>
-                            <span class="nav-main-link-name">My Profile</span>
-                        </a>
-                    </li>
-
-
-                    <li class="nav-main-heading">Homepage</li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="be_pages_dashboard_all.html">
-                            <i class="nav-main-link-icon fa fa-arrow-left"></i>
-                            <span class="nav-main-link-name">Go Back</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- END Side Navigation -->
-        </div>
-        <!-- END Sidebar Scrolling -->
-    </nav>
-    <!-- END Sidebar -->
-
-    <!-- Header -->
-    <header id="page-header">
-        <!-- Header Content -->
-        <div class="content-header">
-            <!-- Left Section -->
-            <div>
-                <!-- Toggle Sidebar -->
-                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                <button type="button" class="btn btn-alt-secondary" data-toggle="layout" data-action="sidebar_toggle">
-                    <i class="fa fa-fw fa-bars"></i>
-                </button>
-                <!-- END Toggle Sidebar -->
-
-
-            </div>
-            <!-- END Left Section -->
-
-            <!-- Right Section -->
-            <div class="dropdown d-inline-block">
-                <button type="button" class="btn btn-alt-secondary dropdown-toggle" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="d-none d-sm-inline me-1">{{ auth()->user()->name }}</span>
-                    <span class="badge rounded-pill bg-success">PRO</span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-user-dropdown" style="">
-                    <div class="rounded-top fw-semibold text-white text-center bg-image" style="background-image: url('client/assets/media/photos/photo16.jpg');">
-                        <div class="p-3">
-                            <img class="img-avatar img-avatar-thumb" src="{{ asset(auth()->user()->avatar) }}" alt="">
-                        </div>
-                        <div class="p-3 bg-primary-dark-op">
-                            <a class="text-white fw-semibold" href="">{{ auth()->user()->name }}</a>
-                            <div class="text-white-75">{{ auth()->user()->email }}</div>
-                        </div>
-                    </div>
-                    <div class="p-2">
-                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                            Profile
-                            <i class="fa fa-fw fa-user-circle opacity-50 ms-1"></i>
-                        </a>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="javascript:void(0)">
-                            Top Up
-                            <i class="fab fa-fw fa-paypal opacity-50 ms-1"></i>
-                        </a>
-                        <div role="separator" class="dropdown-divider"></div>
-                        <a class="dropdown-item d-flex justify-content-between align-items-center" href="op_auth_signin.html">
-                            Log Out
-                            <i class="fa fa-fw fa-sign-out-alt text-danger ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- END Right Section -->
-        </div>
-        <!-- END Header Content -->
-
-
-
-        <!-- Header Loader -->
-        <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
-        <div id="page-header-loader" class="overlay-header bg-primary-darker">
-            <div class="content-header">
-                <div class="w-100 text-center">
-                    <i class="fa fa-fw fa-2x fa-sun fa-spin text-white"></i>
-                </div>
-            </div>
-        </div>
-        <!-- END Header Loader -->
-    </header>
-    <!-- END Header -->
-
-    <!-- Main Container -->
-    <main id="main-container">
-
-
-        <!-- Page Content -->
-        @yield('content')
-        <!-- END Page Content -->
-    </main>
-    <!-- END Main Container -->
-
-    <!-- Footer -->
-    <footer id="page-footer" class="bg-body-light">
-        <div class="content py-0">
-            <div class="row fs-sm">
-                <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-end">
-                    Crafted with <i class="fa fa-heart text-danger"></i> by <a class="fw-semibold" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
-                </div>
-                <div class="col-sm-6 order-sm-1 text-center text-sm-start">
-                    <a class="fw-semibold" href="https://1.envato.market/r6y" target="_blank">Trocode 5.1</a> &copy; <span data-toggle="year-copy"></span>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- END Footer -->
+<body class="body-bg-f8faff">
+<!-- Start Preloader Area -->
+<div class="preloader">
+    <h2 style="font-weight: bolder; color: #2883dd">Trocode</h2>
+    <img id="circle" height="50" width="50" src="{{ asset('img/spin.svg') }}" alt="main-logo">
 </div>
-<!-- END Page Container -->
+<!-- End Preloader Area -->
 
-<!--
-  Dashmix JS
+<!-- Start All Section Area -->
+<div class="all-section-area">
+    <!-- Start Header Area -->
+    <div class="header-area header-style-two">
+        <div class="container-fluid">
+            <div class="header-content-wrapper">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                    <div class="header-left-content d-flex">
+                        <div class="responsive-burger-menu d-block d-lg-none">
+                            <span class="top-bar"></span>
+                            <span class="middle-bar"></span>
+                            <span class="bottom-bar"></span>
+                        </div>
 
-  Core libraries and functionality
-  webpack is putting everything together at assets/_js/main/app.js
--->
-<script src="{{ asset('client/assets/js/dashmix.app.min.js') }}"></script>
+                        <div class="main-logo">
+                            <a href="{{ route('index') }}">
+                                <h2 style="font-weight: bolder; color: #2883dd">Trocode</h2>
+{{--                                <img src="{{ asset('assets/images/main-logo.svg') }}" alt="main-logo">--}}
+                            </a>
+                        </div>
 
-<!-- jQuery (required for Magnific Popup Plugin) -->
-<script src="{{ asset('client/assets/js/lib/jquery.min.js') }}"></script>
 
-<!-- Page JS Plugins -->
-<script src="{{ asset('client/assets/js/plugins/highlightjs/highlight.pack.min.js') }}"></script>
-<script src="{{ asset('client/assets/js/plugins/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+                        <div class="option-item for-mobile-devices d-block d-lg-none">
+                            <i class="search-btn ri-search-line"></i>
+                            <i class="close-btn ri-close-line"></i>
 
-<!-- Page JS Helpers (Highlight.js + Magnific Popup Plugins) -->
-<script>Dashmix.helpersOnLoad(['js-highlightjs', 'jq-magnific-popup']);</script>
+                            <div class="search-overlay search-popup">
+                                <div class='search-box'>
+                                    <form class="search-form">
+                                        <input class="search-input" name="search" placeholder="Search" type="text">
+
+                                        <button class="search-button" type="submit">
+                                            <i class="ri-search-line"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-right-content d-flex align-items-center">
+                        <div class="header-right-option">
+                            <a href="#" class="dropdown-item fullscreen-btn" id="fullscreen-button">
+                                <img src="{{ asset('assets/images/icon/maximize.svg') }}" alt="maximize">
+                            </a>
+                        </div>
+
+
+                        <div class="header-right-option dropdown profile-nav-item pt-0 pb-0">
+                            <a class="dropdown-item dropdown-toggle avatar d-flex align-items-center" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="{{ asset('img/avatar.svg') }}" alt="avatar">
+                                <div class="d-none d-lg-block d-md-block">
+                                    <h3>{{ auth()->user()->name }}</h3>
+{{--                                    <span></span>--}}
+                                </div>
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <div class="dropdown-header d-flex flex-column align-items-center">
+                                    <div class="figure mb-3">
+                                        <img src="{{ asset('img/avatar.svg') }}" class="rounded-circle" alt="avatar">
+                                    </div>
+
+                                    <div class="info text-center">
+                                        <span class="name">{{ auth()->user()->name }}</span>
+
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-wrap">
+                                    <ul class="profile-nav p-0 pt-3">
+                                        <li class="nav-item">
+                                            <a href="profile.html" class="nav-link">
+                                                <i class="ri-user-line"></i>
+                                                <span>Profile</span>
+                                            </a>
+                                        </li>
+
+
+                                        <li class="nav-item">
+                                            <a href="edit-profile.html" class="nav-link">
+                                                <i class="ri-settings-5-line"></i>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown-footer">
+                                    <ul class="profile-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                <i class="ri-login-circle-line"></i>
+                                                {{ __('Logout') }}
+                                            </a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                @csrf
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Area -->
+
+    <!-- Start Sidebar Area -->
+    <nav class="side-menu-area">
+        <nav class="sidebar-nav" data-simplebar>
+            <ul id="sidebar-menu" class="sidebar-menu">
+                <li class="mm-active">
+                    <a href="#" class=" box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/element.svg') }}" alt="element">
+                        </div>
+                        <span class="menu-title">Dashboards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html" class="box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/diagram.svg') }}" alt="messages">
+                        </div>
+                        <span class="menu-title">Campaigns</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{ route('user.deposits') }}" class="box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/calendar.svg') }}" alt="calendar">
+                        </div>
+                        <span class="menu-title">Add Fund</span>
+                    </a>
+                </li>
+                <hr>
+{{--                <li class="nav-main-heading">Profile</li>--}}
+
+                <li>
+                    <a href="chat.html" class="box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/messages.svg') }}" alt="messages">
+                        </div>
+                        <span class="menu-title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="chat.html" class="box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/profile-2user.svg') }}" alt="profile-2user">
+                        </div>
+                        <span class="menu-title">My Profile</span>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </nav>
+    <!-- End Sidebar Area -->
+
+    <!-- Start Main Content Area -->
+   @yield('content')
+    <!-- End Main Content Area -->
+</div>
+<!-- End All Section Area -->
+
+<!-- Start Template Sidebar Area -->
+<div class="template-sidebar-area">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <a href="index.html">
+                <img src="assets/images/main-logo.svg" alt="main-logo">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li>
+                    <a class="default-btn btn active" target="_blank" href="#">
+                        Buy Now
+                    </a>
+                </li>
+                <li>
+                    <a class="default-btn btn" target="_blank" href="https://themeforest.net/user/envytheme/portfolio">
+                        Our Portfolio
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Template Sidebar Area -->
+
+<!-- Start Go Top Area -->
+<div class="go-top">
+    <i class="ri-arrow-up-s-fill"></i>
+    <i class="ri-arrow-up-s-fill"></i>
+</div>
+<!-- End Go Top Area -->
+
+<!-- Jquery Min JS -->
+<script data-cfasync="false" src="https://templates.envytheme.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/js/metismenu.min.js') }}"></script>
+<script src="{{ asset('assets/js/simplebar.min.js') }}"></script>
+<script src="{{ asset('assets/js/apexcharts/apexcharts.min.js') }}"></script>
+<script src="{{ asset('assets/js/apexcharts/hr-management.js') }}"></script>
+<script src="{{ asset('assets/js/geticons.js') }}"></script>
+<script src="{{ asset('assets/js/calendar.js') }}"></script>
+<script src="{{ asset('assets/js/calendar.min.js') }}"></script>
+<script src="{{ asset('assets/js/editor.js') }}"></script>
+<script src="{{ asset('assets/js/form-validator.min.js') }}"></script>
+<script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
+<script src="{{ asset('assets/js/ajaxchimp.min.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 </body>
+
+<!-- Mirrored from templates.envytheme.com/joxi/default/hr-management.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Nov 2022 03:23:29 GMT -->
 </html>
+
+
