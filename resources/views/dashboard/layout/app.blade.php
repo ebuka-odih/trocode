@@ -189,7 +189,7 @@
                 <li>
                     <a href="{{ route('user.deposits') }}" class="box-style d-flex align-items-center">
                         <div class="icon">
-                            <img src="{{ asset('assets/images/icon/calendar.svg') }}" alt="calendar">
+                            <img src="{{ asset('assets/images/icon/fatrows.svg') }}" alt="calendar">
                         </div>
                         <span class="menu-title">Add Fund</span>
                     </a>
@@ -200,7 +200,7 @@
                 <li>
                     <a href="chat.html" class="box-style d-flex align-items-center">
                         <div class="icon">
-                            <img src="{{ asset('assets/images/icon/messages.svg') }}" alt="messages">
+                            <img src="{{ asset('assets/images/icon/setting.svg') }}" alt="messages">
                         </div>
                         <span class="menu-title">Settings</span>
                     </a>
