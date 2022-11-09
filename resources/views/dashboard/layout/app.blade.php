@@ -170,7 +170,7 @@
         <nav class="sidebar-nav" data-simplebar>
             <ul id="sidebar-menu" class="sidebar-menu">
                 <li class="mm-active">
-                    <a href="#" class=" box-style d-flex align-items-center">
+                    <a href="{{ route('user.dashboard') }}" class=" box-style d-flex align-items-center">
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/element.svg') }}" alt="element">
                         </div>
