@@ -75,7 +75,7 @@
 
 
                         <div class="option-item for-mobile-devices d-block d-lg-none">
-                          
+
                             <i class="close-btn ri-close-line"></i>
 
                             <div class="search-overlay search-popup">
@@ -178,7 +178,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="chat.html" class="box-style d-flex align-items-center">
+                    <a href="{{ route('user.campaigns') }}" class="box-style d-flex align-items-center">
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/diagram.svg') }}" alt="messages">
                         </div>

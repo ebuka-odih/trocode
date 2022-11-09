@@ -8,65 +8,33 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Top Up
+                        </button>
 
 
                         <div class="card-box-style">
                             <div class="others-title">
-                                <h3>Table Variants</h3>
+                                <h3>Funding History</h3>
                             </div>
 
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">#ID</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Currency</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr class="table-primary">
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr class="table-secondary">
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr class="table-success">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                <tr class="table-danger">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                <tr class="table-warning">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
                                 <tr class="table-info">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <th >#3</th>
+                                    <td >12/4/22</td>
+                                    <td>$300</td>
+                                    <td>NGN</td>
                                 </tr>
-                                <tr class="table-light">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                                <tr class="table-dark">
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -78,9 +46,38 @@
         <!-- End Student Progress Area -->
 
         <!-- Start Footer Area -->
-       @include('dashboard.layout.footer')
+        @include('dashboard.layout.footer')
         <!-- End Footer Area -->
 
     </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Enter Amount to Fund</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="{{ route('user.pay') }}" method="POST" target="_blank" >
+                    @csrf
+                    <div class="modal-body">
+                        <div class="card-box-style">
+
+                            <div class="row g-3">
+                                <div class="col-sm-12">
+                                    <input type="number" name="amount" class="form-control"  aria-label="City">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Proceed</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
 @endsection
