@@ -23,7 +23,6 @@ class CampaignController extends Controller
 
     public function getData(Request $request)
     {
-//        return $request;
         $request->validate([
            'objective' => 'required',
            'days' => 'required',

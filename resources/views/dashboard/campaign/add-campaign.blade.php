@@ -119,85 +119,111 @@
             color: #999;
         }
     </style>
-{{--    <style>--}}
+    <style>
 
-{{--        #regForm {--}}
-{{--            background-color: #ffffff;--}}
-{{--            margin: 100px auto;--}}
-{{--            font-family: Raleway;--}}
-{{--            /*padding: 40px;*/--}}
-{{--            /*width: 70%;*/--}}
-{{--            min-width: 300px;--}}
-{{--        }--}}
+        #regForm {
+            background-color: #ffffff;
+            margin: 100px auto;
+            font-family: Raleway;
+            /*padding: 40px;*/
+            /*width: 70%;*/
+            min-width: 300px;
+        }
 
-{{--        h1 {--}}
-{{--            text-align: center;--}}
-{{--        }--}}
+        h1 {
+            text-align: center;
+        }
 
-{{--        input {--}}
-{{--            padding: 10px;--}}
-{{--            width: 100%;--}}
-{{--            font-size: 17px;--}}
-{{--            font-family: Raleway;--}}
-{{--            border: 1px solid #aaaaaa;--}}
-{{--        }--}}
+        input {
+            padding: 10px;
+            width: 100%;
+            font-size: 17px;
+            font-family: Raleway;
+            border: 1px solid #aaaaaa;
+        }
 
-{{--        /* Mark input boxes that gets an error on validation: */--}}
-{{--        input.invalid {--}}
-{{--            background-color: #ffdddd;--}}
-{{--        }--}}
+        /* Mark input boxes that gets an error on validation: */
+        input.invalid {
+            background-color: #ffdddd;
+        }
 
-{{--        /* Hide all steps by default: */--}}
-{{--        .tab {--}}
-{{--            display: none;--}}
-{{--        }--}}
+        /* Hide all steps by default: */
+        .tab {
+            display: none;
+        }
 
-{{--        button {--}}
-{{--            background-color: #04AA6D;--}}
-{{--            color: #ffffff;--}}
-{{--            border: none;--}}
-{{--            padding: 10px 20px;--}}
-{{--            font-size: 17px;--}}
-{{--            font-family: Raleway;--}}
-{{--            cursor: pointer;--}}
-{{--        }--}}
+        button {
+            background-color: #04AA6D;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 17px;
+            font-family: Raleway;
+            cursor: pointer;
+        }
 
-{{--        button:hover {--}}
-{{--            opacity: 0.8;--}}
-{{--        }--}}
+        button:hover {
+            opacity: 0.8;
+        }
 
-{{--        #prevBtn {--}}
-{{--            background-color: #bbbbbb;--}}
-{{--        }--}}
+        #prevBtn {
+            background-color: #bbbbbb;
+        }
 
-{{--        /* Make circles that indicate the steps of the form: */--}}
-{{--        .step {--}}
-{{--            height: 15px;--}}
-{{--            width: 15px;--}}
-{{--            margin: 0 2px;--}}
-{{--            background-color: #bbbbbb;--}}
-{{--            border: none;--}}
-{{--            border-radius: 50%;--}}
-{{--            display: inline-block;--}}
-{{--            opacity: 0.5;--}}
-{{--        }--}}
+        /* Make circles that indicate the steps of the form: */
+        .step {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbbbbb;
+            border: none;
+            border-radius: 50%;
+            display: inline-block;
+            opacity: 0.5;
+        }
 
-{{--        .step.active {--}}
-{{--            opacity: 1;--}}
-{{--        }--}}
+        .step.active {
+            opacity: 1;
+        }
 
-{{--        /* Mark the steps that are finished and valid: */--}}
-{{--        .step.finish {--}}
-{{--            background-color: #04AA6D;--}}
-{{--        }--}}
-{{--        @media only screen and (max-width: 600px) {--}}
-{{--            .push {--}}
-{{--                padding-right: 20px;--}}
-{{--            }--}}
-{{--        }--}}
-{{--    </style>--}}
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+            background-color: #04AA6D;
+        }
+        @media only screen and (max-width: 600px) {
+            .push {
+                padding-right: 20px;
+            }
+        }
+    </style>
+
+    <style>
+        .custom-file-input::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+        .custom-file-input::before {
+            content: 'Select some files';
+            display: inline-block;
+            background: linear-gradient(top, #f9f9f9, #e3e3e3);
+            border: 1px solid #999;
+            border-radius: 3px;
+            padding: 5px 8px;
+            outline: none;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+            text-shadow: 1px 1px #fff;
+            font-weight: 700;
+            font-size: 10pt;
+        }
+        .custom-file-input:hover::before {
+            border-color: black;
+        }
+        .custom-file-input:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+        }
+    </style>
     <main class="main-content-wrap style-two">
-
 
         <!-- Start Student Progress Area -->
         <div class="student-progress-area">
@@ -207,7 +233,18 @@
                     <div class="col-lg-10 col-md-12 offset-lg-1">
 
                         <div style="padding: 0px" class="device-content website card-box-style">
-                            <form id="regForm" action="">
+                            <form id="regForm" action="{{ route('user.getData') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                                <input type="hidden" value="{{ $ad->id }}" name="ad_id">
                                 <div class="tab">
                                     <h5 style="font-size: 26px;" class="text-center fw-light">Select a Campaign Objective:</h5>
                                     <div class="justify-content-center">
@@ -353,55 +390,43 @@
                                     <h5 style="font-size: 26px;" class="text-center fw-light">Who's Your Target Audience?:</h5>
                                     <div class="card-box-style">
                                         <div class="row mb-3">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="inputEmail3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                                            <div class="col-sm-5">
+                                                <select name="start_age" id="" class="form-control">
+                                                    <option value="16">16</option>
+                                                    <option value="above">Above 16</option>
+                                                </select>
+                                            </div>
+{{--                                            <div style="padding: 5px" class="col-sm-2">--}}
+{{--                                               <i class="fa fa-arrow-right"></i>--}}
+{{--                                            </div>--}}
+                                            <div class="col-sm-5">
+                                                <select name="end_age" id="" class="form-control">
+                                                    <option value="40">40</option>
+                                                    <option value="below">Below 40</option>
+                                                    <option value="above">Above 40</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Gender</label>
                                             <div class="col-sm-10">
-                                                <input type="password" class="form-control" id="inputPassword3">
+                                                <select name="gender" id="" class="form-control">
+                                                    <option value="All">All</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
                                             </div>
                                         </div>
-                                        <fieldset class="row mb-3">
-                                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                                            <div class="col-sm-10">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                                                    <label class="form-check-label" for="gridRadios1">
-                                                        First radio
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                                    <label class="form-check-label" for="gridRadios2">
-                                                        Second radio
-                                                    </label>
-                                                </div>
-                                                <div class="form-check disabled">
-                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
-                                                    <label class="form-check-label" for="gridRadios3">
-                                                        Third disabled radio
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </fieldset>
                                         <div class="row mb-3">
-                                                <div class="col-sm-10 offset-sm-2">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                        <label class="form-check-label" for="gridCheck1">
-                                                            Example checkbox
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                            <label for="media" class="col-sm-2 col-form-label">Media</label>
+                                            <div class="col-sm-10">
+                                                <input type="file" id="media" name="media" class="custom-file-input">
                                             </div>
+                                        </div>
 
                                     </div>
                                 </div>
-
-
 
                                 <div style="overflow:auto;">
                                     <div class="push" style="float: right; padding-right: 150px" >
