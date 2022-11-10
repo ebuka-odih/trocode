@@ -54,6 +54,7 @@
             padding: 28px 30px;
             transition: all ease 0.5s;
             margin-bottom: 20px;
+            border: 1px solid rgba(121, 121, 146, 0.64);
         }
 
         .frb input[type="radio"] ~ label:focus,
@@ -118,83 +119,83 @@
             color: #999;
         }
     </style>
-    <style>
+{{--    <style>--}}
 
-        #regForm {
-            background-color: #ffffff;
-            margin: 100px auto;
-            font-family: Raleway;
-            /*padding: 40px;*/
-            /*width: 70%;*/
-            min-width: 300px;
-        }
+{{--        #regForm {--}}
+{{--            background-color: #ffffff;--}}
+{{--            margin: 100px auto;--}}
+{{--            font-family: Raleway;--}}
+{{--            /*padding: 40px;*/--}}
+{{--            /*width: 70%;*/--}}
+{{--            min-width: 300px;--}}
+{{--        }--}}
 
-        h1 {
-            text-align: center;
-        }
+{{--        h1 {--}}
+{{--            text-align: center;--}}
+{{--        }--}}
 
-        input {
-            padding: 10px;
-            width: 100%;
-            font-size: 17px;
-            font-family: Raleway;
-            border: 1px solid #aaaaaa;
-        }
+{{--        input {--}}
+{{--            padding: 10px;--}}
+{{--            width: 100%;--}}
+{{--            font-size: 17px;--}}
+{{--            font-family: Raleway;--}}
+{{--            border: 1px solid #aaaaaa;--}}
+{{--        }--}}
 
-        /* Mark input boxes that gets an error on validation: */
-        input.invalid {
-            background-color: #ffdddd;
-        }
+{{--        /* Mark input boxes that gets an error on validation: */--}}
+{{--        input.invalid {--}}
+{{--            background-color: #ffdddd;--}}
+{{--        }--}}
 
-        /* Hide all steps by default: */
-        .tab {
-            display: none;
-        }
+{{--        /* Hide all steps by default: */--}}
+{{--        .tab {--}}
+{{--            display: none;--}}
+{{--        }--}}
 
-        button {
-            background-color: #04AA6D;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 17px;
-            font-family: Raleway;
-            cursor: pointer;
-        }
+{{--        button {--}}
+{{--            background-color: #04AA6D;--}}
+{{--            color: #ffffff;--}}
+{{--            border: none;--}}
+{{--            padding: 10px 20px;--}}
+{{--            font-size: 17px;--}}
+{{--            font-family: Raleway;--}}
+{{--            cursor: pointer;--}}
+{{--        }--}}
 
-        button:hover {
-            opacity: 0.8;
-        }
+{{--        button:hover {--}}
+{{--            opacity: 0.8;--}}
+{{--        }--}}
 
-        #prevBtn {
-            background-color: #bbbbbb;
-        }
+{{--        #prevBtn {--}}
+{{--            background-color: #bbbbbb;--}}
+{{--        }--}}
 
-        /* Make circles that indicate the steps of the form: */
-        .step {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbbbbb;
-            border: none;
-            border-radius: 50%;
-            display: inline-block;
-            opacity: 0.5;
-        }
+{{--        /* Make circles that indicate the steps of the form: */--}}
+{{--        .step {--}}
+{{--            height: 15px;--}}
+{{--            width: 15px;--}}
+{{--            margin: 0 2px;--}}
+{{--            background-color: #bbbbbb;--}}
+{{--            border: none;--}}
+{{--            border-radius: 50%;--}}
+{{--            display: inline-block;--}}
+{{--            opacity: 0.5;--}}
+{{--        }--}}
 
-        .step.active {
-            opacity: 1;
-        }
+{{--        .step.active {--}}
+{{--            opacity: 1;--}}
+{{--        }--}}
 
-        /* Mark the steps that are finished and valid: */
-        .step.finish {
-            background-color: #04AA6D;
-        }
-        @media only screen and (max-width: 600px) {
-            .push {
-                padding-right: 20px;
-            }
-        }
-    </style>
+{{--        /* Mark the steps that are finished and valid: */--}}
+{{--        .step.finish {--}}
+{{--            background-color: #04AA6D;--}}
+{{--        }--}}
+{{--        @media only screen and (max-width: 600px) {--}}
+{{--            .push {--}}
+{{--                padding-right: 20px;--}}
+{{--            }--}}
+{{--        }--}}
+{{--    </style>--}}
     <main class="main-content-wrap style-two">
 
 
@@ -301,9 +302,105 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                 </div>
+
+                                <div class="tab">
+                                    <h5 style="font-size: 26px;" class="text-center fw-light">What's Your Monthly Budget:</h5>
+                                    <div class="justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget1" name="budget" value="500">
+                                                        <label style="padding: 12px" for="budget1">
+                                                            <span class="badge bg-success">High</span>
+                                                            <span style="font-size: 30px" class="frb-title">$500/day</span><br>
+                                                            <span>Big business with multiple team </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget3" name="budget" value="150">
+                                                        <label style="padding: 12px" for="budget3">
+                                                            <span class="badge bg-warning">Mid</span>
+                                                            <span style="font-size: 30px" class="frb-title">$150/day</span><br>
+                                                            <span>Startup Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget2" name="budget" value="25">
+                                                        <label style="padding: 12px" for="budget2">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">$25/day</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab">
+                                    <h5 style="font-size: 26px;" class="text-center fw-light">Who's Your Target Audience?:</h5>
+                                    <div class="card-box-style">
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="inputEmail3">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10">
+                                                <input type="password" class="form-control" id="inputPassword3">
+                                            </div>
+                                        </div>
+                                        <fieldset class="row mb-3">
+                                            <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                                            <div class="col-sm-10">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                                                    <label class="form-check-label" for="gridRadios1">
+                                                        First radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                    <label class="form-check-label" for="gridRadios2">
+                                                        Second radio
+                                                    </label>
+                                                </div>
+                                                <div class="form-check disabled">
+                                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled="">
+                                                    <label class="form-check-label" for="gridRadios3">
+                                                        Third disabled radio
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="row mb-3">
+                                                <div class="col-sm-10 offset-sm-2">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label" for="gridCheck1">
+                                                            Example checkbox
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                    </div>
+                                </div>
+
 
 
                                 <div style="overflow:auto;">
