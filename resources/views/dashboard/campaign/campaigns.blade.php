@@ -22,15 +22,22 @@
                                     <th scope="col">Date</th>
                                     <th scope="col">Amount</th>
                                     <th scope="col">Currency</th>
+                                    <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
+                                @foreach($camp as $item)
                                 <tr class="table-info">
-                                    <th >#3</th>
-                                    <td >12/4/22</td>
-                                    <td>$300</td>
-                                    <td>NGN</td>
+                                    <th >#{{ $item->transId() }}</th>
+                                    <td >{{ date('d m, Y', strtotime($item->created_at)) }}</td>
+                                    <td>${{ $item->currency }}{{ $item->budget }}</td>
+                                    <td>{{ $item->currency ? : "NGN" }}</td>
+                                    <td>{!! $item->status() !!}</td>
+                                    <td>
+                                        <a href="{{ route('user.review',$item->id) }}" class="btn btn-primary">View</a>
+                                    </td>
                                 </tr>
+                                @endforeach
 
                                 </tbody>
                             </table>

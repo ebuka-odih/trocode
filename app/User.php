@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Events\RegisteredEvent;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -10,11 +11,10 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $dispatchesEvents = [
+        'created' => RegisteredEvent::class
+    ];
+
     protected $fillable = [
         'name', 'email', 'password',
     ];

@@ -8,9 +8,16 @@
             <div class="container-fluid">
                 <div class="row justify-content-center">
 
+                    <div class="container">
+                        @if(session()->has('lowbal'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Insufficient Balance:</strong>  {{ session()->get('lowbal') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
+                    </div>
+
                     <div class="blog-details-content card-box-style">
-
-
                         <div class="related-articles">
                             <div class="related-title d-flex justify-content-between">
                                 <h3 class="text text-center">Campaign Details</h3>
@@ -65,8 +72,20 @@
                                                 </tr>
                                             </table>
                                         </div>
-                                        <a href="" class="btn btn-warning">Edit</a>
-                                        <a href="" class="btn btn-primary">Proceed</a>
+                                        @if($camp->status == 1)
+                                       <div class="row">
+                                           <div class="col-md-6">
+                                               <a href="" class="btn btn-warning">Edit</a>
+                                           </div>
+                                           <div class="col-md-6">
+                                               <form action="{{ route('user.proceed') }}" method="POST">
+                                                   @csrf
+                                                   <input type="hidden" value="{{ $camp->id }}" name="camp_id">
+                                                   <button type="submit" class="btn btn-primary">Proceed</button>
+                                               </form>
+                                           </div>
+                                       </div>
+                                        @endif
                                     </div>
                                 </div>
 

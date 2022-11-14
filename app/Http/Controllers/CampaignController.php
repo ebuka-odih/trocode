@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Ads;
 use App\Campaign;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -73,6 +74,18 @@ class CampaignController extends Controller
     {
         $camp = Campaign::findOrFail($id);
         return view('dashboard.campaign.review', compact('camp'));
+    }
+    public function proceed(Request $request)
+    {
+        $id = $request->camp_id;
+        $camp = Campaign::findOrFail($id);
+        $pay = floatval($camp->days * $camp->budget);
+        if (Auth::user()->balance <  $pay){
+            $bal = $pay - Auth::user()->balance;
+            return redirect()->back()->with('lowbal', "Top up your account with $".$bal." to proceed");
+//            return view('dashboard.deposit.topup', compact('bal'));
+        }
+        return redirect()->route('user.campaigns');
     }
 
     public function edit($id)

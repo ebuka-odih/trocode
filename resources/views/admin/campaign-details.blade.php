@@ -31,6 +31,14 @@
                                     </h5>
                                 </div>
                                 <h4>Audience</h4>
+                                <div class="container">
+                                    @if(session()->has('declined'))
+                                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <strong>Insufficient Balance:</strong>  {{ session()->get('declined') }}
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    @endif
+                                </div>
                                 <div class="block-content p-0">
                                     <div class="row text-center m-0 border-top border-bottom bg-body-light">
                                         <table class="table" style="width:100%">

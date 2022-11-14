@@ -61,7 +61,7 @@
                     <form class="account-wrap" action="{{ route('register') }}" method="POST">
                         @csrf
                         <div class="form-group mb-24 icon">
-                            <input type="text" name="name" class="form-control" placeholder="Email">
+                            <input type="text" name="name" class="form-control" placeholder="Full Name">
                             <img src="{{ asset('assets/images/icon/user-square.svg') }}" alt="user-square">
                         </div>
                         <div class="form-group mb-24 icon">

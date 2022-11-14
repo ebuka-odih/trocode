@@ -124,7 +124,7 @@
                                 <div class="dropdown-wrap">
                                     <ul class="profile-nav p-0 pt-3">
                                         <li class="nav-item">
-                                            <a href="profile.html" class="nav-link">
+                                            <a href="{{ route('user.myprofile') }}" class="nav-link">
                                                 <i class="ri-user-line"></i>
                                                 <span>Profile</span>
                                             </a>
@@ -206,7 +206,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="chat.html" class="box-style d-flex align-items-center">
+                    <a href="{{ route('user.myprofile') }}" class="box-style d-flex align-items-center">
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/profile-2user.svg') }}" alt="profile-2user">
                         </div>

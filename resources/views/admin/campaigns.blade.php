@@ -14,6 +14,14 @@
 
             <div class="block block-rounded">
                 <div class="block-content">
+                    <div class="container">
+                        @if(session()->has('declined'))
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <strong>Insufficient Balance:</strong>  {{ session()->get('declined') }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        @endif
+                    </div>
 
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-vcenter">
