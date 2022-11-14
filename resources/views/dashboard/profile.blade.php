@@ -31,7 +31,7 @@
                                             <h4>{{ $user->name }}</h4>
                                             <span>Member Since: {{ date('M Y', strtotime($user->created_at)) }}</span>
                                             <div class="follow-email">
-                                                <a href="" class="btn btn-secondary">
+                                                <a href="{{ route('user.settings') }}" class="btn btn-secondary">
                                                    Edit Profile
                                                 </a>
                                             </div>

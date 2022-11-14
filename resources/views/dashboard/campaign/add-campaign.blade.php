@@ -268,11 +268,11 @@
                                                     <label style="padding: 12px" for="radio-button-2">
                                                         <div style="position: relative; ">
                                                             <img src="{{ asset('img/web.svg') }}" height="50" width="50" alt="">
-                                                            <span style="margin-left: 2px" class="frb-title">Increase Website Visit </span>
-                                                            <p class="description">Get more traffic from potential customers</p>
+                                                            <span style="margin-left: 2px" class="frb-title">Get Engagements </span>
+                                                            <p class="description">Reach a Broad Audience, Get more Followers, likes, and clout.</p>
                                                         </div>
                                                         <a style="background-color: #e2eef8"  class="btn text-primary">
-                                                            Website Traffic
+                                                            Engagements
                                                         </a>
                                                     </label>
                                                 </div>
