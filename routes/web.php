@@ -10,7 +10,8 @@ Route::view('/', 'pages.index')->name('index');
 Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 'user.'], function () {
     Route::view('demo', 'dashboard.demo');
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
-    Route::get('myprofile', 'UserController@profile')->name('myprofile');
+    Route::get('profile', 'UserController@profile')->name('myprofile');
+    Route::get('setting', 'UserController@setting')->name('settings');
 
     Route::get('fund', "FundController@deposits")->name('deposits');
     Route::post('pay', "FundController@pay")->name('pay');

@@ -197,20 +197,21 @@
                 <hr>
 {{--                <li class="nav-main-heading">Profile</li>--}}
 
-                <li>
-                    <a href="chat.html" class="box-style d-flex align-items-center">
-                        <div class="icon">
-                            <img src="{{ asset('assets/images/icon/setting.svg') }}" alt="messages">
-                        </div>
-                        <span class="menu-title">Settings</span>
-                    </a>
-                </li>
+
                 <li>
                     <a href="{{ route('user.myprofile') }}" class="box-style d-flex align-items-center">
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/profile-2user.svg') }}" alt="profile-2user">
                         </div>
                         <span class="menu-title">My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('user.settings') }}" class="box-style d-flex align-items-center">
+                        <div class="icon">
+                            <img src="{{ asset('assets/images/icon/setting.svg') }}" alt="messages">
+                        </div>
+                        <span class="menu-title">Settings</span>
                     </a>
                 </li>
 

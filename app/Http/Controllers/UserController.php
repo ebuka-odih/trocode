@@ -20,4 +20,10 @@ class UserController extends Controller
         $user = Auth::user();
         return view('dashboard.profile', compact('user', 'camp_num'));
     }
+
+    public function setting()
+    {
+        $user = Auth::user();
+        return view('dashboard.setting', compact('user'));
+    }
 }
