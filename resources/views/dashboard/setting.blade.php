@@ -23,7 +23,7 @@
                 <div class="profile-area">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-6">
                                 <div class="edit-profile-content card-box-style">
                                     <h3>Edit Profile Info</h3>
 
@@ -32,56 +32,54 @@
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label>Fullname</label>
-                                                    <input type="text" class="form-control" value="{{ old('name', optional($user)->name) }}">
+                                                    <input type="text" name="name" class="form-control" value="{{ old('name', optional($user)->name) }}">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group">
                                                     <label>Email</label>
-                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                    <input type="text" name="email" class="form-control" value="{{ old('email', optional($user)->email) }}">
                                                 </div>
                                             </div>
 
-
-
-
                                             <div class="save-update">
-                                                <button class="btn btn-primary me-2">Update</button>
-                                                <button class="btn btn-danger">Cancel</button>
+                                                <button type="submit" class="btn btn-primary me-2">Update</button>
+                                                <a href="{{ route('user.dashboard') }}" class="btn btn-danger">Cancel</a>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-6">
                                 <div class="edit-profile-content card-box-style">
                                     <h3>Change Password</h3>
-                                    <form>
+                                    <form action="{{ route('user.storePassword') }}" method="POST">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>Old Password</label>
-                                                    <input type="password" class="form-control" value="password">
+                                                    <input type="password" name="current_password" class="form-control" >
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>New Password</label>
-                                                    <input type="password" class="form-control" value="password">
+                                                    <input type="password" name="new_password" class="form-control" >
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group">
                                                     <label>Confirm Password</label>
-                                                    <input type="password" class="form-control" value="password">
+                                                    <input type="password" class="form-control" name="new_confirm_password">
                                                 </div>
                                             </div>
 
                                             <div class="save-update">
-                                                <button class="btn btn-primary me-2">Update</button>
-                                                <button class="btn btn-danger">Cancel</button>
+                                                <button type="submit" class="btn btn-primary me-2">Update</button>
+                                                <a href="{{ route('user.dashboard') }}" class="btn btn-danger">Cancel</a>
                                             </div>
                                         </div>
                                     </form>

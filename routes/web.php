@@ -12,6 +12,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
     Route::get('profile', 'UserController@profile')->name('myprofile');
     Route::get('setting', 'UserController@setting')->name('settings');
+    Route::post('update/password', 'UserController@storePassword')->name('storePassword');
 
     Route::get('fund', "FundController@deposits")->name('deposits');
     Route::post('pay', "FundController@pay")->name('pay');
