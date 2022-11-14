@@ -30,6 +30,11 @@ class UserController extends Controller
         return view('dashboard.setting', compact('user'));
     }
 
+    public function update_profile()
+    {
+
+    }
+
     public function storePassword(Request $request)
     {
         $request->validate([

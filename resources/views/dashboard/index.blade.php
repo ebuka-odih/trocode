@@ -58,13 +58,7 @@
         <!-- End Student Progress Area -->
 
         <!-- Start Footer Area -->
-        <div class="footer-area">
-            <div class="container-fluid">
-                <div class="footer-content">
-                    <p>© Joxi is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
-                </div>
-            </div>
-        </div>
+        @include('dashboard.layout.footer')
         <!-- End Footer Area -->
 
     </main>
