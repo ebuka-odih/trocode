@@ -37,37 +37,22 @@
 
                                 <div class="col-lg-6">
                                     <div class="row justify-content-center">
-                                        <div class="col-lg-4 col-sm-6">
+                                        <div class="col-lg-6 col-sm-6">
                                             <div class="profile-activity">
                                                 <i class="bx bx-repost"></i>
-                                                <h3>Posts</h3>
-                                                <h2>15,2015</h2>
+                                                <h3>Total Campaign</h3>
+                                                <h2>{{ $camp_num }}</h2>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="profile-activity">
-                                                <i class="bx bx-user"></i>
-                                                <h3>Followers</h3>
-                                                <h2>40,5487</h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <div class="profile-activity">
-                                                <i class="bx bx-wifi"></i>
-                                                <h3>Followers</h3>
-                                                <h2>50,1248</h2>
-                                            </div>
-                                        </div>
+{{--                                        <div class="col-lg-4 col-sm-6">--}}
+{{--                                            <div class="profile-activity">--}}
+{{--                                                <i class="bx bx-user"></i>--}}
+{{--                                                <h3>Followers</h3>--}}
+{{--                                                <h2>40,5487</h2>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
                                     </div>
 
-                                    <div class="text-end edit-massage">
-                                        <a href="edit-profile.html" class="btn btn-primary">
-                                            Edit Profile
-                                        </a>
-                                        <button class="btn btn-secondary">
-                                            Massage
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -75,13 +60,7 @@
                         <div class="profile-details card-box-style">
                             <ul class="list-inline profile-menu">
                                 <li>
-                                    <a href="profile.html" class="active">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="friends.html">Friends</a>
-                                </li>
-                                <li>
-                                    <a href="followers.html">Followers</a>
+                                    <a  class="active">Profile</a>
                                 </li>
                             </ul>
 
@@ -90,53 +69,31 @@
                                     <h3>Personal Information</h3>
                                 </div>
 
-                                <div class="col-lg-6">
+                                <div class="col-lg-10">
                                     <div class="personal-info">
                                         <ul class="list-inline">
                                             <li>
                                                 <span>Full Name :</span>
-                                                John Smilga
+                                                {{ $user->name }}
                                             </li>
                                             <li>
-                                                <span>Profession :</span>
-                                                Freelancer
+                                                <span>Email :</span>
+                                                {{ $user->email }}
                                             </li>
                                             <li>
-                                                <span>Location :</span>
-                                                6890 Blvd, The Bronx, NY 1058, USA
+                                                <span>Balance :</span>
+                                                ${{ $user->balance }}
                                             </li>
                                             <li>
-                                                <span>Languages :</span>
-                                                English, China
+                                                <span>Joined At :</span>
+                                                {{ date('d M, Y', strtotime($user->created_at)) }}
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <div class="personal-info">
-                                        <ul class="list-inline">
-                                            <li>
-                                                <span>Website :</span>
-                                                <a href="#" target="_blank">envytheme.com</a>
-                                            </li>
-                                            <li>
-                                                <span>Email :</span>
-                                                <a href="mailto:johnsmilga@hello.com">johnsmilga@hello.com</a>
-                                            </li>
-                                            <li>
-                                                <span>Phone :</span>
-                                                <a href="tel:+44-077-585-00-77">: +44 077 585 00 77</a>
-                                            </li>
-                                            <li>
-                                                <span>Others Link :</span>
-                                                <a href="#">Twitter, Facebook, Linkedin Etc</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>

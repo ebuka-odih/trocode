@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Ads;
+use App\Campaign;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,7 +16,8 @@ class UserController extends Controller
     }
     public function profile()
     {
+        $camp_num = Campaign::whereUserId(\auth()->id())->count();
         $user = Auth::user();
-        return view('dashboard.profile', compact('user'));
+        return view('dashboard.profile', compact('user', 'camp_num'));
     }
 }
