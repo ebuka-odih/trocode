@@ -268,6 +268,19 @@
                                                     <label style="padding: 12px" for="radio-button-2">
                                                         <div style="position: relative; ">
                                                             <img src="{{ asset('img/web.svg') }}" height="50" width="50" alt="">
+                                                            <span style="margin-left: 2px" class="frb-title">Increase Website Visit </span>
+                                                            <p class="description">Get more traffic from potential customers</p>
+                                                        </div>
+                                                        <a style="background-color: #e2eef8"  class="btn text-primary">
+                                                            Website Traffic
+                                                        </a>
+                                                    </label>
+                                                </div>
+                                                <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                    <input type="radio" id="radio-button-2" name="objective" value="Get Engagements">
+                                                    <label style="padding: 12px" for="radio-button-2">
+                                                        <div style="position: relative; ">
+                                                            <img src="{{ asset('img/star.png') }}" height="50" width="50" alt="">
                                                             <span style="margin-left: 2px" class="frb-title">Get Engagements </span>
                                                             <p class="description">Reach a Broad Audience, Get more Followers, likes, and clout.</p>
                                                         </div>
@@ -276,6 +289,7 @@
                                                         </a>
                                                     </label>
                                                 </div>
+
                                                 <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
                                                     <input type="radio" id="radio-button-3" name="objective" value="Increase App Install">
                                                     <label style="padding: 12px" for="radio-button-3">
