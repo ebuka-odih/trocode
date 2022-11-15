@@ -31,6 +31,7 @@ class CampaignController extends Controller
            'start_age' => 'required',
            'end_age' => 'required',
            'gender' => 'required',
+           'website' => 'nullable',
            'media' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
         ]);
         $id = $request->ad_id;
@@ -45,6 +46,7 @@ class CampaignController extends Controller
             $camp->user_id = Auth::id();
             $camp->objective = $request->objective;
             $camp->gender = $request->gender;
+            $camp->website = $request->website;
             $camp->days = $request->days;
             $camp->budget = $request->budget;
             $camp->start_age = $request->start_age;
@@ -60,6 +62,7 @@ class CampaignController extends Controller
         $camp->ads_id = $id;
         $camp->objective = $request->objective;
         $camp->gender = $request->gender;
+        $camp->website = $request->website;
         $camp->days = $request->days;
         $camp->budget = $request->budget;
         $camp->start_age = $request->start_age;

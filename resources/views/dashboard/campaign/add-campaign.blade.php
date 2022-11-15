@@ -385,6 +385,12 @@
                                                 <input type="file" id="media" name="media" class="custom-file-input">
                                             </div>
                                         </div>
+                                        <div class="row mb-3">
+                                            <label for="website" class="col-sm-2 col-form-label">Website</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="website" name="website" class="custom-file-input">
+                                            </div>
+                                        </div>
 
                                     </div>
                                 </div>
