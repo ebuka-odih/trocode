@@ -342,11 +342,52 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                  </div>
 
+                                <div class="tab">
+                                    <h5 style="font-size: 26px;" class="text-center fw-light">Who's Your Target Audience?:</h5>
+                                    <div class="card-box-style">
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+                                            <div class="col-sm-5">
+                                                <select name="start_age" id="" class="form-control">
+                                                    <option value="16">16</option>
+                                                    <option value="above">Above 16</option>
+                                                </select>
+                                            </div>
+{{--                                            <div style="padding: 5px" class="col-sm-2">--}}
+{{--                                               <i class="fa fa-arrow-right"></i>--}}
+{{--                                            </div>--}}
+                                            <div class="col-sm-5">
+                                                <select name="end_age" id="" class="form-control">
+                                                    <option value="40">40</option>
+                                                    <option value="below">Below 40</option>
+                                                    <option value="above">Above 40</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Gender</label>
+                                            <div class="col-sm-10">
+                                                <select name="gender" id="" class="form-control">
+                                                    <option value="All">All</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="media" class="col-sm-2 col-form-label">Media</label>
+                                            <div class="col-sm-10">
+                                                <input type="file" id="media" name="media" class="custom-file-input">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                                 <div class="tab">
                                     <h5 style="font-size: 26px;" class="text-center fw-light">What's Your Monthly Budget:</h5>
                                     <div class="justify-content-center">
@@ -389,47 +430,6 @@
                                             </div>
 
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="tab">
-                                    <h5 style="font-size: 26px;" class="text-center fw-light">Who's Your Target Audience?:</h5>
-                                    <div class="card-box-style">
-                                        <div class="row mb-3">
-                                            <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
-                                            <div class="col-sm-5">
-                                                <select name="start_age" id="" class="form-control">
-                                                    <option value="16">16</option>
-                                                    <option value="above">Above 16</option>
-                                                </select>
-                                            </div>
-{{--                                            <div style="padding: 5px" class="col-sm-2">--}}
-{{--                                               <i class="fa fa-arrow-right"></i>--}}
-{{--                                            </div>--}}
-                                            <div class="col-sm-5">
-                                                <select name="end_age" id="" class="form-control">
-                                                    <option value="40">40</option>
-                                                    <option value="below">Below 40</option>
-                                                    <option value="above">Above 40</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Gender</label>
-                                            <div class="col-sm-10">
-                                                <select name="gender" id="" class="form-control">
-                                                    <option value="All">All</option>
-                                                    <option value="Male">Male</option>
-                                                    <option value="Female">Female</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="media" class="col-sm-2 col-form-label">Media</label>
-                                            <div class="col-sm-10">
-                                                <input type="file" id="media" name="media" class="custom-file-input">
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
 
