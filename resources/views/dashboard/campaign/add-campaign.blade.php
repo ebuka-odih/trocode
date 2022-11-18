@@ -350,6 +350,24 @@
                                 <div class="tab">
                                     <h5 style="font-size: 26px;" class="text-center fw-light">Who's Your Target Audience?:</h5>
                                     <div class="card-box-style">
+
+
+                                        <div class="row mb-3">
+                                            <label for="website" class="col-sm-2 col-form-label">Regional</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" id="autocomplete" class="">
+
+                                                <p>We suggest adding a broad range of location to cover the largest surrounding areas,
+                                                including countries, countries/regions and towns/cities
+                                                </p>
+
+{{--                                                use the form name addresses--}}
+                                                <div id="addresses"></div>
+
+                                            </div>
+                                        </div>
+
+
                                         <div class="row mb-3">
                                             <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
                                             <div class="col-sm-5">
@@ -538,6 +556,62 @@
                 x[n].className += " active";
             }
         </script>
+
+
+
+
+        <script>
+
+
+            function initAutocomplete() {
+
+                var map = new google.maps.places.Autocomplete(
+                    (document.getElementById('autocomplete')),
+                    {types: ['geocode']}
+                );
+
+                google.maps.event.addListener(map, 'place_changed', function () {
+                    var place = map.getPlace();
+
+                    const latitude = place.geometry.location.lat();
+                    const longitude = place.geometry.location.lng();
+
+                    const latlng = new google.maps.LatLng(latitude, longitude);
+                    let geocoder = new google.maps.Geocoder();
+                    geocoder.geocode({'latLng': latlng}, function (results, status) {
+                        if (status === google.maps.GeocoderStatus.OK) {
+                            if (results[0]) {
+                                // console.log(results[0])
+                                var state = results[0].address_components[results[0].address_components.length - 3].long_name;
+                                var city = results[0].address_components[results[0].address_components.length - 5].long_name;
+                                var country = results[0].address_components[results[0].address_components.length - 2].long_name;
+
+                                var address = city + ', '+country;
+                                // console.log(country)
+                                document.getElementById('autocomplete').value = '';
+                                $("#addresses").append(
+                                    '<div class="form-check"> <input class="form-check-input" type="checkbox" name="addresses[]" checked value="'+address+'"/>' + '<label class="form-check-label" >' + address + ' </label></div>'
+                                );
+
+                            }
+                        }
+                    });
+                })
+
+
+                // map.addListener('click',function(event) {
+                //     console.log(event)
+                //     console.log(event)
+                //     document.getElementById('latitude').value = event.latLng.lat();
+                //     document.getElementById('longitude').value = event.latLng.lng();
+                // });
+            }
+
+        </script>
+
+
+
+
         <!-- Start Footer Area -->
        @include('dashboard.layout.footer')
         <!-- End Footer Area -->

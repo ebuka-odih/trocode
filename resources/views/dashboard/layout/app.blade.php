@@ -278,7 +278,14 @@
 <script src="{{ asset('assets/js/contact-form-script.js') }}"></script>
 <script src="{{ asset('assets/js/ajaxchimp.min.js') }}"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key={{ env('MAP_API_KEY') }}&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
 </body>
+
+
+
 
 <!-- Mirrored from templates.envytheme.com/joxi/default/hr-management.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Nov 2022 03:23:29 GMT -->
 </html>
