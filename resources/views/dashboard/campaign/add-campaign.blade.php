@@ -363,12 +363,11 @@
 
 
                                         <div class="row mb-3">
-                                            <label for="website" class="col-sm-2 col-form-label">Regional</label>
+                                            <label for="website" class="col-sm-2 col-form-label">Location</label>
                                             <div class="col-sm-10">
                                                 <input type="text" id="autocomplete" class="">
 
-                                                <p>We suggest adding a broad range of location to cover the largest surrounding areas,
-                                                including countries, countries/regions and towns/cities
+                                                <p>Use AI Smart Interface To Get the best and converting Locations for Your Ad
                                                 </p>
 
 {{--                                                use the form name addresses--}}
