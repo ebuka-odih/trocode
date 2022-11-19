@@ -366,8 +366,13 @@
                                             <label for="website" class="col-sm-2 col-form-label">Location</label>
                                             <div class="col-sm-10">
                                                 <input type="text" id="autocomplete" class="">
+                                                <ul>
+                                                  <li>
+                                                      Use AI Smart Interface To Get the best and converting Locations for Your Ad
+                                                  </li>
+                                                </ul>
 
-                                                <p>Use AI Smart Interface To Get the best and converting Locations for Your Ad
+                                                <p>
                                                 </p>
 
 {{--                                                use the form name addresses--}}
