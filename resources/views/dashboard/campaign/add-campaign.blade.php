@@ -414,6 +414,24 @@
                                             </div>
                                         </div>
                                         <div class="row mb-3">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Call to Action</label>
+                                            <div class="col-sm-10">
+                                                <select name="gender" id="" class="form-control">
+                                                    <option value="Learn More">Learn More </option>
+                                                    <option value="Shop Now">Shop Now</option>
+                                                    <option value="Sign Up">Sign Up</option>
+                                                    <option value="Apply Now">Apply Now </option>
+                                                    <option value="Contact Us">Contact Us</option>
+                                                    <option value="Book Now ">Book Now </option>
+                                                    <option value="Subscribe Now">Subscribe Now</option>
+                                                    <option value="Get Access">Get Access</option>
+                                                    <option value="Watch More">Watch More</option>
+                                                    <option value="Download">Download</option>
+                                                    <option value="Get Offer">Get Offer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
                                             <label for="website" class="col-sm-2 col-form-label">Website</label>
                                             <div class="col-sm-10">
                                                 <input type="text" id="website" name="website" class="custom-file-input">

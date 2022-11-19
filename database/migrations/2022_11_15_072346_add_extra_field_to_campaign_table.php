@@ -28,7 +28,9 @@ class AddExtraFieldToCampaignTable extends Migration
     public function down()
     {
         Schema::table('campaigns', function (Blueprint $table) {
-            //
+           $table->dropColumn('country');
+           $table->dropColumn('website');
+           $table->dropColumn('call_to_action');
         });
     }
 }

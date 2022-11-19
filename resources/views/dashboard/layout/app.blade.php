@@ -191,7 +191,7 @@
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/fatrows.svg') }}" alt="calendar">
                         </div>
-                        <span class="menu-title">Add Fund</span>
+                        <span class="menu-title">Add Funds</span>
                     </a>
                 </li>
                 <hr>
