@@ -16,6 +16,7 @@ class AddExtraFieldToCampaignTable extends Migration
         Schema::table('campaigns', function (Blueprint $table) {
             $table->string('country')->nullable();
             $table->string('website')->nullable();
+            $table->string('call_to_action')->nullable();
         });
     }
 

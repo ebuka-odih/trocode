@@ -342,6 +342,16 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="radio-button-6" name="days" value="30">
+                                                        <label style="padding: 12px" for="radio-button-6">
+                                                            <span class="frb-title">30 Days</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>

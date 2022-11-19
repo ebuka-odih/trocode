@@ -86,7 +86,7 @@
                                             </li>
                                             <li>
                                                 <span>Balance :</span>
-                                                ${{ $user->balance }}
+                                                NGN @convert($user->balance)
                                             </li>
                                             <li>
                                                 <span>Joined At :</span>

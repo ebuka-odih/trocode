@@ -30,8 +30,8 @@
                                 <tr class="table-info">
                                     <th >#{{ $item->transId() }}</th>
                                     <td >{{ date('d m, Y', strtotime($item->created_at)) }}</td>
-                                    <td>${{ $item->currency }}{{ $item->budget }}</td>
-                                    <td>{{ $item->currency ? : "NGN" }}</td>
+                                    <td>@convert($item->budget)</td>
+                                    <td>NGN</td>
                                     <td>{!! $item->status() !!}</td>
                                     <td>
                                         <a href="{{ route('user.review',$item->id) }}" class="btn btn-primary">View</a>
