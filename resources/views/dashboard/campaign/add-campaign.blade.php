@@ -451,10 +451,10 @@
                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
                                                 <div class="frb-group">
                                                     <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                        <input type="radio" id="budget1" name="budget" value="500">
+                                                        <input type="radio" id="budget1" name="budget" value="250000">
                                                         <label style="padding: 12px" for="budget1">
                                                             <span class="badge bg-success">High</span>
-                                                            <span style="font-size: 30px" class="frb-title">$500/day</span><br>
+                                                            <span style="font-size: 30px" class="frb-title">N250,000</span><br>
                                                             <span>Big business with multiple team </span>
                                                         </label>
                                                     </div>
@@ -463,10 +463,10 @@
                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
                                                 <div class="frb-group">
                                                     <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                        <input type="radio" id="budget3" name="budget" value="150">
+                                                        <input type="radio" id="budget3" name="budget" value="200000">
                                                         <label style="padding: 12px" for="budget3">
                                                             <span class="badge bg-warning">Mid</span>
-                                                            <span style="font-size: 30px" class="frb-title">$150/day</span><br>
+                                                            <span style="font-size: 30px" class="frb-title">N200,000 </span><br>
                                                             <span>Startup Business </span>
                                                         </label>
                                                     </div>
@@ -475,15 +475,77 @@
                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
                                                 <div class="frb-group">
                                                     <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                        <input type="radio" id="budget2" name="budget" value="25">
+                                                        <input type="radio" id="budget2" name="budget" value="100000">
                                                         <label style="padding: 12px" for="budget2">
                                                             <span class="badge bg-danger">Low</span>
-                                                            <span style="font-size: 30px" class="frb-title">$25/day</span><br>
+                                                            <span style="font-size: 30px" class="frb-title">N100,000</span><br>
                                                             <span>Freelancer Business </span>
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget4" name="budget" value="50000">
+                                                        <label style="padding: 12px" for="budget4">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">N50,000</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget5" name="budget" value="25000">
+                                                        <label style="padding: 12px" for="budget5">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">N25,000</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget6" name="budget" value="25000">
+                                                        <label style="padding: 12px" for="budget6">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">N25,000</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget7" name="budget" value="10000">
+                                                        <label style="padding: 12px" for="budget7">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">N10,000</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
+                                                <div class="frb-group">
+                                                    <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
+                                                        <input type="radio" id="budget8" name="budget" value="5000">
+                                                        <label style="padding: 12px" for="budget8">
+                                                            <span class="badge bg-danger">Low</span>
+                                                            <span style="font-size: 30px" class="frb-title">N5000</span><br>
+                                                            <span>Freelancer Business </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
 
                                         </div>
                                     </div>
