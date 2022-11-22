@@ -365,18 +365,17 @@
                                         <div class="row mb-3">
                                             <label for="website" class="col-sm-2 col-form-label">Location</label>
                                             <div class="col-sm-10">
-                                                <input type="text" id="autocomplete" class="">
-                                                <ul>
-                                                  <li>
-                                                      Use AI Smart Interface To Get the best and converting Locations for Your Ad
-                                                  </li>
-                                                </ul>
-
-                                                <p>
-                                                </p>
-
+                                                <input type="text" id="autocomplete" name="location" class="">
 {{--                                                use the form name addresses--}}
                                                 <div id="addresses"></div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                    <label class="form-check-label" for="gridCheck1">
+                                                        <strong>
+                                                            Use AI Smart Interface To Get the best and converting Locations for Your Ad
+                                                        </strong>
+                                                    </label>
+                                                </div>
 
                                             </div>
                                         </div>
