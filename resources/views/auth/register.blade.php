@@ -60,6 +60,15 @@
                     </div>
                     <form class="account-wrap" action="{{ route('register') }}" method="POST">
                         @csrf
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <div class="form-group mb-24 icon">
                             <input type="text" name="name" class="form-control" placeholder="Full Name">
                             <img src="{{ asset('assets/images/icon/user-square.svg') }}" alt="user-square">
