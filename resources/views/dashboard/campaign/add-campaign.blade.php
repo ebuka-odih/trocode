@@ -277,8 +277,8 @@
                                                     </label>
                                                 </div>
                                                 <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                    <input type="radio" id="radio-button-2" name="objective" value="Get Engagements">
-                                                    <label style="padding: 12px" for="radio-button-2">
+                                                    <input type="radio" id="radio-button-3" name="objective" value="Get Engagements">
+                                                    <label style="padding: 12px" for="radio-button-3">
                                                         <div style="position: relative; ">
                                                             <img src="{{ asset('img/star.png') }}" height="50" width="50" alt="">
                                                             <span style="margin-left: 2px" class="frb-title">Get Engagements </span>
@@ -291,8 +291,8 @@
                                                 </div>
 
                                                 <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                    <input type="radio" id="radio-button-3" name="objective" value="Increase App Install">
-                                                    <label style="padding: 12px" for="radio-button-3">
+                                                    <input type="radio" id="radio-button-4" name="objective" value="Increase App Install">
+                                                    <label style="padding: 12px" for="radio-button-4">
                                                         <div style="position: relative; ">
                                                             <img src="{{ asset('img/mobile.svg') }}" height="50" width="50" alt="">
                                                             <span style="margin-left: 2px" class="frb-title">Increase App Install </span>

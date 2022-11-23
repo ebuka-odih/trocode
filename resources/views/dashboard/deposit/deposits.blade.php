@@ -9,7 +9,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Top Up
+                            Add Fund
                         </button>
 
 
@@ -29,10 +29,7 @@
                                 </thead>
                                 <tbody>
                                 <tr class="table-info">
-                                    <th >#3</th>
-                                    <td >12/4/22</td>
-                                    <td>$300</td>
-                                    <td>NGN</td>
+
                                 </tr>
 
                                 </tbody>

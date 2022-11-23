@@ -99,7 +99,7 @@ class CampaignController extends Controller
 
     public function campaigns()
     {
-        $camp = Campaign::latest()->paginate(10);
+        $camp = Campaign::whereUserId(\auth()->id())->latest()->paginate(10);
         return view('dashboard.campaign.campaigns', compact('camp'));
     }
 }
