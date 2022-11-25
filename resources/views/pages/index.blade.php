@@ -488,10 +488,7 @@
                 <br />
                 <br />
             </p>
-            <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
-                <a href="https://app.plai.io/" class="cta blue w-button">Start advertising</a>
 
-            </div>
             <div style="margin-top: 20px; height: 100px" data-aos="zoom-out"><h1 class="word">
                 </h1>
             </div>
@@ -555,7 +552,6 @@
                             </strong>
                         </a>
                     </p>
-                    <a href="/getapp" class="cta blue paragraph w-button">Get Started</a>
                 </div>
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
@@ -600,7 +596,6 @@
                     <div class="overline right-aligned">START WITH JUST $1</div>
                     <h2 class="content-h2 right-aligend"> Accurate and Tailored Ads.</h2>
                     <p class="paragraph right-aligned"> Run Ads and Sell To Audiences that really matters , this is why We are happy to provide the best services to brands that want to scale up their marketing, You have the best tool in your hands to reach tailored audiences and same time save cost.</p>
-                    <a href="/getapp" class="cta blue paragraph w-button">Try It Free</a>
                 </div>
             </div>
             <div data-w-id="8588a556-b4d9-99e1-7a72-52bb9a24027a" style="-webkit-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
@@ -617,7 +612,6 @@
     <div class="_800px_container center">
         <h2 class="h2">Scale up your Brand The right way.</h2>
         <p class="body_text xxl">Running ads is a cheap and profitable way to boost your business or brand ,that’s if you do it the right way.</p>
-        <a href="/getapp" class="cta w-button">Try It Free</a>
     </div>
 </div>
 <div class="section_xxl wf-section">
@@ -665,7 +659,6 @@
         <div class="follower-number _02">Over 20,000+ App Downloads <span class="tag-span"></span>
         </div>
     </div>
-    <a href="/getapp" class="cta light w-button">Download Now</a>
 </div>
 <div class="wrapper m50-100 mobile">
     <div class="section">
@@ -765,9 +758,7 @@
     <div class="footer-container">
         <div class="footer-inner">
             <div class="footer-col-right">
-                <div class="div-block-21">
-                    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2).png" width="100" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2)-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2)-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2)-p-1080.png 1080w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2)-p-1600.png 1600w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2)-p-2000.png 2000w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5eb0ac59d16fc4331d39ab78_White%20(2).png 2500w" sizes="100px" alt="" class="image-7" />
-                </div>
+
                 <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store.png" width="119" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store.png 800w" sizes="119px" alt="Plai App" class="image-5 ios" />
                 <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303.png" width="120" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303.png 1024w" sizes="120px" alt="" class="image-5 android" />
             </div>
