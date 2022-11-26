@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Mail\WelcomeEmail;
+use App\Mail\WelcomeMail;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -77,7 +78,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
         );
-        Mail::to($email_data['email'])->send(new WelcomeEmail($email_data));
+        Mail::to($email_data['email'])->send(new WelcomeMail($email_data));
 
         return $user;
     }
