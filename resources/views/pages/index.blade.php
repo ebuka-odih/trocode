@@ -449,13 +449,13 @@
         <a href="/billboard" class="nav-link w-nav-link">Billboards</a>
     </nav>
     <div class="nav-top-social">
-        <a href="https://www.tiktok.com/@plai.io" target="_blank" class="social-icon-link w-inline-block">
+        <a href="" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8f281a0ff244b287aac3_icons8-tiktok.svg" width="25" alt="" />
         </a>
-        <a href="https://www.instagram.com/plai.io" target="_blank" class="social-icon-link w-inline-block">
+        <a href="" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e6da5e1854c7eb79917_icons8-instagram.svg" width="25" alt="" />
         </a>
-        <a href="https://www.youtube.com/channel/UCPAtkLzXf6qAh4TYJ9Qre1A" target="_blank" class="social-icon-link w-inline-block">
+        <a href="" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
         </a>
     </div>
@@ -489,7 +489,7 @@
                 <br />
             </p>
             <div data-w-id="5a7f1bc6-3728-a5b2-b2fd-48a73202d3d9" class="hero-cta-buttons">
-                <a href="https://app.plai.io/" class="cta blue w-button">Start advertising</a>
+                <a href="{{ route('login') }}" class="cta blue w-button">Start advertising</a>
 
             </div>
             <div style="margin-top: 20px; height: 100px" data-aos="zoom-out"><h1 class="word">
