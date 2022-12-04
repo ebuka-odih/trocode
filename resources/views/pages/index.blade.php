@@ -362,7 +362,7 @@
 
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar-top-2 w-nav">
     <a href="/" aria-current="page" class="brand nav-top-brand w-nav-brand w--current">
-        <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d86f50681151806b16aec_plai%20circle%20icon.png" width="48" alt="" />
+        <img src="{{ asset('img/logo.png') }}" width="200" alt="" />
     </a>
     <div class="menu-button-2 w-hidden-main w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -401,7 +401,7 @@
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
         </a>
     </div>
-    <a href="https://app.plai.io/" data-w-id="ba791b6a-139b-8fea-e8c7-66d578c385dd" class="button link-button w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
+    <a href="{{ route('login') }}" data-w-id="ba791b6a-139b-8fea-e8c7-66d578c385dd" class="button link-button w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
         <div class="line-button-text">Get started</div>
         <div class="color-hover left"></div>
     </a>
@@ -420,7 +420,7 @@
 </div>
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="nav-bar-top-2 w-nav">
     <a href="/" aria-current="page" class="brand nav-top-brand w-nav-brand w--current">
-        <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d86f50681151806b16aec_plai%20circle%20icon.png" width="48" alt="" />
+        <img style="width: 150px" src="{{ asset('img/logo.png') }}"  alt="" />
     </a>
     <div class="menu-button-2 w-hidden-main w-nav-button">
         <div class="w-icon-nav-menu"></div>
@@ -560,7 +560,7 @@
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
                 <div class="feature-image-div right-aligned home">
-                    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87a9978a0cee010276d7b8_hero1.png" width="160" alt="Plai digital marketing app" class="feature-image right-align home" />
+                    <img src="{{ asset('img/phone1.png') }}" width="260" alt="Plai digital marketing app" class="feature-image right-align home" />
                 </div>
             </div>
         </div>
@@ -575,7 +575,7 @@
             </div>
             <div data-w-id="686399a5-351e-4f98-912a-f7182a72cbeb" style="-webkit-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
                 <div class="feature-image-div left-aligned">
-                    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e87acbbab1cf86da399c96c_hero2a.png" width="160" alt="Plai" class="feature-image left-align" />
+                    <img src="{{ asset('img/phone2.png') }}" width="460" alt="Plai" class="feature-image left-align" />
                 </div>
             </div>
         </div>
