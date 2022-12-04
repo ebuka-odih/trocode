@@ -459,7 +459,7 @@
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
         </a>
     </div>
-    <a href="https://app.plai.io/" data-w-id="ba791b6a-139b-8fea-e8c7-66d578c385dd" class="button link-button w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
+    <a href="{{ route('login') }}" data-w-id="ba791b6a-139b-8fea-e8c7-66d578c385dd" class="button link-button w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block">
         <div class="line-button-text">Get started</div>
         <div class="color-hover left"></div>
     </a>
@@ -555,7 +555,7 @@
                             </strong>
                         </a>
                     </p>
-                    <a href="{{ route('register') }}" class="cta blue paragraph w-button">Get Started</a>
+                    <a href="{{ route('login') }}" class="cta blue paragraph w-button">Get Started</a>
                 </div>
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
@@ -585,7 +585,7 @@
                     <div class="overline">HELPING YOU MARKET</div>
                     <h2 class="content-h2"> Easy Setup To Use.</h2>
                     <p class="paragraph left-align">You can start running ads in Few minutes, Trocode’s interface is extensively smooth to provide you with the best user experience.</p>
-                    <a href="{{ route('register') }}" class="cta blue paragraph w-button">Get Started</a>
+                    <a href="{{ route('login') }}" class="cta blue paragraph w-button">Get Started</a>
                 </div>
             </div>
             <div data-w-id="cb1dc496-5b87-6139-7ab9-c8f0b5733b96" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
