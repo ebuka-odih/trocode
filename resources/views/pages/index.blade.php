@@ -761,12 +761,7 @@
                 <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store.png" width="119" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251d02dac1a9509dcd5e_Plai-Apple-App-Store.png 800w" sizes="119px" alt="Plai App" class="image-5 ios" />
                 <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303.png" width="120" srcset="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303-p-500.png 500w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303-p-800.png 800w, https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8e251dd54c5f09df403614_Plai-Google-Play-Store-1024x303.png 1024w" sizes="120px" alt="" class="image-5 android" />
             </div>
-            <div class="footer-col-left">
-                <a data-w-id="7ee3a526-1bad-7b98-a414-423548ca8819" href="/faq" class="small-link no-border home">FAQ</a>
-                <a data-w-id="0c98819a-1ac0-fccb-d5da-13b906e0a5ae" href="/about-us" class="small-link no-border">about us</a>
-                <a data-w-id="0c98819a-1ac0-fccb-d5da-13b906e0a5ac" href="https://www.youtube.com/channel/UCPAtkLzXf6qAh4TYJ9Qre1A" target="_blank" class="small-link no-border">Resources</a>
-                <a data-w-id="0c98819a-1ac0-fccb-d5da-13b906e0a5b0" href="https://www.tiktok.com/@plai.io" target="_blank" class="small-link no-border">Tiktok</a>
-            </div>
+            
         </div>
         <div class="legal-footer">
             <p class="small legal">Copyright © 2021 <a href="/" aria-current="page" class="plai-io w--current">trocode.io </a>. | All Rights Reserved | <a href="/privacy-terms" class="ptlinks">Privacy Policy</a> | <a href="/privacy-terms" class="ptlinks">Terms of Use</a>
