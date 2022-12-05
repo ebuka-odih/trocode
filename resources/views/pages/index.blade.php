@@ -384,11 +384,6 @@
         </div>
         <a href="{{ route('register') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
         <a href="/features" class="nav-link w-nav-link">Features</a>
-        <a href="https://www.plai.io/#Pricing-Section" class="nav-link w-nav-link">Pricing</a>
-        <a href="/about-us" class="nav-link w-nav-link">about us</a>
-        <a href="/blog" class="nav-link w-nav-link">Blog</a>
-        <a href="/metaverse-and-nfts" class="nav-link w-nav-link">Metaverse &amp; NFTs</a>
-        <a href="/billboard" class="nav-link w-nav-link">Billboards</a>
     </nav>
     <div class="nav-top-social">
         <a href="https://www.tiktok.com/@plai.io" target="_blank" class="social-icon-link w-inline-block">
@@ -429,24 +424,19 @@
         <a href="https://www.plai.io/#Features-Section" class="nav-link w-nav-link">How it works</a>
         <div class="div-block-17">
             <div class="nav-menu-social-links">
-                <a href="https://www.tiktok.com/@plai.io" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href="https://www.tiktok.com/@trocode.io?_t=8Xv2GSrcq2Q&_r=1" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8f281a0ff244b287aac3_icons8-tiktok.svg" width="25" alt="" />
                 </a>
-                <a href="https://www.instagram.com/plai.io" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href=" https://instagram.com/trocode.io?igshid=YmMyMTA2M2Y=" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e6da5e1854c7eb79917_icons8-instagram.svg" width="25" alt="" />
                 </a>
-                <a href="https://www.facebook.com/plaiapp/" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href="https://www.facebook.com/profile.php?id=100087092259263&mibextid=LQQJ4d" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
                 </a>
             </div>
         </div>
         <a href="{{ route('register') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
         <a href="/features" class="nav-link w-nav-link">Features</a>
-        <a href="https://www.plai.io/#Pricing-Section" class="nav-link w-nav-link">Pricing</a>
-        <a href="/about-us" class="nav-link w-nav-link">about us</a>
-        <a href="/blog" class="nav-link w-nav-link">Blog</a>
-        <a href="/metaverse-and-nfts" class="nav-link w-nav-link">Metaverse &amp; NFTs</a>
-        <a href="/billboard" class="nav-link w-nav-link">Billboards</a>
     </nav>
     <div class="nav-top-social">
         <a href="" target="_blank" class="social-icon-link w-inline-block">
@@ -674,7 +664,7 @@
                 <div class="size3-text-2 size3-top-clear">Let&#x27;s chat <br />
                 </div>
                 <p class="paragraph-70 paragraph70-bottom-clear">You are the most important thing and we would love to get in touch with you! Please reach out with any questions you might have. That could be with your marketing strategy or with Plai :) Let us know any questions, feedback, or support that you need! Chat soon. <br />
-                    <br />Email: plai@plai.app <br />
+                    <br />Email: support@trocode.io <br />
                     <br />Live Chat: Tap the bubble in the bottom right corner <br />
                 </p>
             </div>
@@ -779,7 +769,7 @@
             </div>
         </div>
         <div class="legal-footer">
-            <p class="small legal">Copyright © 2021 <a href="/" aria-current="page" class="plai-io w--current">plai.io</a>. | All Rights Reserved | <a href="/privacy-terms" class="ptlinks">Privacy Policy</a> | <a href="/privacy-terms" class="ptlinks">Terms of Use</a>
+            <p class="small legal">Copyright © 2021 <a href="/" aria-current="page" class="plai-io w--current">trocode.io </a>. | All Rights Reserved | <a href="/privacy-terms" class="ptlinks">Privacy Policy</a> | <a href="/privacy-terms" class="ptlinks">Terms of Use</a>
             </p>
         </div>
     </div>

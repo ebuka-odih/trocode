@@ -363,7 +363,7 @@
 
 
                                         <div class="row mb-3">
-                                            <label for="website" class="col-sm-2 col-form-label">Location</label>
+                                            <label for="" class="col-sm-2 col-form-label">Location</label>
                                             <div class="col-sm-10">
                                                 <input type="text" id="autocomplete" name="location" class="">
 {{--                                                use the form name addresses--}}
@@ -444,7 +444,7 @@
                                     </div>
                                 </div>
                                 <div class="tab">
-                                    <h5 style="font-size: 26px;" class="text-center fw-light">What's Your Monthly Budget:</h5>
+                                    <h5 style="font-size: 26px;" class="text-center fw-light">What's Your Budget:</h5>
                                     <div class="justify-content-center">
                                         <div class="row">
                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10">
