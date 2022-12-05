@@ -382,7 +382,7 @@
                 </a>
             </div>
         </div>
-        <a href="{{ route('register') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
+        <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
         <a href="/features" class="nav-link w-nav-link">Features</a>
     </nav>
     <div class="nav-top-social">
@@ -435,7 +435,7 @@
                 </a>
             </div>
         </div>
-        <a href="{{ route('register') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
+        <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
         <a href="/features" class="nav-link w-nav-link">Features</a>
     </nav>
     <div class="nav-top-social">
@@ -655,7 +655,7 @@
         <div class="follower-number _02">Over 20,000+ App Downloads <span class="tag-span"></span>
         </div>
     </div>
-    <a href="{{ route('register') }}" class="cta light w-button">Download Now</a>
+    <a href="{{ route('login') }}" class="cta light w-button">Download Now</a>
 </div>
 <div class="wrapper m50-100 mobile">
     <div class="section">
@@ -740,11 +740,11 @@
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e8231115856b_wifi.svg" alt="Plai marketing made easy" />
                 </div>
                 <div class="service-title">User friendly</div>
-                <p class="service-paragraph">Plai uses cutting-edge marketing strategies to help brands create and optimize their digital marketing campaigns in just a few taps.</p>
+                <p class="service-paragraph">Trocide uses cutting-edge marketing strategies to help brands create and optimize their digital marketing campaigns in just a few taps.</p>
             </a>
             <div class="services-grid-block-04 end-block">
                 <div class="service-title service-title-centre">You can keep doing it all the same old way, or you can download marketing superpowers</div>
-                <a href="https://apps.apple.com/us/app/plai-marketing/id1458128279" class="primary-cta w-button">Download Now!</a>
+                <a href="{{ route('register') }}" class="primary-cta w-button">Download Now!</a>
                 <p class="tag-10">Minimal $1,000 project</p>
             </div>
         </div>
