@@ -368,16 +368,16 @@
         <div class="w-icon-nav-menu"></div>
     </div>
     <nav role="navigation" class="nav-menu-top w-nav-menu">
-        <a href="https://www.plai.io/#Features-Section" class="nav-link w-nav-link">How it works</a>
+        <a href="{{ route('register') }}" class="nav-link w-nav-link">Sign Up</a>
         <div class="div-block-17">
             <div class="nav-menu-social-links">
-                <a href="https://www.tiktok.com/@plai.io" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href="https://www.tiktok.com/@trocode.io?_t=8Xv2GSrcq2Q&_r=1" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8f281a0ff244b287aac3_icons8-tiktok.svg" width="25" alt="" />
                 </a>
-                <a href="https://www.instagram.com/plai.io" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href="https://instagram.com/trocode.io?igshid=YmMyMTA2M2Y=" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e6da5e1854c7eb79917_icons8-instagram.svg" width="25" alt="" />
                 </a>
-                <a href="https://www.facebook.com/plaiapp/" target="_blank" class="social-link-nav-menu w-inline-block">
+                <a href="https://www.facebook.com/profile.php?id=100087092259263&mibextid=LQQJ4d" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
                 </a>
             </div>
@@ -386,13 +386,13 @@
         <a href="/features" class="nav-link w-nav-link">Features</a>
     </nav>
     <div class="nav-top-social">
-        <a href="https://www.tiktok.com/@plai.io" target="_blank" class="social-icon-link w-inline-block">
+        <a href="https://www.tiktok.com/@trocode.io?_t=8Xv2GSrcq2Q&_r=1" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8f281a0ff244b287aac3_icons8-tiktok.svg" width="25" alt="" />
         </a>
-        <a href="https://www.instagram.com/plai.io" target="_blank" class="social-icon-link w-inline-block">
+        <a href="https://instagram.com/trocode.io?igshid=YmMyMTA2M2Y=" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e6da5e1854c7eb79917_icons8-instagram.svg" width="25" alt="" />
         </a>
-        <a href="https://www.youtube.com/channel/UCPAtkLzXf6qAh4TYJ9Qre1A" target="_blank" class="social-icon-link w-inline-block">
+        <a href="https://www.facebook.com/profile.php?id=100087092259263&mibextid=LQQJ4d" target="_blank" class="social-icon-link w-inline-block">
             <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
         </a>
     </div>
