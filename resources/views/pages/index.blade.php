@@ -435,7 +435,7 @@
                 </a>
             </div>
         </div>
-        <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Download Now</a>
+        <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Login</a>
         <a href="/features" class="nav-link w-nav-link">Features</a>
     </nav>
     <div class="nav-top-social">
