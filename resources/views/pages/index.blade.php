@@ -427,7 +427,7 @@
         <div class="w-icon-nav-menu"></div>
     </div>
     <nav role="navigation" class="nav-menu-top w-nav-menu">
-        <a href="https://www.plai.io/#Features-Section" class="nav-link w-nav-link">How it works</a>
+        <a href="{{ route('register') }}" class="nav-link w-nav-link">Sign Up</a>
         <div class="div-block-17">
             <div class="nav-menu-social-links">
                 <a href="https://www.tiktok.com/@trocode.io?_t=8Xv2GSrcq2Q&_r=1" target="_blank" class="social-link-nav-menu w-inline-block">
@@ -442,7 +442,7 @@
             </div>
         </div>
         <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Login</a>
-        <a href="/features" class="nav-link w-nav-link">Features</a>
+        <a href="/features" class="nav-link w-nav-link">Support</a>
     </nav>
     <div class="nav-top-social">
         <a href="https://www.tiktok.com/@trocode.io?_t=8Xv2GSrcq2Q&_r=1" target="_blank" class="social-icon-link w-inline-block">
@@ -559,7 +559,7 @@
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
                 <div class="feature-image-div right-aligned home">
-                    <img src="{{ asset('img/phone1.png') }}" width="260" alt="Plai digital marketing app" class="feature-image right-align home" />
+                    <img src="{{ asset('img/phone1.png') }}" width="460" alt="Plai digital marketing app" class="feature-image right-align home" />
                 </div>
             </div>
         </div>
