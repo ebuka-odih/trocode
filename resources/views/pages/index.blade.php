@@ -569,7 +569,7 @@
                 </div>
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
-                <div style="padding-left: 30%;" class="feature-image-div right-aligned home">
+                <div style="padding-left: 30%; margin-left: 80px" class="feature-image-div right-aligned home">
                     <img style="width: 500px" src="{{ asset('img/phone1.png') }}"  alt="Plai digital marketing app" class="feature-image right-align home" />
                 </div>
             </div>
