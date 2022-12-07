@@ -439,6 +439,9 @@
                 <a href="https://www.facebook.com/profile.php?id=100087092259263&mibextid=LQQJ4d" target="_blank" class="social-link-nav-menu w-inline-block">
                     <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e8b8e4eda47781f7ae29b11_icons8-facebook.svg" width="25" alt="" />
                 </a>
+                <a href="https://twitter.com/officialtrocode?s=21&t=PxCrpn-QUPWZ_tUKvLQSCQ" target="_blank" class="social-icon-link w-inline-block">
+                    <img src="{{ asset('img/twitter.svg') }}" width="25" alt="" />
+                </a>
             </div>
         </div>
         <a href="{{ route('login') }}" class="nav-link dl-mobile-link w-nav-link">Login</a>
