@@ -672,7 +672,7 @@
             <div id="w-node-_091b2baa-0b13-d027-7eb1-13fa8319878f-39d756a4">
                 <div class="size3-text-2 size3-top-clear">Let&#x27;s chat <br />
                 </div>
-                <p class="paragraph-70 paragraph70-bottom-clear">You are the most important thing and we would love to get in touch with you! Please reach out with any questions you might have. That could be with your marketing strategy or with Plai :) Let us know any questions, feedback, or support that you need! Chat soon. <br />
+                <p class="paragraph-70 paragraph70-bottom-clear">You are the most important thing and we would love to get in touch with you! Please reach out with any questions you might have. That could be with your marketing strategy or with Trocode :) Let us know any questions, feedback, or support that you need! Chat soon. <br />
                     <br />Email: support@trocode.io <br />
                     <br />Live Chat: Tap the bubble in the bottom right corner <br />
                 </p>
@@ -711,7 +711,7 @@
             </a>
             <a href="#" class="services-grid-block-02 w-inline-block">
                 <div class="icon-block">
-                    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e872f9158559_eye.svg" alt="Plai digital marketing app" class="image-3" />
+                    <img src="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d80fab3b7e872f9158559_eye.svg" alt="Trocode digital marketing app" class="image-3" />
                 </div>
                 <div class="service-title">Ads</div>
                 <p class="service-paragraph">Create and launch expert Google Ads and YouTube Ads in minutes.</p>
