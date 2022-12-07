@@ -19,6 +19,7 @@ class AdminSeeder extends Seeder
             DB::table('users')->insert([
                 'name' => 'Admin',
                 'admin' => 1,
+                'country' => "USA",
                 'balance' => 20000,
                 'email' => 'admin@trocode.io',
                 'email_verified_at' => \Carbon\Carbon::now(),
