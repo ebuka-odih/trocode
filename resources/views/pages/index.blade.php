@@ -357,6 +357,14 @@
             /*text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;*/
         }
     </style>
+    <style>
+        @media screen and (max-width: 479px)
+            .feature-image-div.right-aligned.home {
+                right: 0;
+                padding-left: 30%;
+                background-image: none;
+            }
+    </style>
 </head>
 <body  class="body-3">
 
@@ -561,8 +569,8 @@
                 </div>
             </div>
             <div data-w-id="c5ada9d1-9dad-0538-a043-8503fc673975" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="feature-column-image">
-                <div class="feature-image-div right-aligned home">
-                    <img src="{{ asset('img/phone1.png') }}" width="460" alt="Plai digital marketing app" class="feature-image right-align home" />
+                <div style="padding-left: 30%;" class="feature-image-div right-aligned home">
+                    <img style="width: 500px" src="{{ asset('img/phone1.png') }}"  alt="Plai digital marketing app" class="feature-image right-align home" />
                 </div>
             </div>
         </div>
