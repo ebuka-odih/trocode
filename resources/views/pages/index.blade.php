@@ -259,9 +259,8 @@
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
     </script>
-    <link href="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d85cab36bbeaf794b0e50_asset%200-32.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="https://uploads-ssl.webflow.com/5e4d80fab3b7e8f3c8158547/5e4d86085f25697b77fc8f38_asset%200.png" rel="apple-touch-icon" />
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-131589405-3"></script>
+    <link href="{{ asset('img/logo.png') }}" rel="shortcut icon" type="image/x-icon" />
+    <link href="{{ asset('img/logo.png') }}" rel="apple-touch-icon" />
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
 
@@ -297,7 +296,6 @@
     <!--Start of Tawk.to Script-->
 
     <!--End of Tawk.to Script-->
-    <meta name="facebook-domain-verification" content="tz3kb95tn752zr4z9ro0bwkrj7i4x5" />
 
     <style>
         * {

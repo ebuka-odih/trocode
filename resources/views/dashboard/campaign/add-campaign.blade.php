@@ -315,8 +315,8 @@
                                             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
                                                 <div class="frb-group">
                                                     <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                        <input type="radio" id="radio-button-4" name="days" value="3">
-                                                        <label style="padding: 12px" for="radio-button-4">
+                                                        <input type="radio" id="radio-button-days" name="days" value="3">
+                                                        <label style="padding: 12px" for="radio-button-days">
                                                             <span class="frb-title">3 Days</span>
                                                         </label>
                                                     </div>
@@ -345,8 +345,8 @@
                                             <div class="col-xs-12 col-sm-4 col-md-6 col-lg-6">
                                                 <div class="frb-group">
                                                     <div class="frb frb-success single-website-performance d-flex justify-content-between align-items-center">
-                                                        <input type="radio" id="radio-button-6" name="days" value="30">
-                                                        <label style="padding: 12px" for="radio-button-6">
+                                                        <input type="radio" id="radio-button-7" name="days" value="30">
+                                                        <label style="padding: 12px" for="radio-button-7">
                                                             <span class="frb-title">30 Days</span>
                                                         </label>
                                                     </div>
@@ -369,12 +369,13 @@
 {{--                                                use the form name addresses--}}
                                                 <div id="addresses"></div>
                                                 <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                    <label class="form-check-label" for="gridCheck1">
+                                                    <input class="form-check-input" type="checkbox"  name="smart_ai" id="smart_ai">
+                                                    <label class="form-check-label" for="smart_ai">
                                                         <strong>
                                                             Use AI Smart Interface To Get the best and converting Locations for Your Ad
                                                         </strong>
                                                     </label>
+                                                    <div style="color: #be4e4e" id="warning"></div>
                                                 </div>
 
                                             </div>
@@ -627,10 +628,19 @@
                     // If a field is empty...
                     if (y[i].value == "") {
                         // add an "invalid" class to the field:
-                        y[i].className += " invalid";
+
                         // and set the current valid status to false
-                        valid = false;
+                        var name = document.getElementById('autocomplete');
+                        var smart_ai = document.getElementById('smart_ai');
+                        if (name.value === "" || smart_ai.value !== "") {
+                            valid = true;
+                        }
+                            document.getElementById("warning").innerHTML = "Please enter campaign location or choose smart AI";
+                            y[i].className += " invalid";
+                            valid = false;
                     }
+
+
                 }
                 // If the valid status is true, mark the step as finished and valid:
                 if (valid) {
