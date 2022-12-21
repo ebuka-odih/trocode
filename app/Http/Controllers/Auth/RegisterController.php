@@ -71,8 +71,8 @@ class RegisterController extends Controller
     {
         if ($request->has('ref')) {
             session(['referrer' => $request->query('ref')]);
-            return view('auth.register');
         }
+        return view('auth.register');
     }
 
         /**
