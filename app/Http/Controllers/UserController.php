@@ -23,6 +23,12 @@ class UserController extends Controller
         $user = Auth::user();
         return view('dashboard.profile', compact('user', 'camp_num'));
     }
+    public function referrals()
+    {
+        $user = Auth::user();
+        $referrals = User::where('referrer_id',$user->id)->get();
+        return view('dashboard.referrals', compact('user', 'referrals'));
+    }
 
     public function setting()
     {

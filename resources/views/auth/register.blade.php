@@ -330,6 +330,10 @@
                             <img src="{{ asset('assets/images/icon/key.svg') }}" alt="key">
                         </div>
                         <div class="form-group mb-24 icon">
+                            <input value="{{ session()->get('referrer') }}" type="text" name="referral_code" class="form-control" placeholder="Referral Code">
+                            <img src="{{ asset('assets/images/icon/user-square.svg') }}" alt="key">
+                        </div>
+                        <div class="form-group mb-24 icon">
                             <input type="password" name="password_confirmation" class="form-control" placeholder="Password">
                             <img src="{{ asset('assets/images/icon/key.svg') }}" alt="key">
                         </div>

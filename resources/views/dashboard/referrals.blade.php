@@ -7,7 +7,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-sm-6">
                         <div class="page-title">
-                            <h3>Profile</h3>
+                            <h3>My Referrals</h3>
                         </div>
                     </div>
 
@@ -30,9 +30,6 @@
                                         <div class="profile-name ms-4">
                                             <h4>{{ $user->name }}</h4>
                                             <span>Member Since: {{ date('M Y', strtotime($user->created_at)) }}</span>
-                                            @if($user->referrer)
-                                            <span>Referred by: {{ optional($user->referrer)->name }}</span>
-                                            @endif
                                             <div class="follow-email">
                                                 <a href="{{ route('user.settings') }}" class="btn btn-secondary">
                                                    Edit Profile
@@ -47,8 +44,8 @@
                                         <div class="col-lg-6 col-sm-6">
                                             <div class="profile-activity">
                                                 <i class="bx bx-repost"></i>
-                                                <h3>Total Campaign</h3>
-                                                <h2>{{ $camp_num }}</h2>
+                                                <h3>Total Referrals</h3>
+                                                <h2>{{ $user->referrals()->count() }}</h2>
                                             </div>
                                         </div>
 {{--                                        <div class="col-lg-4 col-sm-6">--}}
@@ -65,56 +62,25 @@
                         </div>
 
                         <div class="profile-details card-box-style">
-                            <ul class="list-inline profile-menu">
-                                <li>
-                                    <a  class="active">Profile</a>
-                                </li>
-                            </ul>
 
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <h3>Personal Information</h3>
+                                    <h3>All Referrals</h3>
                                 </div>
 
-                                <div class="col-lg-10">
-                                    <div class="personal-info">
-                                        <ul class="list-inline">
-                                            <li>
-                                                <span>Full Name :</span>
-                                                {{ $user->name }}
-                                            </li>
-                                            <li>
-                                                <span>Email :</span>
-                                                {{ $user->email }}
-                                            </li>
-                                            <li>
-                                                <span>Balance :</span>
-                                                NGN @convert($user->balance)
-                                            </li>
-                                            <li>
-                                                <span>Ref Bonus :</span>
-                                                NGN {{ $user->ref_bonus  }}
-                                            </li>
-                                            <li>
-                                                <span>Total Referrals :</span>
-                                                {{ $user->referrals()->count()  }} (<a href="{{ route('user.my_referrals') }}">View all</a>)
-                                            </li>
-                                            <li>
-                                                <span>Referral Link :</span>
-                                                <a href="{{ $user->referral_link }}">{{ $user->referral_link }}</a>
-                                            </li>
-                                            <li>
-                                                <span>Referral Code :</span>
-                                                {{ $user->referralCode() }}
-                                            </li>
-                                            <li>
-                                                <span>Joined At :</span>
-                                                {{ date('d M, Y', strtotime($user->created_at)) }}
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                @foreach($referrals as $user)
+                                <div class="col-lg-6 col-sm-12">
+                                        <div class="single-audience d-flex justify-content-between align-items-center">
+                                            <div class="icon">
+                                                <img  src="{{ $user->avatar }}" alt="{{ $user->name }}">
+                                            </div>
+                                            <div class="audience-content">
+                                                <h4>{{ $user->name }}</h4>
+                                            </div>
 
+                                        </div>
+                                </div>
+                                @endforeach
                             </div>
 
                         </div>
@@ -132,9 +98,3 @@
     </main>
 
 @endsection
-<script>
-    import Ajax from "../../../public/client/assets/js/plugins/ckeditor/samples/old/ajax.html";
-    export default {
-        components: {Ajax}
-    }
-</script>

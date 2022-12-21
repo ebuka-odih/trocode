@@ -7,10 +7,14 @@ use App\Mail\WelcomeEmail;
 use App\Mail\WelcomeMail;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
+use Vinkla\Hashids\Facades\Hashids;
 
 class RegisterController extends Controller
 {
@@ -26,6 +30,24 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request)));
+
+        $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+
+        return $request->wantsJson()
+            ? new JsonResponse([], 201)
+            : redirect($this->redirectPath());
+    }
+
 
     /**
      * Where to redirect users after registration.
@@ -44,7 +66,16 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
-    /**
+
+    public function showRegistrationForm(Request $request)
+    {
+        if ($request->has('ref')) {
+            session(['referrer' => $request->query('ref')]);
+            return view('auth.register');
+        }
+    }
+
+        /**
      * Get a validator for an incoming registration request.
      *
      * @param  array  $data
@@ -60,28 +91,48 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\User
-     */
-    protected function create(array $data)
+
+    protected function create(Request  $data)
     {
+        $ref_earned = 2;
+        if ($data->has('referral_code'))
+        {
+            $id = Hashids::decode($data['referral_code']);
+
+            $referrer = \App\User::where('id',$id)->first();
+
+        }else{
+            $referrer = null;
+        }
         $user = User::create([
             'name' => $data['name'],
             'country' => $data['country'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'referrer_id' => $referrer ? $referrer->id : null,
         ]);
+
+        if($referrer){
+            $referrer->ref_bonus = $referrer->ref_bonus + $ref_earned;
+            $referrer->save();
+
+            $this->store_ref_earning($referrer->id, 'signup bonus',$ref_earned);
+        }
+
+
+        if(session()->has('referrer')){
+            session()->forget('referrer');
+        }
 
         // email data
         $email_data = array(
             'name' => $data['name'],
             'email' => $data['email'],
         );
-        Mail::to($email_data['email'])->send(new WelcomeMail($email_data));
+//        Mail::to($email_data['email'])->send(new WelcomeMail($email_data));
 
         return $user;
     }
+
+
 }

@@ -108,6 +108,9 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/unicodeveloper/laravel-paystack" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pelago/emogrifier" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/snowfire/beautymail" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vinkla/hashids" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/graham-campbell/manager" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/hashids/hashids" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

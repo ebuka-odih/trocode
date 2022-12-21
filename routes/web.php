@@ -11,6 +11,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::view('demo', 'dashboard.demo');
     Route::get('dashboard', 'UserController@dashboard')->name('dashboard');
     Route::get('profile', 'UserController@profile')->name('myprofile');
+    Route::get('referrals', 'UserController@referrals')->name('my_referrals');
     Route::get('setting', 'UserController@setting')->name('settings');
     Route::post('update/password', 'UserController@storePassword')->name('storePassword');
 
@@ -25,10 +26,8 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('campaigns', "CampaignController@campaigns")->name('campaigns');
     Route::get('place/campaigns', "CampaignController@index")->name('addCamp');
 });
-Route::post('/pay', [
-    'uses' => 'PaymentController@redirectToGateway',
-    'as' => 'pay'
-]);
+
+Route::get('/paystack/callback', 'FundController@handleGatewayCallback');
 
 Auth::routes();
 

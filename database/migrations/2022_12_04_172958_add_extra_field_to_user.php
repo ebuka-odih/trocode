@@ -15,6 +15,8 @@ class AddExtraFieldToUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('country');
+            $table->unsignedBigInteger('referrer_id')->nullable();
+            $table->decimal('ref_bonus', 12,2)->default(0);
         });
     }
 
@@ -26,7 +28,7 @@ class AddExtraFieldToUser extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('country');
+            $table->dropColumn('country','referrer_id','ref_bonus');
         });
     }
 }
