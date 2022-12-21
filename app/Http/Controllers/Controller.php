@@ -13,7 +13,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public function store_ref_earning($user_id, $title, $amt){
-        
+
         return RefEarning::create([
             'user_id' => $user_id,
             'title' => $title,
