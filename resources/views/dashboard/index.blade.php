@@ -16,6 +16,8 @@
                     <span>Welcome Back</span>
                     <h2>{{ auth()->user()->name }}</h2>
                     <img class="welcome-img" src="{{ asset('assets/images/welcome.png') }}" alt="welcome image">
+                    <p>Referral link: <p id="foo">{{ auth()->user()->referral_link }} <a href="#" class="btn btn-sm" data-clipboard-target="#foo"><i class="fa fa-copy text-warning"></i></a> </p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -62,5 +64,10 @@
         <!-- End Footer Area -->
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.btn');
+    </script>
 
 @endsection
