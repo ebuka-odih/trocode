@@ -625,19 +625,38 @@
                 y = x[currentTab].getElementsByTagName("input");
                 // A loop that checks every input field in the current tab:
                 for (i = 0; i < y.length; i++) {
+
+                    y[i].classList.remove('invalid');
+                    // document.getElementById("warning").innerHTML = ''
+
                     // If a field is empty...
                     if (y[i].value == "") {
+
+                        console.log(y[i].name)
                         // add an "invalid" class to the field:
 
                         // and set the current valid status to false
-                        var name = document.getElementById('autocomplete');
+
                         var smart_ai = document.getElementById('smart_ai');
-                        if (name.value === "" || smart_ai.value !== "") {
-                            valid = true;
-                        }
-                            document.getElementById("warning").innerHTML = "Please enter campaign location or choose smart AI";
+
+
+
+                        if (y[i].name == "location" ) {
+                            if($('input[name="addresses[]"]:checked').length > 0 || smart_ai.checked){
+                                valid = true;
+                                document.getElementById("warning").innerHTML = ''
+                            }else {
+                                y[i].className += " invalid";
+                                valid = false;
+                                document.getElementById("warning").innerHTML = "Please enter campaign location or choose smart AI";
+                            }
+                        }else {
                             y[i].className += " invalid";
                             valid = false;
+                        }
+
+
+
                     }
 
 
