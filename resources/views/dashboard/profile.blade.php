@@ -46,18 +46,19 @@
                                     <div class="row justify-content-center">
                                         <div class="col-lg-6 col-sm-6">
                                             <div class="profile-activity">
-                                                <i class="bx bx-repost"></i>
-                                                <h3>Total Campaign</h3>
-                                                <h2>{{ $camp_num }}</h2>
+                                                <i class="bx bx-money"></i>
+                                                <h3>Balance</h3>
+                                                <h2>NGN @convert($user->balance)</h2>
                                             </div>
                                         </div>
-{{--                                        <div class="col-lg-4 col-sm-6">--}}
-{{--                                            <div class="profile-activity">--}}
-{{--                                                <i class="bx bx-user"></i>--}}
-{{--                                                <h3>Followers</h3>--}}
-{{--                                                <h2>40,5487</h2>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="profile-activity">
+                                                <i class="bx bx-money"></i>
+                                                <h3>Earned</h3>
+                                                <h2>NGN @convert($user->ref_bonus)</h2>
+                                            </div>
+                                        </div>
+
                                     </div>
 
                                 </div>
