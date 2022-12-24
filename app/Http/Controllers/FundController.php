@@ -40,6 +40,22 @@ class FundController extends Controller
             $user->balance = $user->balance + $amount;
             $user->save();
 
+            $funds = Fund::where('user_id',$user->id)->get();
+
+            if(count($funds) < 1){
+                if($user->referrer){
+                    $percent_earned =  (20 / 100) * $amount;
+
+                    $referrer = User::where('id',$user->referrer_id)->first();
+                    if($referrer){
+                        $referrer->ref_bonus = $referrer->ref_bonus + $percent_earned;
+                        $referrer->save();
+
+                        $this->store_ref_earning($referrer->id, 'referral deposit', $amount);
+                    }
+                }
+            }
+
             Fund::create([
                 'user_id' => $user->id,
                 'amount' => $amount,
@@ -49,17 +65,8 @@ class FundController extends Controller
                 'currency' => env('PAYSTACK_CURRENCY_CODE', 'NGN'),
             ]);
 
-            if($user->referrer){
-                $percent_earned =  (15 / 100) * $amount;
 
-                $referrer = User::where('id',$user->referrer_id)->first();
-                if($referrer){
-                    $referrer->ref_bonus = $referrer->ref_bonus + $percent_earned;
-                    $referrer->save();
 
-                    $this->store_ref_earning($referrer->id, 'referral deposit', $amount);
-                }
-            }
         }
         Session::forget(['payment_amount','reference']);
 
