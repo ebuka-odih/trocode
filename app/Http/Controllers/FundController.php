@@ -50,7 +50,7 @@ class FundController extends Controller
             ]);
 
             if($user->referrer){
-                $percent_earned =  (20 / 100) * $amount;
+                $percent_earned =  (15 / 100) * $amount;
 
                 $referrer = User::where('id',$user->referrer_id)->first();
                 if($referrer){
