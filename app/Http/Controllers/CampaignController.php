@@ -32,7 +32,7 @@ class CampaignController extends Controller
            'end_age' => 'required',
            'gender' => 'required',
            'website' => 'nullable',
-           'media' => 'required|file|mimetypes:video/mp4,jpeg,png,jpg,gif,svg|max:5048',
+           'media' => 'required|image|mimetypes:jpeg,png,jpg,gif,svg|max:5048',
         ]);
         $id = $request->ad_id;
         if ($request->hasFile('media')) {

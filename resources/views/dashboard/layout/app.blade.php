@@ -203,7 +203,7 @@
                         <div class="icon">
                             <img src="{{ asset('assets/images/icon/profile-2user.svg') }}" alt="profile-2user">
                         </div>
-                        <span class="menu-title">My Profile</span>
+                        <span class="menu-title">My Account</span>
                     </a>
                 </li>
                 <li>

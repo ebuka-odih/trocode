@@ -414,7 +414,7 @@
                                         <div class="row mb-3">
                                             <label for="media" class="col-sm-2 col-form-label">Media</label>
                                             <div class="col-sm-10">
-                                                <input type="file" id="media" name="media" class="custom-file-input">
+                                                <input type="file" id="media" name="media" >
                                             </div>
                                         </div>
                                         <div class="row mb-3">
