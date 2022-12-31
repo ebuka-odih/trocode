@@ -64,6 +64,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Campaign::class, 'user_id');
     }
+    public function funding()
+    {
+        return $this->hasMany(Funding::class, 'user_id');
+    }
 
 
     public function getReferralLinkAttribute()

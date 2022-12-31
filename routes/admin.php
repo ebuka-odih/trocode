@@ -13,4 +13,8 @@ Route::group(['middleware' => ['admin', 'auth', 'verified'], 'prefix' => 'admin'
     Route::get('campaigns', "Admin\AdminCampaign@campaigns")->name('campaigns');
     Route::get('campaigns/details/{id}', "Admin\AdminCampaign@preview")->name('preview');
     Route::get('approve/campaign/{id}', "Admin\AdminCampaign@approve")->name('approve');
+
+    Route::get('funding', 'Admin\AdminFunding@funding')->name('funding');
+    Route::get('funding/history', 'Admin\AdminFunding@history')->name('history');
+    Route::post('storeFunding', 'Admin\AdminFunding@storeFunding')->name('storeFunding');
 });

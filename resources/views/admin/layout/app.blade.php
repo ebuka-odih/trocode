@@ -114,6 +114,24 @@
                             <span class="nav-main-link-name">Users</span>
                         </a>
                     </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.funding') }}">
+                            <i class="nav-main-link-icon fa fa-money-bill"></i>
+                            <span class="nav-main-link-name">Add Fund</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.history') }}">
+                            <i class="nav-main-link-icon fa fa-history"></i>
+                            <span class="nav-main-link-name">Funding History</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link nav-main-link"  href="{{ route('admin.history') }}">
+                            <i class="nav-main-link-icon fa fa-history"></i>
+                            <span class="nav-main-link-name">Withdrawal</span>
+                        </a>
+                    </li>
                     <li class="nav-main-heading">Settings</li>
                     <li class="nav-main-item">
                         <a class="nav-main-link nav-main-link"  href="{{ route('admin.users') }}">
