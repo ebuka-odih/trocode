@@ -16,6 +16,11 @@ class CreateWithdrawsTable extends Migration
         Schema::create('withdraws', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->bigInteger('user_id');
+            $table->decimal('amount', 12, 2);
+            $table->string('bank');
+            $table->string('acct_number');
+            $table->string('acct_name');
         });
     }
 

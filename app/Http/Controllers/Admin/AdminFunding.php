@@ -25,9 +25,12 @@ class AdminFunding extends Controller
     public function storeFunding(Request $request)
     {
         $fund = new Funding();
+        $user = User::findOrFail($fund->user_id);
         $fund->amount = $request->amount;
         $fund->user_id = $request->user_id;
         $fund->status = 1;
+        $user->balance += $request->amount;
+        $user->save();
         $fund->save();
         return redirect()->back()->with('success', "Funding Sent Successfully");
     }

@@ -25,6 +25,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('edit/campaign/225{id}34', "CampaignController@edit")->name('edit');
     Route::get('campaigns', "CampaignController@campaigns")->name('campaigns');
     Route::get('place/campaigns', "CampaignController@index")->name('addCamp');
+
+    Route::get('withdraw', "WithdrawController@withdraw")->name('withdraw');
+    Route::post('process/withdraw', "WithdrawController@proWithdraw")->name('proWithdraw');
 });
 
 Route::get('/paystack/callback', 'FundController@handleGatewayCallback');

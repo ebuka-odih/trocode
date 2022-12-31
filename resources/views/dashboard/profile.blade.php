@@ -37,7 +37,7 @@
                                                 <a href="{{ route('user.settings') }}" class="btn btn-secondary">
                                                    Edit Profile
                                                 </a>
-                                                <a href="" class="btn btn-primary btn-sm">Withdraw Funds</a>
+                                                <a href="{{ route('user.withdraw') }}" class="btn btn-primary btn-sm">Withdraw Funds</a>
                                             </div>
                                         </div>
                                     </div>
