@@ -639,8 +639,6 @@
 
                         var smart_ai = document.getElementById('smart_ai');
 
-
-
                         if (y[i].name == "location" ) {
                             if($('input[name="addresses[]"]:checked').length > 0 || smart_ai.checked){
                                 valid = true;
@@ -654,8 +652,6 @@
                             y[i].className += " invalid";
                             valid = false;
                         }
-
-
 
                     }
 

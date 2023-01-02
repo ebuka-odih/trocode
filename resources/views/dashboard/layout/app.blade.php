@@ -132,7 +132,7 @@
 
 
                                         <li class="nav-item">
-                                            <a href="edit-profile.html" class="nav-link">
+                                            <a href="{{ route('user.settings') }}" class="nav-link">
                                                 <i class="ri-settings-5-line"></i>
                                                 <span>Settings</span>
                                             </a>
