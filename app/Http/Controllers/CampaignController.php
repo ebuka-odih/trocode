@@ -33,6 +33,7 @@ class CampaignController extends Controller
            'gender' => 'required',
            'website' => 'nullable',
            'media' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
+//           'media' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5048',
         ]);
         $id = $request->ad_id;
         if ($request->hasFile('media')) {
